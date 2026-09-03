@@ -1,0 +1,299 @@
+@use "sass:math";
+@use "variables" as v;
+@use "mixin" as m;
+
+/*----------------------------------------
+  Major Breakpoint 768px
+----------------------------------------*/
+.mq-md-up {
+  display: block;
+  @include m.bp-down(md) {
+    display: none;
+  }
+}
+
+.mq-md-down {
+  display: none;
+  @include m.bp-down(md) {
+    display: block;
+  }
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/*----------------------------------------
+	Font size
+----------------------------------------*/
+html {
+  font-size: 100%; // ユーザーのブラウザ設定に依存できる
+}
+
+@function rem($pixels, $base: 16) {
+  @return math.div($pixels, $base) * 1rem;
+}
+
+/*----------------------------------------
+	base
+----------------------------------------*/
+body {
+  overflow-y: auto;
+  font-family:
+    "YakuHanJP", "Yu Gothic", "YuGothic", "Yu Gothic UI", system-ui, sans-serif;
+  color: var(--c-black-primary);
+  font-size: rem(16);
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  text-rendering: optimizeLegibility;
+
+  /* Mac only */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* 禁則処理 */
+  word-break: normal;
+  line-break: strict;
+  overflow-wrap: break-word;
+}
+
+.lexend {
+  font-family: "Lexend", sans-serif;
+}
+
+// =========================
+// HD（Heading）
+// =========================
+$hd-map: (
+  xl: (
+    size: var(--hd-xl),
+    weight: 700,
+    lh: 1.2,
+  ),
+  lg: (
+    size: var(--hd-lg),
+    weight: 700,
+    lh: 1.25,
+  ),
+  md: (
+    size: var(--hd-md),
+    weight: 700,
+    lh: 1.3,
+  ),
+  sm: (
+    size: var(--hd-sm),
+    weight: 700,
+    lh: 1.35,
+  ),
+  xs: (
+    size: var(--hd-xs),
+    weight: 700,
+    lh: 1.4,
+  ),
+  2xs: (
+    size: var(--hd-2xs),
+    weight: 700,
+    lh: 1.45,
+  ),
+);
+
+@each $key, $vals in $hd-map {
+  .hd-#{$key} {
+    font-size: map-get($vals, size);
+    font-weight: map-get($vals, weight);
+    line-height: map-get($vals, lh);
+  }
+}
+
+// =========================
+// TX（Text）
+// =========================
+$tx-map: (
+  lg: (
+    size: var(--tx-lg),
+    weight: 700,
+    lh: 1.3,
+  ),
+  md: (
+    size: var(--tx-md),
+    weight: 700,
+    lh: 1.3,
+  ),
+  sm: (
+    size: var(--tx-sm),
+    weight: 700,
+    lh: 1.3,
+  ),
+  xs: (
+    size: var(--tx-xs),
+    weight: 700,
+    lh: 1.4,
+  ),
+  2xs: (
+    size: var(--tx-2xs),
+    weight: 700,
+    lh: 1.5,
+  ),
+  3xs: (
+    size: var(--tx-3xs),
+    weight: 700,
+    lh: 1.6,
+  ),
+  4xs: (
+    size: var(--tx-4xs),
+    weight: 700,
+    lh: 1.7,
+  ),
+);
+
+@each $key, $vals in $tx-map {
+  .tx-#{$key} {
+    font-size: map-get($vals, size);
+    font-weight: map-get($vals, weight);
+    line-height: map-get($vals, lh);
+  }
+}
+
+// =========================
+// MB（Margin Bottom）
+// =========================
+$mb-sizes: (
+  xl: var(--mb-xl),
+  lg: var(--mb-lg),
+  md: var(--mb-md),
+  sm: var(--mb-sm),
+  xs: var(--mb-xs),
+  2xs: var(--mb-2xs),
+  3xs: var(--mb-3xs),
+  4xs: var(--mb-4xs),
+  5xs: var(--mb-5xs),
+);
+
+@each $key, $value in $mb-sizes {
+  .mb-#{$key} {
+    margin-bottom: #{$value};
+  }
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+// Elements
+// =========================
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  vertical-align: top;
+}
+
+a {
+  color: var(--c-primary);
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img,
+input,
+select,
+textarea {
+  vertical-align: middle;
+}
+
+hr {
+  margin: 1rem 0;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/*----------------------------------------
+	Container
+----------------------------------------*/
+.container {
+  width: 100%;
+  margin: 0 auto;
+  @each $size, $width in v.$container-max-widths {
+    @if map-has-key(v.$breakpoints, $size) {
+      @media (min-width: map-get(v.$breakpoints, $size)) {
+        max-width: $width;
+      }
+    }
+  }
+  @include m.bp-down(md) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+/*----------------------------------------
+	Utilities
+----------------------------------------*/
+
+/* center-block */
+.mx-auto {
+  margin: 0 auto;
+}
+
+.row-15 {
+  margin-right: -15px;
+  margin-left: -15px;
+  @include m.bp-down(md) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+/* Line Height
+---------------------------------*/
+.lh-1 {
+  line-height: 1;
+}
+.lh-16 {
+  line-height: 1.6;
+}
+.lh-2 {
+  line-height: 2;
+}
+
+/* 背景色
+---------------------------------*/
+.bg-white {
+  background-color: var(--c-white);
+}
+
+/* 行揃え
+---------------------------------*/
+.tx-center {
+  text-align: center;
+}
+
+.tx-left {
+  text-align: left;
+}
+
+.tx-right {
+  text-align: right;
+}
+
+.tx-justify {
+  text-align: justify;
+}

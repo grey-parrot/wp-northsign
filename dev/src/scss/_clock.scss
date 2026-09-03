@@ -1,0 +1,96 @@
+@use "variables" as v;
+@use "mixin" as m;
+
+/*----------------------------------------
+  時計表示
+----------------------------------------*/
+.bg-watch {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 142px;
+  height: 238px;
+  background-image: url("images/clock/bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 0;
+  @include m.bp-down(md) {
+    top: 30px;
+    transform: translateX(-50%) scale(0.68) translateY(0px);
+  }
+}
+
+/* ▼ 時計中心の座標（すべて共通） */
+:root {
+  /* bg-watch内の中心X */
+  --center-x: 71px;
+  --center-y: 96px;
+}
+
+/* 共通設定 */
+.watch-hour,
+.watch-min {
+  position: absolute;
+  top: var(--center-y);
+  left: var(--center-x);
+  transform-origin: 50% 100%; /* 下端を回転軸 */
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotate(0deg);
+}
+.watch-sec {
+  position: absolute;
+  top: var(--center-y);
+  left: var(--center-x);
+  transform-origin: 50% 70%; /* 下端より中央よりを回転軸 */
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotate(0deg);
+}
+
+/* 時針 */
+.watch-hour {
+  width: 8px; /* 針を元の画像の28%に縮小 */
+  height: 24px;
+  margin-left: -4px; /* width 8 の半分 → 中央合わせ */
+  margin-top: -24px; /* 下端を中心に置くため */
+  background-image: url("images/clock/hour-hand.png");
+  z-index: 1;
+}
+
+/* 分針 */
+.watch-min {
+  width: 2px;
+  height: 30px;
+  margin-left: -1px; /* 2/6 */
+  margin-top: -30px;
+  background-image: url("images/clock/minute-hand.png");
+  z-index: 2;
+}
+
+/* 秒針 */
+.watch-sec {
+  position: absolute;
+  width: 2px;
+  height: 50px;
+  margin-left: -1px;
+  margin-top: -35px; /* 50px × 0.70 ≒ 35 */
+  background-image: url("images/clock/second-hand.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 3;
+}
+
+/* 中央キャップ */
+.watch-center {
+  position: absolute;
+  top: calc(var(--center-y) - 4px);
+  left: calc(var(--center-x) - 4px);
+  width: 8px;
+  height: 8px;
+  background-image: url("images/clock/center.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 4;
+}

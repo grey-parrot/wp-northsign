@@ -1,0 +1,119 @@
+@use "variables" as v;
+@use "base" as b;
+@use "mixin" as m;
+
+/* 共通項目
+----------------------------------------*/
+
+/* About Hero
+----------------------------------------*/
+.about-hero {
+  .about-hero__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 80px;
+    @include m.bp-down(md) {
+      flex-direction: column;
+    }
+    .about-hero__txt {
+      flex: 0 0 calc(50% - 40px);
+    }
+    .about-hero__wrapper-image {
+      flex: 0 0 calc(50% - 40px);
+    }
+  }
+}
+
+/* 基盤となる力
+----------------------------------------*/
+.about-power {
+  .about-power__title {
+    @include m.bp-down(md) {
+      font-size: b.rem(22);
+    }
+  }
+  .about-power__sub-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    @include m.bp-down(md) {
+      flex-direction: column;
+      gap: 4px;
+    }
+    .about-power__sub-title-txt {
+      .about-power__sub-title-txt-span {
+        font-size: b.rem(18);
+        font-weight: 400;
+      }
+    }
+    .about-power__multi {
+      font-weight: 400;
+      @include m.bp-down(md) {
+        font-size: b.rem(26);
+        font-weight: 100;
+      }
+    }
+  }
+  .about-power__boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 24px;
+    @include m.bp-down(md) {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+}
+
+/* メンバー
+----------------------------------------*/
+.about-member {
+  .about-member__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 80px;
+    @include m.bp-down(md) {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+}
+
+/* 受賞/保有資格
+----------------------------------------*/
+.about-award {
+  .about-award__img {
+    display: block;
+    width: 85%;
+    @include m.bp-down(md) {
+      width: 100%;
+    }
+  }
+}
+
+/* 会社概要
+----------------------------------------*/
+.about-company {
+  .about-company__table {
+    .about-company__wrapper {
+      display: grid;
+      grid-template-columns: 1fr 5fr;
+      gap: 24px;
+      padding: 32px 24px;
+      @include m.bp-down(md) {
+        grid-template-columns: 1fr 3fr;
+        gap: 16px;
+      }
+      &:not(:last-of-type) {
+        border-bottom: 1px var(--c-black-lv5) solid;
+      }
+    }
+  }
+}

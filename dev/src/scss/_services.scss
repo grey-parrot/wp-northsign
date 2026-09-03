@@ -1,0 +1,223 @@
+@use "variables" as v;
+@use "base" as b;
+@use "mixin" as m;
+
+/* 共通項目
+----------------------------------------*/
+
+/* Services Hero
+----------------------------------------*/
+.services-hero {
+  .services-hero__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 80px;
+    @include m.bp-down(md) {
+      flex-direction: column;
+      gap: 40px;
+    }
+    .services-hero__txt {
+      flex: 0 0 calc(74% - 40px);
+      @include m.bp-down(md) {
+        flex: none;
+      }
+    }
+    .services-hero__wrapper-image {
+      flex: 0 0 calc(26% - 40px);
+      @include m.bp-down(md) {
+        flex: none;
+        display: flex;
+        justify-content: center;
+      }
+      .services-hero__img {
+        @include m.bp-down(md) {
+          width: 50%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+/* デザイン支援等と教育・研修
+----------------------------------------*/
+.services-support {
+  .services-support__items {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: clamp(80px, 10vw, 164px);
+    .services-support__item {
+      .services-support__wrapper-title {
+        @include m.bp-down(md) {
+          text-align: center;
+        }
+        .services-support__title {
+          display: inline-block;
+          position: relative;
+          padding-left: 100px;
+          @include m.bp-down(md) {
+            text-align: center;
+            padding-left: 36px;
+          }
+          &::before {
+            content: "";
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            vertical-align: middle;
+            position: absolute;
+            top: -16px;
+            left: 0;
+            @include m.bp-down(md) {
+              width: 64px;
+              height: 64px;
+              top: -16px;
+              left: -36px;
+            }
+          }
+        }
+      }
+      &:nth-of-type(1) {
+        .services-support__wrapper-title {
+          .services-support__title {
+            &::before {
+              background-image: url("images/ico-flag.png");
+            }
+          }
+        }
+      }
+      &:nth-of-type(2) {
+        .services-support__wrapper-title {
+          .services-support__title {
+            &::before {
+              background-image: url("images/ico-design.png");
+            }
+          }
+        }
+      }
+      &:nth-of-type(3) {
+        .services-support__wrapper-title {
+          .services-support__title {
+            &::before {
+              background-image: url("images/ico-mortarboard.png");
+            }
+          }
+        }
+      }
+      .services-support__wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        gap: 40px;
+        @include m.bp-down(md) {
+          flex-direction: column;
+        }
+        .services-support__wrapper-image {
+          flex: 0 0 calc(44% - 20px);
+        }
+        .services-support__wrapper-txt {
+          flex: 0 0 calc(56% - 20px);
+        }
+      }
+    }
+  }
+}
+
+/* デザイン顧問サービス｜料金プラン
+----------------------------------------*/
+.services-plans {
+  .services-plans__txt {
+    @include m.bp-down(md) {
+      text-align: left;
+    }
+  }
+  .services-plans__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    @include m.bp-down(md) {
+      flex-direction: column;
+      gap: 24px;
+    }
+    .services-plans__item-list {
+      position: relative;
+      line-height: 1.7;
+    }
+  }
+  .services-plans__comments {
+    @include m.bp-down(md) {
+      font-size: b.rem(12);
+    }
+  }
+  .services-plans__link {
+    position: relative;
+    padding-left: 80px;
+    padding-top: 26px;
+
+    @include m.bp-down(md) {
+      padding-left: 40px;
+      padding-top: 13px;
+    }
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 70px;
+      height: 80px;
+      background-image: url("images/ico-plans.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      vertical-align: middle;
+      position: absolute;
+      top: -2px;
+      left: 0;
+      @include m.bp-down(md) {
+        width: 35px;
+        height: 40px;
+        top: 0;
+      }
+    }
+    &.more {
+      padding-right: 56px;
+      @include m.bp-down(md) {
+        padding-right: 28px;
+      }
+      &::after {
+        content: "";
+        width: 41px;
+        height: 41px;
+        top: 17px;
+        right: 0;
+        @include m.bp-down(md) {
+          width: 20px;
+          height: 20px;
+          top: 20px;
+        }
+      }
+    }
+  }
+}
+
+/* サービスの流れ
+----------------------------------------*/
+.services-flow {
+  .services-flow__items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 80px;
+    @include m.bp-down(md) {
+      gap: 40px;
+    }
+    .services-flow__step {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 24px;
+    }
+  }
+}

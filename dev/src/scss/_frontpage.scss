@@ -1,0 +1,344 @@
+@use "variables" as v;
+@use "base" as b;
+@use "mixin" as m;
+
+/* 共通項目
+----------------------------------------*/
+.top-common__title {
+  .top-common__title-ja {
+    text-align: center;
+  }
+  .top-common__title-en {
+    text-align: center;
+  }
+}
+
+.top-common__wrapper-more {
+  width: 100%;
+  text-align: right;
+}
+
+/* Top Hero
+----------------------------------------*/
+.top-hero {
+  background-color: var(--c-back-ground);
+  padding-top: 100px;
+  padding-bottom: 160px;
+  @include m.bp-down(md) {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+}
+
+.top-hero__wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  @include m.bp-down(md) {
+    display: block;
+  }
+}
+
+.top-hero__wrapper-image {
+  flex: 0 0 60%;
+  @include m.bp-down(xxl) {
+    flex: 0 0 56%;
+  }
+  @include m.bp-down(xl) {
+    flex: 0 0 56%;
+  }
+  @include m.bp-down(lg) {
+    flex: 0 0 56%;
+  }
+  @include m.bp-down(md) {
+    padding-left: 24px;
+  }
+}
+
+.top-hero__txt {
+  flex: 0 0 40%;
+  padding-left: 4.5%;
+  padding-right: 1%;
+  @include m.bp-down(xxl) {
+    flex: 0 0 44%;
+  }
+  @include m.bp-down(xl) {
+    flex: 0 0 44%;
+  }
+  @include m.bp-down(lg) {
+    flex: 0 0 44%;
+  }
+  @include m.bp-down(md) {
+    padding-top: 64px;
+  }
+}
+
+.top-hero__catch {
+  font-size: b.rem(40);
+  @include m.bp-down(xxl) {
+    font-size: b.rem(36);
+  }
+  @include m.bp-down(xl) {
+    font-size: b.rem(30);
+  }
+  @include m.bp-down(lg) {
+    font-size: b.rem(26);
+  }
+  @include m.bp-down(md) {
+    font-size: b.rem(24);
+    margin-bottom: 24px;
+  }
+}
+
+.top-hero__txt1 {
+  font-size: b.rem(24);
+  @include m.bp-down(xxl) {
+    font-size: b.rem(22);
+  }
+  @include m.bp-down(xl) {
+    font-size: b.rem(20);
+  }
+  @include m.bp-down(lg) {
+    font-size: b.rem(18);
+  }
+  @include m.bp-down(md) {
+    font-size: b.rem(16);
+    margin-bottom: 24px;
+  }
+}
+
+.top-hero__txt2 {
+  font-size: b.rem(16);
+  @include m.bp-down(md) {
+    font-size: b.rem(14);
+  }
+}
+
+/* News & Events
+----------------------------------------*/
+.top-news-events {
+  background-color: var(--c-back-ground);
+  width: 100%;
+  padding-bottom: 160px;
+  @include m.bp-down(md) {
+    padding-bottom: 80px;
+  }
+  .top-news-events__title-en {
+    @include m.bp-down(md) {
+      padding-bottom: 24px;
+    }
+  }
+  .top-news-events__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 40px;
+  }
+  .top-news-events__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    @include m.bp-down(md) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+  }
+}
+
+/* Concept
+----------------------------------------*/
+.top-concept {
+  .top-concept__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 80px;
+    @include m.bp-down(md) {
+      flex-direction: column;
+    }
+    .top-concept__wrapper-image,
+    .top-concept__wrapper-txt {
+      flex: 0 0 calc(50% - 40px);
+    }
+  }
+}
+
+/* 私たちが伴走できること
+----------------------------------------*/
+.top-we-support {
+  .top-we-support__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    @include m.bp-down(md) {
+      flex-direction: column;
+      gap: 24px;
+    }
+    .top-we-support__wrapper-image {
+      width: 100%;
+      height: auto;
+      text-align: center;
+      .top-we-support__image {
+        width: 34%;
+      }
+    }
+  }
+}
+
+/* 私たちの関わり方
+----------------------------------------*/
+.top-we-work {
+  .top-we-work__item-title > span {
+    font-size: b.rem(18);
+    padding-left: 4px;
+  }
+  .top-we-work__item-txt {
+    background-color: var(--c-black-lv7);
+    border-radius: 8px;
+    padding: 32px;
+  }
+}
+
+/* このような方のお役に立てます
+----------------------------------------*/
+.top-who-for {
+  .top-who-for__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 40px;
+    @include m.bp-down(md) {
+      flex-direction: column;
+      gap: 24px;
+    }
+    .top-who-for__item-list {
+      position: relative;
+      padding-left: 30px;
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-image: url("images/ico-check.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        vertical-align: middle;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}
+
+/* プロジェクト事例
+----------------------------------------*/
+
+/* デザイン顧問サービス｜料金プラン
+----------------------------------------*/
+.top-plans {
+  .top-plans__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    @include m.bp-down(md) {
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+  .top-plans__comments {
+    @include m.bp-down(md) {
+      font-size: b.rem(12);
+    }
+  }
+
+  .top-plans__link {
+    position: relative;
+    padding-left: 80px;
+    padding-top: 26px;
+
+    @include m.bp-down(md) {
+      padding-left: 40px;
+      padding-top: 13px;
+    }
+    &.more {
+      padding-right: 56px;
+      @include m.bp-down(md) {
+        padding-right: 28px;
+      }
+      &::after {
+        content: "";
+        width: 41px;
+        height: 41px;
+        top: 17px;
+        right: 0;
+        @include m.bp-down(md) {
+          width: 20px;
+          height: 20px;
+          top: 20px;
+        }
+      }
+    }
+  }
+}
+
+/* ブログ
+----------------------------------------*/
+.top-blog {
+  .front-posts__item {
+    margin-bottom: 40px;
+  }
+  .front-posts__inner {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+  .front-posts__body {
+    flex: 1 1 65%;
+  }
+  .front-posts__thumb {
+    flex: 0 0 35%;
+    text-align: right;
+  }
+
+  /* SP */
+  @media (max-width: 768px) {
+    .front-posts__inner {
+      flex-direction: column;
+    }
+    .front-posts__body,
+    .front-posts__thumb {
+      flex: 0 0 100%;
+    }
+  }
+}
+
+/* 相談してみる
+----------------------------------------*/
+.top-contact {
+  position: relative;
+  margin-bottom: 160px;
+  @include m.bp-down(md) {
+    margin-bottom: 80px;
+  }
+  .top-contact__item {
+    margin-top: 300px;
+    text-align: center;
+    @include m.bp-down(md) {
+      margin-top: 220px;
+    }
+  }
+  .top-contact__txt {
+    @include m.bp-down(md) {
+      margin-bottom: 32px;
+    }
+  }
+}
