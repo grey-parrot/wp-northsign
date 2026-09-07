@@ -6,7 +6,7 @@
   <!-- Subpage Title
   ====================================================================== -->
   <div class="subpage-title">
-    <h1 class="subpage-title__txt hd-xs tx-center">ニュース/イベント</h1>
+    <h1 class="subpage-title__txt hd-xs tx-center"><?php the_title(); ?></h1>
     <p class="subpage-title__txt-en lexend tx-xs tx-center">News & Events</p>
   </div>
 
@@ -21,7 +21,6 @@
               <?php echo esc_html( get_the_date('Y/m/d') ); ?>
             </time>
           </div>
-          <h2 class="hd-2xs"><?php the_title(); ?></h2>
           <p class="tx-4xs md-3xs"><?php the_content(); ?></p>
         </article>
   <?php endwhile; ?>

@@ -6,7 +6,7 @@
 </head>
 <body <?php body_class(); ?>>
   <header class="header-custom">
-    <h1 class="header__logo">
+    <p class="header__logo">
       <a href="<?php echo esc_url( home_url() ); ?>/"
         ><img
           src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/logo.svg"
@@ -14,7 +14,7 @@
           width="190"
           height="36"
       /></a>
-    </h1>
+    </p>
     <button
       id="hamburger"
       class="hamburger"
