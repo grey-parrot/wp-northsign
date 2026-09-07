@@ -12,7 +12,7 @@
         <img
           class="top-hero__image"
           src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-hero.jpg"
-          alt=""
+          alt="起業家のアイディアをイノベーションに変える、ノースサインのブランディングイメージ"
         />
       </div>
       <div class="top-hero__txt">
@@ -82,7 +82,7 @@ $news_events = new WP_Query([
             <img
               class="top-concept__image"
               src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-concept.png"
-              alt=""
+              alt="経営のそばで考え続けるパートナーとしてのコンセプトイメージ"
             />
           </div>
           <div class="top-concept__wrapper-txt">
@@ -128,7 +128,7 @@ $news_events = new WP_Query([
               <img
                 class="top-we-support__image"
                 src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/ico-flag.png"
-                alt=""
+                alt="ブランド構築支援のアイコン"
               />
             </div>
             <h3 class="top-we-support__item-title hd-2xs tx-center mb-2xs">
@@ -145,7 +145,7 @@ $news_events = new WP_Query([
               <img
                 class="top-we-support__image"
                 src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/ico-design.png"
-                alt=""
+                alt="デザイン支援のアイコン"
               />
             </div>
             <h3 class="top-we-support__item-title hd-2xs tx-center mb-2xs">
@@ -163,7 +163,7 @@ $news_events = new WP_Query([
               <img
                 class="top-we-support__image"
                 src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/ico-mortarboard.png"
-                alt=""
+                alt="講座・研修のアイコン"
               />
             </div>
             <h3 class="top-we-support__item-title hd-2xs tx-center mb-2xs">
@@ -199,12 +199,12 @@ $news_events = new WP_Query([
             <img
               class="mq-md-up top-we-support__image mb-xs"
               src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-we-work1__pc.png"
-              alt=""
+              alt="一緒に考え、一緒に決める共創型の関わり方を表す図（PC表示）"
             />
             <img
               class="mq-md-down top-we-support__image mb-xs"
               src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-we-work1__sp.png"
-              alt=""
+              alt="一緒に考え、一緒に決める共創型の関わり方を表す図（スマートフォン表示）"
             />
             <p class="top-we-work__item-txt tx-4xs">
               私たちは、要件やアイディアを一方的に受け取り、そのまま形にする関わり方はしていません。<br /><br />
@@ -220,12 +220,12 @@ $news_events = new WP_Query([
             <img
               class="mq-md-up top-we-support__image mb-xs"
               src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-we-work2__pc.png"
-              alt=""
+              alt="試しながら前に進めるアジャイル型の関わり方を表す図（PC表示）"
             />
             <img
               class="mq-md-down top-we-support__image mb-xs"
               src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-we-work2__sp.png"
-              alt=""
+              alt="試しながら前に進めるアジャイル型の関わり方を表す図（スマートフォン表示）"
             />
             <p class="top-we-work__item-txt tx-4xs">
               私たちは、最初からすべてを決め切る進め方は選んでいません。<br /><br />

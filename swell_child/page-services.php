@@ -19,7 +19,7 @@
           <div class="services-hero__wrapper-image mb-md">
             <img
               src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/services/img-services-hero.png"
-              alt=""
+              alt="サービスページのメインビジュアル"
               class="services-hero__img"
             />
           </div>
@@ -48,7 +48,7 @@
               <div class="services-support__wrapper-image">
                 <img
                   src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/services/img-services-support1.jpg"
-                  alt=""
+                  alt="ブランド構築支援のイメージ写真"
                   class="services-support__img"
                 />
               </div>
@@ -90,7 +90,7 @@
               <div class="services-support__wrapper-image">
                 <img
                   src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/services/img-services-support2.jpg"
-                  alt=""
+                  alt="デザイン支援のイメージ写真"
                   class="services-support__img"
                 />
               </div>
@@ -136,7 +136,7 @@
               <div class="services-support__wrapper-image">
                 <img
                   src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/services/img-services-support3.jpg"
-                  alt=""
+                  alt="教育・研修のイメージ写真"
                   class="services-support__img"
                 />
               </div>
