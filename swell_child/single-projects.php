@@ -11,7 +11,7 @@
 <?php if ( have_posts() ) : ?>
   <?php while ( have_posts() ) : the_post(); ?>
       <article <?php post_class('projects__item mb-md'); ?>>
-        <h2 class="hd-sm tx-center mb-4xs"><?php the_title(); ?></h2>
+        <h1 class="hd-sm tx-center mb-4xs"><?php the_title(); ?></h1>
 
   <?php if ( get_field('company_name') ) : ?>
         <p class="project-company tx-center tx-xs mb-md">
