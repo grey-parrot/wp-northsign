@@ -9,6 +9,8 @@
               alt="ノースサイン合同会社"
               width="190"
               height="36"
+              loading="lazy"
+              decoding="async"
           /></a>
         </div>
         <ul class="footer__menu mb-lg">

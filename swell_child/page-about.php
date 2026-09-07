@@ -21,6 +21,9 @@
               src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/about/img-about-hero.png"
               alt="私たちについてページのメインビジュアル"
               class="about-hero__img"
+              loading="eager"
+              fetchpriority="high"
+              decoding="async"
             />
           </div>
           <p class="about-hero__txt tx-4xs">
@@ -170,6 +173,8 @@
               src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/about/ph-about-member1.jpg"
               alt="代表/ブランド顧問デザイナー 北條菜津子の写真"
               class="about-member__img mb-xs"
+              loading="lazy"
+              decoding="async"
             />
             <div class="about-member__wrapper mb-xs">
               <div class="about-member__job-title tx-4xs mb-4xs">
@@ -197,6 +202,8 @@
               src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/about/ph-about-member2.jpg"
               alt="役員/デザインエンジニア 北條利昭の写真"
               class="about-member__img mb-xs"
+              loading="lazy"
+              decoding="async"
             />
             <div class="about-member__wrapper mb-xs">
               <div class="about-member__job-title tx-4xs mb-4xs">
@@ -218,6 +225,8 @@
               src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/about/ph-about-member3.jpg"
               alt="マーケティングコンサルタント/デザイナー 北條比加瑠の写真"
               class="about-member__img mb-xs"
+              loading="lazy"
+              decoding="async"
             />
             <div class="about-member__wrapper mb-xs">
               <div class="about-member__job-title tx-4xs mb-4xs">
@@ -241,6 +250,8 @@
               src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/about/ph-about-member4.jpg"
               alt="システムコンサルタント/エンジニア 青山新の写真"
               class="about-member__img mb-xs"
+              loading="lazy"
+              decoding="async"
             />
             <div class="about-member__wrapper mb-xs">
               <div class="about-member__job-title tx-4xs mb-4xs">
@@ -271,6 +282,8 @@
           src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/about/img-about-award.png"
           alt="受賞歴・保有資格一覧"
           class="about-award__img"
+          loading="lazy"
+          decoding="async"
         />
       </div>
     </sections>

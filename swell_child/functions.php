@@ -53,6 +53,19 @@ add_action('wp_enqueue_scripts', function () {
 });
 
 /**
+ * Contact Form 7 のCSS/JSを、フォームを使用するページ以外では読み込まない
+ * （page-contact.php で do_shortcode() を直接使っているため、
+ * 　CF7側の自動判定が効かず全ページで読み込まれてしまうのを防止）
+ */
+add_action('wp_enqueue_scripts', function () {
+  if ( ! is_page('contact') ) {
+    wp_dequeue_style('contact-form-7');
+    wp_dequeue_script('contact-form-7');
+    wp_dequeue_script('swv');
+  }
+}, 100);
+
+/**
  * カスタム投稿タイプ登録
  */
 add_action('init', function () {
