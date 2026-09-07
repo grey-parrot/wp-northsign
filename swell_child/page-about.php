@@ -19,7 +19,7 @@
           <div class="about-hero__wrapper-image mb-md">
             <img
               src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/about/img-about-hero.png"
-              alt=""
+              alt="私たちについてページのメインビジュアル"
               class="about-hero__img"
             />
           </div>
@@ -168,7 +168,7 @@
           <div class="about-member__item tx-center">
             <img
               src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/about/ph-about-member1.jpg"
-              alt=""
+              alt="代表/ブランド顧問デザイナー 北條菜津子の写真"
               class="about-member__img mb-xs"
             />
             <div class="about-member__wrapper mb-xs">
@@ -195,7 +195,7 @@
           <div class="about-member__item tx-center">
             <img
               src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/about/ph-about-member2.jpg"
-              alt=""
+              alt="役員/デザインエンジニア 北條利昭の写真"
               class="about-member__img mb-xs"
             />
             <div class="about-member__wrapper mb-xs">
@@ -216,7 +216,7 @@
           <div class="about-member__item tx-center">
             <img
               src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/about/ph-about-member3.jpg"
-              alt=""
+              alt="マーケティングコンサルタント/デザイナー 北條比加瑠の写真"
               class="about-member__img mb-xs"
             />
             <div class="about-member__wrapper mb-xs">
@@ -239,7 +239,7 @@
           <div class="about-member__item tx-center">
             <img
               src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/about/ph-about-member4.jpg"
-              alt=""
+              alt="システムコンサルタント/エンジニア 青山新の写真"
               class="about-member__img mb-xs"
             />
             <div class="about-member__wrapper mb-xs">
@@ -269,7 +269,7 @@
         <h2 class="about-common__title hd-xs mb-md">受賞歴/保有資格</h2>
         <img
           src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/about/img-about-award.png"
-          alt=""
+          alt="受賞歴・保有資格一覧"
           class="about-award__img"
         />
       </div>
