@@ -32,6 +32,9 @@
           <li class="footer__menu-item">
             <a href="<?php echo esc_url( get_permalink( get_page_by_path('contact'))); ?>" class="tx-3xs">相談する</a>
           </li>
+          <li class="footer__menu-item">
+            <a href="<?php echo esc_url( get_permalink( get_page_by_path('privacy-policy'))); ?>" class="tx-3xs">プライバシーポリシー</a>
+          </li>
         </ul>
         <p class="footer__copyright lexend tx-3xs txt-center">
           <small lang="en"
