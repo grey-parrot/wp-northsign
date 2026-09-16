@@ -191,64 +191,26 @@
         <div class="services-plans__items mb-xs">
           <div class="services-plans__item box">
             <p class="services-plans__item-txt1 tx-4xs mb-4xs">
-              考えるための壁打ち・判断の整理
+              選ばれるブランドの土台をつくる
             </p>
             <h3 class="services-plans__item-title hd-xs mb-4xs">
-              相談プラン
-            </h3>
-            <h4 class="services-plans__item-price hd-2xs mb-4xs">
-              5万円/月額
-            </h4>
-            <p class="services-plans__item-txt2 tx-4xs mb-5xs">
-              デザイナー不在の組織で、デザインの相談や、ツールの使い方のサポートなど、継続的なサポートを必要とする企業・組織のためのプランです。デザインの作る/作らないの判断や、仕様を考えるお手伝いも可能です。<br /><br />
-              支援事例
-            </p>
-            <ul class="services-plans__item-lists">
-              <li class="services-plans__item-list bullet tx-4xs">
-                月2回程度の定例ミーティング
-              </li>
-              <li class="services-plans__item-list bullet tx-4xs">
-                チャットでの簡易相談・監修
-              </li>
-              <li class="services-plans__item-list bullet tx-4xs">
-                ツールの使い方レクチャー
-              </li>
-            </ul>
-          </div>
-          <div class="services-plans__item box">
-            <p class="services-plans__item-txt1 tx-4xs mb-4xs">
-              意思決定に並走し、プロジェクトを前へ
-            </p>
-            <h3 class="services-plans__item-title hd-xs mb-4xs">
-              伴走プラン
+              伴走パートナー
             </h3>
             <h4 class="services-plans__item-price hd-2xs mb-4xs">
               10万円/月額
             </h4>
             <p class="services-plans__item-txt2 tx-4xs mb-5xs">
-              選ばれるブランド作りを目指して、戦略の部分をお手伝いするプランです。厳選したフレームワークを使い、様々な分析を行ったり、デザインの方向性を決めるお手伝いをします。<br /><br />
-              支援事例
+              こんな方に<br />
+              デザイナー不在の組織で、ブランドの方向性や判断の軸をまだお持ちでない方。これからブランド構築に取り組みたい経営者・事業責任者の方。<br /><br />
+              内容<br />
+              厳選したフレームワークを用いてブランド分析を行い、デザインの方向性を決定します。ブランドの方針が固まった後は、ロゴ・Webサイト・販促物など、各メディアの戦略や設計についてもプラン内でご相談いただけます（実際の制作は制作メニューにて別途承ります）。各週程度のセッションを通じて、継続的に伴走します。<br /><br />
+              3ヶ月ほど継続いただくことで、ブランドの土台となる方向性が定まります。
             </p>
-            <ul class="services-plans__item-lists">
-              <li class="services-plans__item-list bullet tx-4xs">
-                月4回程度の定例ミーティング
-              </li>
-              <li class="services-plans__item-list bullet tx-4xs">
-                チャットでの相談・監修
-              </li>
-              <li class="services-plans__item-list bullet tx-4xs">
-                ツールの使い方レクチャー
-              </li>
-              <li class="services-plans__item-list bullet tx-4xs">
-                ブランド構築サポート
-              </li>
-              <li class="services-plans__item-list bullet tx-4xs">
-                要件定義・壁打ち
-              </li>
-            </ul>
           </div>
           <div class="services-plans__item box">
-            <p class="services-plans__item-txt1 tx-4xs mb-4xs">外部CDO</p>
+            <p class="services-plans__item-txt1 tx-4xs mb-4xs">
+              判断の軸を、社内に根付かせる
+            </p>
             <h3 class="services-plans__item-title hd-xs mb-4xs">
               戦略パートナー
             </h3>
@@ -256,35 +218,27 @@
               15万円/月額
             </h4>
             <p class="services-plans__item-txt2 tx-4xs mb-5xs">
-              創業3年以上の企業で、デザイン責任者が不在の組織で、ブランドを維持し、発展したい組織のために、経営に直結するブランド支援や、デザインシステムの構築をサポートいたします。<br /><br />
-              支援事例
+              こんな方に<br />
+              デザイン責任者が不在で、ブランドの判断が属人化しがちな組織。社内にブランドの考え方を根付かせ、自走できる体制をつくりたい方。<br /><br />
+              内容<br />
+              伴走パートナーの内容に加え、社内メンバー向けのデザイン教育・相談を行います。単発のアドバイスで終わらせず、社内にデザインの判断基準となる仕組みをつくることで、ブランドが社内文化として根付いていくことを目指します。週次程度のセッションで伴走します。
             </p>
-            <ul class="services-plans__item-lists">
-              <li class="services-plans__item-list bullet tx-4xs">
-                月4回以上の定例ミーティング
-              </li>
-              <li class="services-plans__item-list bullet tx-4xs">
-                チャットでの相談・監修
-              </li>
-              <li class="services-plans__item-list bullet tx-4xs">
-                ツールの使い方レクチャー
-              </li>
-              <li class="services-plans__item-list bullet tx-4xs">
-                ブランド構築サポート
-              </li>
-              <li class="services-plans__item-list bullet tx-4xs">
-                要件定義・壁打ち
-              </li>
-              <li class="services-plans__item-list bullet tx-4xs">
-                中長期のブランド・プロダクト設計
-              </li>
-              <li class="services-plans__item-list bullet tx-4xs">
-                経営視点でのデザイン戦略整理
-              </li>
-              <li class="services-plans__item-list bullet tx-4xs">
-                デザインシステム作成サポート
-              </li>
-            </ul>
+          </div>
+          <div class="services-plans__item box">
+            <p class="services-plans__item-txt1 tx-4xs mb-4xs">外部CDO</p>
+            <h3 class="services-plans__item-title hd-xs mb-4xs">
+              経営パートナー
+            </h3>
+            <h4 class="services-plans__item-price hd-2xs mb-4xs">
+              20万円/月額
+            </h4>
+            <p class="services-plans__item-txt2 tx-4xs mb-5xs">
+              こんな方に<br />
+              ブランドを経営そのものに組み込みたい方。単なる外部アドバイザーではなく、内部の人間のように責任を持って動いてくれるパートナーを求めている方。<br /><br />
+              内容<br />
+              戦略パートナーの内容に加え、単なる助言に留まらず、ブランドを実際に実行するところまで伴走します。定期的なMTGでは戦略・ゴール設定について話し合い、Webサイト・UIデザイン・販促ツール・SNSなど、ブランドに関わるあらゆる要素について、戦略策定から改善支援・デザイン監修まで対応します。<br /><br />
+              「時間の長さ」ではなく「関わりの深さ・責任の大きさ」に価値を置いたプランです。
+            </p>
           </div>
         </div>
         <p class="services-plans__comments tx-4xs mb-md">

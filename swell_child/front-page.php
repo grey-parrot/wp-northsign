@@ -416,32 +416,32 @@ $projects_query = new WP_Query($args);
         <div class="top-plans__items mb-xs">
           <div class="top-plans__item box">
             <p class="top-plans__item-txt1 tx-4xs mb-4xs">
-              考えるための壁打ち・判断の整理
+              選ばれるブランドの土台をつくる
             </p>
-            <h3 class="top-plans__item-title hd-xs mb-4xs">相談プラン</h3>
-            <h4 class="top-plans__item-price hd-2xs mb-4xs">5万円/月額</h4>
+            <h3 class="top-plans__item-title hd-xs mb-4xs">伴走パートナー</h3>
+            <h4 class="top-plans__item-price hd-2xs mb-4xs">10万円/月額</h4>
             <p class="top-plans__item-txt2 tx-4xs mb-5xs">
-              デザイナー不在の組織で、デザインの相談や、ツールの使い方のサポートなど、継続的なサポートを必要とする企業・組織のためのプランです。デザインの作る/作らないの判断や、仕様を考えるお手伝いも可能です。
+              ブランド構築から伴走するプランです。厳選したフレームワークで分析を行い、デザインの方向性を決めるお手伝いをします。ブランドの方針が決まったあとは、ロゴ、Web、販促物など各媒体の戦略や設計をプラン内で行うことができます。各週程度のセッションを通じて伴走します。
             </p>
           </div>
           <div class="top-plans__item box">
             <p class="top-plans__item-txt1 tx-4xs mb-4xs">
-              意思決定に並走し、プロジェクトを前へ
+              判断の軸を、社内に根付かせる
             </p>
-            <h3 class="top-plans__item-title hd-xs mb-4xs">伴走プラン</h3>
-            <h4 class="top-plans__item-price hd-2xs mb-4xs">10万円/月額</h4>
+            <h3 class="top-plans__item-title hd-xs mb-4xs">戦略パートナー</h3>
+            <h4 class="top-plans__item-price hd-2xs mb-4xs">15万円/月額</h4>
             <p class="top-plans__item-txt2 tx-4xs mb-5xs">
-              選ばれるブランド作りを目指して、戦略の部分をお手伝いするプランです。厳選したフレームワークを使い、様々な分析を行ったり、デザインの方向性を決めるお手伝いをします。
+              伴走パートナーの内容に加え、社内メンバー向けのデザイン教育・相談や、社内のデザインの仕組みづくりをお手伝いするプランです。ブランドを根付かせ、判断の軸が社内に根付く仕組みをつくります。週次程度のセッションを通じて伴走します。
             </p>
           </div>
           <div class="top-plans__item box">
             <p class="top-plans__item-txt1 tx-4xs mb-4xs">外部CDO</p>
             <h3 class="top-plans__item-title hd-xs mb-4xs">
-              戦略パートナー
+              経営パートナー
             </h3>
-            <h4 class="top-plans__item-price hd-2xs mb-4xs">15万円/月額</h4>
+            <h4 class="top-plans__item-price hd-2xs mb-4xs">20万円/月額</h4>
             <p class="top-plans__item-txt2 tx-4xs mb-5xs">
-              創業3年以上の企業で、デザイン責任者が不在の組織で、ブランドを維持し、発展したい組織のために、経営に直結するブランド支援や、デザインシステムの構築をサポートいたします。
+              戦略パートナーの内容に加え、単なる外部アドバイザーではなく、ブランドを実行するために伴走します。MTGを通じて戦略・ゴール設定を行うほか、Webサイト、UIデザイン、販促ツール、SNSなど各ブランド要素の戦略策定・改善支援・デザイン監修も行えます。
             </p>
           </div>
         </div>
