@@ -6,7 +6,9 @@
     "js:build": "node node_modules/uglify-js/bin/uglifyjs dev/src/js/*.js --compress --mangle -o swell_child/js/bundle.min.js",
     "watch:js": "watch \"npm run js:build\" dev/src/js",
     "watch:sass": "sass --watch dev/src/scss/style.scss:swell_child/style.css --style=compressed --no-source-map",
-    "start": "npm-run-all -p watch:sass watch:js"
+    "watch:sass:brand-study": "sass --watch dev/src/scss/brand-study/brand-study.scss:swell_child/assets/brand-study/brand-study.css --style=compressed --no-source-map",
+    "sass:brand-study": "sass dev/src/scss/brand-study/brand-study.scss:swell_child/assets/brand-study/brand-study.css --style=compressed --no-source-map",
+    "start": "npm-run-all -p watch:sass watch:sass:brand-study watch:js"
   },
   "keywords": [],
   "author": "",
