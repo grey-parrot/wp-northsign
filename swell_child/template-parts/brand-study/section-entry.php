@@ -34,7 +34,7 @@ $questions = [
         </ul>
       </div>
       <div class="brand-study-entry__action">
-        <a <?php echo $args['entry_link']; ?> class="brand-study-button brand-study-button--entry">申込フォームへ進む</a>
+        <a <?php echo $args['form_link']; ?> class="brand-study-button brand-study-button--entry">申込フォームへ進む</a>
         <p class="brand-study-entry__action-note">Googleフォームが開きます。入力は1ページで完了します。</p>
       </div>
     </div>

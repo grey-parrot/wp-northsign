@@ -10,12 +10,15 @@ $brand_study_field = function ( $name ) {
   return function_exists( 'get_field' ) ? get_field( $name ) : null;
 };
 
-// 申込ボタン（ヘッダー・Hero・申込セクション・CTA）の遷移先。別タブで Googleフォームを開く
+// 「無料勉強会に申し込む」ボタン（ヘッダー・Hero・CTA）は、ページ内の申込セクションへ移動させる
+$entry_link = 'href="#entry"';
+
+// Googleフォームへのリンクは申込セクションの「申込フォームへ進む」ボタンだけ（別タブで開く）
 $form_url = $brand_study_field( 'brand_study_form_url' );
 if ( ! $form_url ) {
   $form_url = 'https://docs.google.com/forms/d/e/1FAIpQLSe_i62_69-pp88YWemk7WdTAX4OyMTqNxLgkIKb2gR193HFjQ/viewform';
 }
-$entry_link = sprintf( 'href="%s" target="_blank" rel="noopener"', esc_url( $form_url ) );
+$form_link = sprintf( 'href="%s" target="_blank" rel="noopener"', esc_url( $form_url ) );
 
 // 開催形式
 $format = $brand_study_field( 'brand_study_format' );
@@ -60,6 +63,7 @@ if ( ! $faqs ) {
 
 $args = [
   'entry_link'    => $entry_link,
+  'form_link'     => $form_link,
   'img'           => get_stylesheet_directory_uri() . '/assets/brand-study/img',
   'icon'          => get_stylesheet_directory_uri() . '/images',
   'format'        => $format,
