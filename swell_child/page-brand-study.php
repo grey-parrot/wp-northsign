@@ -10,12 +10,12 @@ $brand_study_field = function ( $name ) {
   return function_exists( 'get_field' ) ? get_field( $name ) : null;
 };
 
-// 申込ボタン（ヘッダー・Hero・申込セクション・CTA）の遷移先
-// フォームURLが未設定の間は、ページ内の申込セクションへ移動させる
-$form_url   = $brand_study_field( 'brand_study_form_url' );
-$entry_link = $form_url
-  ? sprintf( 'href="%s" target="_blank" rel="noopener"', esc_url( $form_url ) )
-  : 'href="#entry"';
+// 申込ボタン（ヘッダー・Hero・申込セクション・CTA）の遷移先。別タブで Googleフォームを開く
+$form_url = $brand_study_field( 'brand_study_form_url' );
+if ( ! $form_url ) {
+  $form_url = 'https://docs.google.com/forms/d/e/1FAIpQLSe_i62_69-pp88YWemk7WdTAX4OyMTqNxLgkIKb2gR193HFjQ/viewform';
+}
+$entry_link = sprintf( 'href="%s" target="_blank" rel="noopener"', esc_url( $form_url ) );
 
 // 開催形式
 $format = $brand_study_field( 'brand_study_format' );

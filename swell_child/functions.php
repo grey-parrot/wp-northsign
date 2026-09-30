@@ -138,8 +138,9 @@ add_action('acf/init', function () {
       'key'          => 'field_brand_study_form_url',
       'label'        => 'GoogleフォームURL',
       'name'         => 'brand_study_form_url',
-      'type'         => 'url',
-      'instructions' => '申込ボタン（ヘッダー・Hero・申込セクション・CTA）の遷移先。別タブで開きます。空の場合はページ内の申込セクションへ移動します。',
+      'type'          => 'url',
+      'default_value' => 'https://docs.google.com/forms/d/e/1FAIpQLSe_i62_69-pp88YWemk7WdTAX4OyMTqNxLgkIKb2gR193HFjQ/viewform',
+      'instructions'  => '申込ボタン（ヘッダー・Hero・申込セクション・CTA）の遷移先。別タブで開きます。空の場合は初期のGoogleフォームを開きます。',
     ],
     [
       'key'           => 'field_brand_study_format',
