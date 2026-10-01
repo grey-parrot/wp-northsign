@@ -37,7 +37,7 @@ $issues = [
       <p class="brand-study-bridge__text">見た目を整えるだけでは、選ばれる理由は生まれません。<br class="brand-study-only-pc" />「誰に、どんな価値を約束するのか」という軸が決まると、<br class="brand-study-only-pc" />Webサイトや営業資料、社内での伝え方まで、判断がそろっていきます。</p>
       <img
         class="brand-study-bridge__img"
-        src="<?php echo esc_url( $args['img'] ); ?>/brand-axis.webp"
+        src="<?php echo esc_url( $args['img'] ); ?>/brand-axis-section-transparent.png"
         alt="ブランドの軸を話し合う2人と、その軸がWebサイト・営業資料・社内の伝え方に広がっていく様子のイラスト"
         width="720"
         height="480"
