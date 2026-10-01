@@ -734,6 +734,24 @@
   }
 }
 
+// お客様の声の動画（YouTube）
+.brand-study-video {
+  max-width: rem(800);
+  margin: rem(80) auto 0;
+  &__iframe {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    border-radius: var(--bs-radius);
+  }
+
+  @include sp {
+    margin-top: rem(40);
+  }
+}
+
 /*----------------------------------------
   勉強会の内容（Program）
 ----------------------------------------*/

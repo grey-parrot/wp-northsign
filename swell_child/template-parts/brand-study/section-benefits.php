@@ -99,6 +99,18 @@ $allowed_br = [ 'br' => [ 'class' => [] ] ];
       </div>
     </div>
 
+    <div class="brand-study-video">
+      <iframe
+        class="brand-study-video__iframe"
+        src="https://www.youtube.com/embed/jUHoCX-4wMw"
+        title="創業直後のスタートアップが3ヶ月で「ブランドの軸」をつくるまで｜PHOSLOOP様インタビュー"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        loading="lazy"
+        allowfullscreen
+      ></iframe>
+    </div>
+
     <p class="brand-study-benefits__note">※ お客様の声・事例は、ノースサイン公式サイトに掲載のインタビュー・事例紹介より抜粋しています。</p>
   </div>
 </section>
