@@ -262,6 +262,14 @@ add_action('wp_head', function () {
   'https://connect.facebook.net/en_US/fbevents.js');
   fbq('init', '<?php echo $pixel_id; ?>');
   fbq('track', 'PageView');
+  <?php if ( is_page('brand-study') ) : ?>
+  // 申込セクションの「申込フォームへ進む」ボタン（Googleフォームを別タブで開く）で Lead を送る
+  document.addEventListener('click', function (e) {
+    if (e.target.closest('.brand-study-button--entry')) {
+      fbq('track', 'Lead');
+    }
+  });
+  <?php endif; ?>
   </script>
   <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=<?php echo esc_attr( NORTHSIGN_FB_PIXEL_ID ); ?>&ev=PageView&noscript=1"
