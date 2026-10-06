@@ -18,6 +18,35 @@
   text-align: right;
 }
 
+.top-common__link {
+  position: relative;
+  padding-left: 80px;
+  padding-top: 26px;
+
+  @include m.bp-down(md) {
+    padding-left: 40px;
+    padding-top: 13px;
+  }
+  &.more {
+    padding-right: 56px;
+    @include m.bp-down(md) {
+      padding-right: 28px;
+    }
+    &::after {
+      content: "";
+      width: 41px;
+      height: 41px;
+      top: 17px;
+      right: 0;
+      @include m.bp-down(md) {
+        width: 20px;
+        height: 20px;
+        top: 20px;
+      }
+    }
+  }
+}
+
 /* Top Hero
 ----------------------------------------*/
 .top-hero {
@@ -257,35 +286,6 @@
   .top-design-advisory-plans__comments {
     @include m.bp-down(md) {
       font-size: b.rem(12);
-    }
-  }
-
-  .top-design-advisory-plans__link {
-    position: relative;
-    padding-left: 80px;
-    padding-top: 26px;
-
-    @include m.bp-down(md) {
-      padding-left: 40px;
-      padding-top: 13px;
-    }
-    &.more {
-      padding-right: 56px;
-      @include m.bp-down(md) {
-        padding-right: 28px;
-      }
-      &::after {
-        content: "";
-        width: 41px;
-        height: 41px;
-        top: 17px;
-        right: 0;
-        @include m.bp-down(md) {
-          width: 20px;
-          height: 20px;
-          top: 20px;
-        }
-      }
     }
   }
 }

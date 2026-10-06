@@ -142,6 +142,12 @@ $news_events = new WP_Query([
           <p class="top-common__title-en lexend tx-3xs">Our service</p>
         </div>
       </div>
+      <div class="tx-center">
+        <a href="<?php echo esc_url( get_permalink( get_page_by_path('services'))); ?>"
+          class="top-common__link more tx-xs"
+          >サービス詳細はこちら</a
+        >
+      </div>
     </section>
 
     <!-- あわせてご依頼いただけること
@@ -280,9 +286,9 @@ $projects_query = new WP_Query($args);
           ※ 制作は別途お見積りになります。お問い合わせください。<br /><br />
           ※ 表示価格はすべて税別です。
         </p>
-        <div class="top-design-advisory-plans__wrapper-link tx-center">
+        <div class="tx-center">
           <a href="<?php echo esc_url( get_permalink( get_page_by_path('services'))); ?>"
-            class="top-design-advisory-plans__link more tx-xs"
+            class="top-common__link more tx-xs"
             >サービス詳細はこちら</a
           >
         </div>
