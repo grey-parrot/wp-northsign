@@ -15,7 +15,7 @@
 
   <?php if ( get_field('company_name') ) : ?>
         <p class="project-company tx-center tx-xs mb-md">
-          <?php the_field('company_name'); ?>
+          <?php the_field('company_name'); ?>様
         </p>
   <?php endif; ?>
 
