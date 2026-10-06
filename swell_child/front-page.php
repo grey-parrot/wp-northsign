@@ -608,7 +608,7 @@ $projects_query = new WP_Query($args);
 
       <?php if ( get_field('company_name') ) : ?>
             <p class="project-company tx-3xs mb-4xs">
-              <?php the_field('company_name'); ?>
+              <?php the_field('company_name'); ?>様
             </p>
       <?php endif; ?>
 
