@@ -169,10 +169,10 @@
   }
 }
 
-/* 私たちが伴走できること
+/* 私たちの役割
 ----------------------------------------*/
-.top-we-support {
-  .top-we-support__items {
+.top-our-role {
+  .top-top-our-role__items {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -181,35 +181,35 @@
       flex-direction: column;
       gap: 24px;
     }
-    .top-we-support__wrapper-image {
+    .top-top-our-role__wrapper-image {
       width: 100%;
       height: auto;
       text-align: center;
-      .top-we-support__image {
+      .top-top-our-role__image {
         width: 34%;
       }
     }
   }
 }
 
-/* 私たちの関わり方
+/* 私たちのサービス
 ----------------------------------------*/
-.top-we-work {
-  .top-we-work__item-title > span {
+.top-our-service {
+  .top-our-service__item-title > span {
     font-size: b.rem(18);
     padding-left: 4px;
   }
-  .top-we-work__item-txt {
+  .top-our-service__item-txt {
     background-color: var(--c-black-lv7);
     border-radius: 8px;
     padding: 32px;
   }
 }
 
-/* このような方のお役に立てます
+/* あわせてご依頼いただけること
 ----------------------------------------*/
-.top-who-for {
-  .top-who-for__items {
+.dtop-other-services {
+  .dtop-other-services__items {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
@@ -218,7 +218,7 @@
       flex-direction: column;
       gap: 24px;
     }
-    .top-who-for__item-list {
+    .dtop-other-services__item-list {
       position: relative;
       padding-left: 30px;
       &::before {
@@ -243,8 +243,8 @@
 
 /* デザイン顧問サービス｜料金プラン
 ----------------------------------------*/
-.top-plans {
-  .top-plans__items {
+.top-design-advisory-plans {
+  .top-design-advisory-plans__items {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -254,13 +254,13 @@
       gap: 24px;
     }
   }
-  .top-plans__comments {
+  .top-design-advisory-plans__comments {
     @include m.bp-down(md) {
       font-size: b.rem(12);
     }
   }
 
-  .top-plans__link {
+  .top-design-advisory-plans__link {
     position: relative;
     padding-left: 80px;
     padding-top: 26px;
@@ -292,7 +292,7 @@
 
 /* ブログ
 ----------------------------------------*/
-.top-blog {
+.top-journal {
   .front-posts__item {
     margin-bottom: 40px;
   }

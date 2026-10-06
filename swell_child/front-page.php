@@ -118,202 +118,41 @@ $news_events = new WP_Query([
       </div>
     </section>
 
-    <!-- 私たちが伴走できること
+    <!-- 私たちの役割
     ======================================== -->
-    <section class="top-we-support">
+    <section class="top-our-role">
       <div class="container">
         <div class="top-common__title mb-md">
           <h2 class="top-common__title-ja hd-xs lh-1 mb-5xs">
-            私たちが伴走できること
+            私たちの役割
           </h2>
-          <p class="top-common__title-en lexend tx-3xs">What we support</p>
-        </div>
-        <div class="top-we-support__items mb-2xs">
-          <div class="top-we-support__item box">
-            <div class="top-we-support__wrapper-image mb-2xs">
-              <img
-                class="top-we-support__image"
-                src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/ico-flag.png"
-                alt="ブランド構築支援のアイコン"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-            <h3 class="top-we-support__item-title hd-2xs tx-center mb-2xs">
-              ブランド構築支援
-            </h3>
-            <p class="top-we-support__item-txt tx-4xs">
-              事業の軸や判断基準を整理し、<br />
-              迷わず進めるブランドの土台をつくります。<br /><br />
-              企業やサービスの状況に合わせて最適なプログラムをご提案いたします。
-            </p>
-          </div>
-          <div class="top-we-support__item box">
-            <div class="top-we-support__wrapper-image mb-2xs">
-              <img
-                class="top-we-support__image"
-                src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/ico-design.png"
-                alt="デザイン支援のアイコン"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-            <h3 class="top-we-support__item-title hd-2xs tx-center mb-2xs">
-              デザイン支援
-            </h3>
-            <p class="top-we-support__item-txt tx-4xs">
-              事業の状況や目的を共有しながら、<br />
-              何をつくるか以前に、何をつくらないかを一緒に考え、UI/UXやWeb、マーケティングに関わる設計を支援します。<br /><br />
-              UI/UX設計やWebデザインを中心に、<br />
-              マーケデザイン、アニメーションでの作成なども得意としております。
-            </p>
-          </div>
-          <div class="top-we-support__item box">
-            <div class="top-we-support__wrapper-image mb-2xs">
-              <img
-                class="top-we-support__image"
-                src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/ico-mortarboard.png"
-                alt="講座・研修のアイコン"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-            <h3 class="top-we-support__item-title hd-2xs tx-center mb-2xs">
-              講座・研修
-            </h3>
-            <p class="top-we-support__item-txt tx-4xs">
-              デザイン業務を内製化したい企業様や、自社で制作フローを構築する際に、デザイン研修やサポートをさせていただいております。<br /><br />
-              Figma、Canva、Webノーコードツールなど、最新ツールに対応しております。
-            </p>
-          </div>
-        </div>
-        <div class="top-common__wrapper-more">
-          <a href="<?php echo esc_url( get_permalink( get_page_by_path('services'))); ?>" class="top-common__more more tx-3xs">サービス詳細</a>
+          <p class="top-common__title-en lexend tx-3xs">Our role</p>
         </div>
       </div>
     </section>
 
-    <!-- 私たちの関わり方
+    <!-- 私たちのサービス
     ======================================== -->
-    <section class="top-we-work">
+    <section class="top-our-service">
       <div class="container">
         <div class="top-common__title mb-md">
           <h2 class="top-common__title-ja hd-xs lh-1 mb-5xs">
-            私たちの関わり方
+            私たちのサービス
           </h2>
-          <p class="top-common__title-en lexend tx-3xs">How we work</p>
-        </div>
-        <div class="top-we-work__items mt-2xs">
-          <div class="top-we-work__item mb-lg">
-            <h3 class="top-we-work__item-title hd-2xs mb-2xs">
-              1.一緒に考え、一緒に決める<span>（共創型）</span>
-            </h3>
-            <img
-              class="mq-md-up top-we-support__image mb-xs"
-              src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-we-work1__pc.png"
-              alt="一緒に考え、一緒に決める共創型の関わり方を表す図（PC表示）"
-              loading="lazy"
-              decoding="async"
-            />
-            <img
-              class="mq-md-down top-we-support__image mb-xs"
-              src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-we-work1__sp.png"
-              alt="一緒に考え、一緒に決める共創型の関わり方を表す図（スマートフォン表示）"
-              loading="lazy"
-              decoding="async"
-            />
-            <p class="top-we-work__item-txt tx-4xs">
-              私たちは、要件やアイディアを一方的に受け取り、そのまま形にする関わり方はしていません。<br /><br />
-              経営者やチームの思考を共有しながら、どこに向かうのか、何を優先するのか。<br />
-              ときには「何をやらないか」も含めて、一緒に考え、一緒に決めていきます。<br /><br />
-              そのため、役割は「発注者／受注者」ではなく、同じ方向を向いて進むパートナーだと考えています。
-            </p>
-          </div>
-          <div class="top-we-work__item">
-            <h3 class="top-we-work__item-title hd-2xs mb-2xs">
-              2.試しながら前に進める<span>（アジャイル型）</span>
-            </h3>
-            <img
-              class="mq-md-up top-we-support__image mb-xs"
-              src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-we-work2__pc.png"
-              alt="試しながら前に進めるアジャイル型の関わり方を表す図（PC表示）"
-              loading="lazy"
-              decoding="async"
-            />
-            <img
-              class="mq-md-down top-we-support__image mb-xs"
-              src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-we-work2__sp.png"
-              alt="試しながら前に進めるアジャイル型の関わり方を表す図（スマートフォン表示）"
-              loading="lazy"
-              decoding="async"
-            />
-            <p class="top-we-work__item-txt tx-4xs">
-              私たちは、最初からすべてを決め切る進め方は選んでいません。<br /><br />
-              スタートアップの多くは、進めながら状況が変わり、考えや仮説も更新されていきます。<br />
-              だからこそ、小さく試し、学びながら、次の一手を決めていく進め方を大切にしています。<br /><br />
-              計画どおりに進めることよりも、事業が前に進むことを優先する。<br />
-              そのための方法として、私たちはアジャイルな進め方を採用しています。
-            </p>
-          </div>
+          <p class="top-common__title-en lexend tx-3xs">Our service</p>
         </div>
       </div>
     </section>
 
-    <!-- このような方のお役に立てます
+    <!-- あわせてご依頼いただけること
     ======================================== -->
-    <section class="top-who-for">
+    <section class="top-other-services">
       <div class="container">
         <div class="top-common__title mb-md">
           <h2 class="top-common__title-ja hd-xs lh-1 mb-5xs">
-            このような方のお役に立てます
+            あわせてご依頼いただけること
           </h2>
-          <p class="top-common__title-en lexend tx-3xs">Who this is for</p>
-        </div>
-        <div class="top-who-for__items">
-          <div class="top-who-for__item box">
-            <h3 class="top-who-for__item-title hd-2xs mb-2xs">
-              向いている方
-            </h3>
-            <ul class="top-who-for__item-lists">
-              <li class="top-who-for__item-list tx-4xs mb-4xs">
-                デザインを「見た目」ではなく、経営の一部として捉えている方
-              </li>
-              <li class="top-who-for__item-list tx-4xs mb-4xs">
-                正解をすぐに求めるより、考える時間を大切にしたい方
-              </li>
-              <li class="top-who-for__item-list tx-4xs mb-4xs">
-                アイディアや構想を、事業として整理していきたい方
-              </li>
-              <li class="top-who-for__item-list tx-4xs mb-4xs">
-                状況の変化を前提に、柔軟に進めたいと考えている方
-              </li>
-              <li class="top-who-for__item-list tx-4xs mb-4xs">
-                経験豊富なデザイナーにアイディア作りから伴走して欲しい方
-              </li>
-              <li class="top-who-for__item-list tx-4xs">
-                単発ではなく、長期的にブランドやサービスを育てていきたい方
-              </li>
-            </ul>
-          </div>
-          <div class="top-who-for__item box">
-            <h3 class="top-who-for__item-title hd-2xs mb-2xs">
-              向いていない方
-            </h3>
-            <ul class="top-who-for__item-lists">
-              <li class="top-who-for__item-list tx-4xs mb-4xs">
-                仕様が決まっていて、見た目のデザインだけ作って欲しい
-              </li>
-              <li class="top-who-for__item-list tx-4xs mb-4xs">
-                とにかく安く作りたい
-              </li>
-              <li class="top-who-for__item-list tx-4xs mb-4xs">
-                丸投げしたい
-              </li>
-              <li class="top-who-for__item-list tx-4xs">
-                単発で成果だけ欲しい
-              </li>
-            </ul>
-          </div>
+          <p class="top-common__title-en lexend tx-3xs">Other services</p>
         </div>
       </div>
     </section>
@@ -398,7 +237,7 @@ $projects_query = new WP_Query($args);
 
     <!-- デザイン顧問サービス｜料金プラン
     ======================================== -->
-    <section class="top-plans">
+    <section class="top-design-advisory-plans">
       <div class="container">
         <div class="top-common__title mb-md">
           <h2 class="top-common__title-ja hd-xs lh-1 mb-5xs">
@@ -407,51 +246,43 @@ $projects_query = new WP_Query($args);
           <p class="top-common__title-en lexend tx-3xs mb-md">
             Design Advisory Plans
           </p>
-          <p class="top-plans__txt tx-3xs tx-center mb-md">
+          <p class="top-design-advisory-plans__txt tx-3xs tx-center mb-md">
             貴社の事業を継続的に理解し、伴走しながら支援を行うため、<br
               class="mq-md-up"
             />
             月額制でのデザイン顧問サービスをご用意しています。
           </p>
         </div>
-        <div class="top-plans__items mb-xs">
-          <div class="top-plans__item box">
-            <p class="top-plans__item-txt1 tx-4xs mb-4xs">
+        <div class="top-design-advisory-plans__items mb-xs">
+          <div class="top-design-advisory-plans__item box">
+            <p class="top-design-advisory-plans__item-txt1 tx-4xs mb-4xs">
               選ばれるブランドの土台をつくる
             </p>
-            <h3 class="top-plans__item-title hd-xs mb-4xs">伴走パートナー</h3>
-            <h4 class="top-plans__item-price hd-2xs mb-4xs">10万円/月額</h4>
-            <p class="top-plans__item-txt2 tx-4xs mb-5xs">
-              ブランド構築から伴走するプランです。厳選したフレームワークで分析を行い、デザインの方向性を決めるお手伝いをします。ブランドの方針が決まったあとは、ロゴ、Web、販促物など各媒体の戦略や設計をプラン内で行うことができます。各週程度のセッションを通じて伴走します。
-            </p>
+            <h3 class="top-design-advisory-plans__item-title hd-xs mb-4xs">伴走パートナー</h3>
+            <h4 class="top-design-advisory-plans__item-price hd-2xs mb-4xs">10万円/月額</h4>
           </div>
-          <div class="top-plans__item box">
-            <p class="top-plans__item-txt1 tx-4xs mb-4xs">
+          <div class="top-design-advisory-plans__item box">
+            <p class="top-design-advisory-plans__item-txt1 tx-4xs mb-4xs">
               判断の軸を、社内に根付かせる
             </p>
-            <h3 class="top-plans__item-title hd-xs mb-4xs">戦略パートナー</h3>
-            <h4 class="top-plans__item-price hd-2xs mb-4xs">15万円/月額</h4>
-            <p class="top-plans__item-txt2 tx-4xs mb-5xs">
-              伴走パートナーの内容に加え、社内メンバー向けのデザイン教育・相談や、社内のデザインの仕組みづくりをお手伝いするプランです。ブランドを根付かせ、判断の軸が社内に根付く仕組みをつくります。週次程度のセッションを通じて伴走します。
-            </p>
+            <h3 class="top-design-advisory-plans__item-title hd-xs mb-4xs">戦略パートナー</h3>
+            <h4 class="top-design-advisory-plans__item-price hd-2xs mb-4xs">15万円/月額</h4>
           </div>
-          <div class="top-plans__item box">
-            <p class="top-plans__item-txt1 tx-4xs mb-4xs">外部CDO</p>
-            <h3 class="top-plans__item-title hd-xs mb-4xs">
+          <div class="top-design-advisory-plans__item box">
+            <p class="top-design-advisory-plans__item-txt1 tx-4xs mb-4xs">外部CDO</p>
+            <h3 class="top-design-advisory-plans__item-title hd-xs mb-4xs">
               経営パートナー
             </h3>
-            <h4 class="top-plans__item-price hd-2xs mb-4xs">20万円/月額</h4>
-            <p class="top-plans__item-txt2 tx-4xs mb-5xs">
-              戦略パートナーの内容に加え、単なる外部アドバイザーではなく、ブランドを実行するために伴走します。MTGを通じて戦略・ゴール設定を行うほか、Webサイト、UIデザイン、販促ツール、SNSなど各ブランド要素の戦略策定・改善支援・デザイン監修も行えます。
-            </p>
+            <h4 class="top-design-advisory-plans__item-price hd-2xs mb-4xs">20万円/月額</h4>
           </div>
         </div>
-        <p class="top-plans__comments tx-4xs mb-md">
-          ※ 制作は別途お見積りになります。お問い合わせください。
+        <p class="top-design-advisory-plans__comments tx-4xs mb-md">
+          ※ 制作は別途お見積りになります。お問い合わせください。<br /><br />
+          ※ 表示価格はすべて税別です。
         </p>
-        <div class="top-plans__wrapper-link tx-center">
+        <div class="top-design-advisory-plans__wrapper-link tx-center">
           <a href="<?php echo esc_url( get_permalink( get_page_by_path('services'))); ?>"
-            class="top-plans__link more tx-xs"
+            class="top-design-advisory-plans__link more tx-xs"
             >サービス詳細はこちら</a
           >
         </div>
@@ -460,11 +291,11 @@ $projects_query = new WP_Query($args);
 
     <!-- ブログ
     ======================================== -->
-    <section class="top-blog">
+    <section class="top-journal">
       <div class="container-middle">
         <div class="top-common__title mb-md">
           <h2 class="top-common__title-ja hd-xs lh-1 mb-5xs">ブログ</h2>
-          <p class="top-common__title-en lexend tx-3xs">Blog</p>
+          <p class="top-common__title-en lexend tx-3xs">Journal</p>
         </div>
 
 <?php
