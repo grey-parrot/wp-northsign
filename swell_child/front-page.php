@@ -23,11 +23,11 @@
           起業家のアイディアを<br />
           イノベーションに変える。
         </h1>
-        <p class="top-hero__txt1 tx-xs lh-13 mb-3xs">
+        <p class="top-hero__txt1 tx-xs lh-16 mb-3xs">
           スタートアップの意思決定に並走する、<br />
           協創型デザインパートナー。
         </p>
-        <p class="top-hero__txt2 tx-4xs lh-13">
+        <p class="top-hero__txt2 tx-4xs lh-16">
           デザインを「作る」前に、<br />
           何を作らないかから一緒に考えます。
         </p>
@@ -37,7 +37,7 @@
 
   <!-- News & Events
     ======================================== -->
-  <section class="top-news-events section">
+  <section class="top-news-events">
     <div class="container">
 
       <h2 class="top-news-events__title-en lexend hd-xs mb-3xs">
@@ -778,7 +778,7 @@ $swell_posts = new WP_Query([
 
     <!-- 相談してみる
     ======================================== -->
-    <section class="top-contact mb-lg">
+    <section class="top-contact">
       <div class="container">
         <div class="top-common__title mb-md">
           <h2 class="top-common__title-ja hd-xs lh-1 mb-5xs">
