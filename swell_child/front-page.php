@@ -85,7 +85,7 @@ $news_events = new WP_Query([
             <img
               class="top-concept__image"
               src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-concept.png"
-              alt="経営のそばで考え続けるパートナーとしてのコンセプトイメージ"
+              alt="コンセプトイメージ"
               loading="lazy"
               decoding="async"
             />
@@ -93,10 +93,11 @@ $news_events = new WP_Query([
           <div class="top-concept__wrapper-txt">
             <h2 class="top-concept__title lexend hd-xs mb-3xs">Concept</h2>
             <p class="top-concept__txt1 tx-sm mb-2xs">
-              経営のそばで、<br />
-              考え続けるパートナーとして。
+              あなたの会社の「北極星」を、<br />
+              ともに見つける。
             </p>
             <p class="top-concept__txt2 tx-3xs mb-2xs">
+              経営のそばで、考え続けるパートナーとして。<br /><br />
               起業家の頭の中にあるアイディアを整理し、<br />
               ブランドの軸を共に探し、世界観を構築していく。<br />
               それが、私たちの大好きな仕事です。<br /><br />
@@ -104,7 +105,7 @@ $news_events = new WP_Query([
               考えていません。<br />
               経営戦略と密接に関わるものだと捉えています。<br /><br />
               従来型の発注者・受注者の関係性を超えて、<br />
-              単発の「納品」にとどまらず、<br />
+              御社のデザイン顧問として<br />
               長期的に、貴社のブランドやサービスづくりに伴走します。
             </p>
             <div class="top-common__wrapper-more">
