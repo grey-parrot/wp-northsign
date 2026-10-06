@@ -55,7 +55,7 @@ $news_events = new WP_Query([
         <dl class="top-news-events__list">
 <?php while ( $news_events->have_posts() ) : $news_events->the_post(); ?>
           <dt class="top-news-events__date tx-3xs">
-            <time datetime="<?php echo esc_attr( get_the_date('c') ); ?>">
+            <time class="lexend" datetime="<?php echo esc_attr( get_the_date('c') ); ?>">
               <?php echo esc_html( get_the_date('Y/m/d') ); ?>
             </time>
           </dt>
