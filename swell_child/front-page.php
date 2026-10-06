@@ -741,7 +741,7 @@ $swell_posts = new WP_Query([
                 <div class="tx-4xs mb-4xs">
                   <?php the_excerpt(); ?>
                 </div>
-                <p class="front-posts__date tx-5xs">
+                <p class="front-posts__date">
                   <?php echo esc_html( get_the_date('Y.m.d') ); ?>
                 </p>
               </div>
