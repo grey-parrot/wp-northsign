@@ -526,6 +526,48 @@ $news_events = new WP_Query([
           </h2>
           <p class="top-common__title-en lexend tx-3xs">Other services</p>
         </div>
+        <div class="top-other-services__items mb-3xs">
+          <div class="top-other-services__item box">
+            <div class="top-other-services__icon">
+              <img
+                class="top-other-services__icon-design"
+                src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-service-design.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <h3 class="top-other-services__item-title hd-2xs tx-center mb-3xs">デザイン支援</h3>
+            <p class="tx-4xs">
+              事業の状況や目的を共有しながら、<br />
+              何をつくるか以前に、何をつくらないかを一緒に考え、UI/UXやWeb、マーケティングに関わる設計を支援します。<br /><br />
+              UI/UX設計やWebデザインを中心に、<br />
+              マーケデザイン、アニメーションでの作成なども得意としております。
+            </p>
+          </div>
+          <div class="top-other-services__item box">
+            <div class="top-other-services__icon">
+              <img
+                class="top-other-services__icon-education"
+                src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-service-education.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <h3 class="top-other-services__item-title hd-2xs tx-center mb-3xs">講座・研修</h3>
+            <p class="tx-4xs">
+              デザイン業務を内製化したい企業様や、自社で制作フローを構築する際に、デザイン研修やサポートをさせていただいております。<br /><br />
+              Figma、Canva、Webノーコードツールなど、最新ツールに対応しております。
+            </p>
+          </div>
+        </div>
+        <div class="top-common__wrapper-more">
+          <a href="<?php echo esc_url( get_permalink( get_page_by_path('services'))); ?>"
+            class="top-common__more more tx-3xs"
+            >サービス詳細</a
+          >
+        </div>
       </div>
     </section>
 

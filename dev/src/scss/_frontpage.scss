@@ -691,32 +691,45 @@
 
 /* あわせてご依頼いただけること
 ----------------------------------------*/
-.dtop-other-services {
-  .dtop-other-services__items {
+.top-other-services {
+  .top-other-services__items {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
-    gap: 40px;
+    gap: 24px;
     @include m.bp-down(md) {
       flex-direction: column;
-      gap: 24px;
     }
-    .dtop-other-services__item-list {
-      position: relative;
-      padding-left: 30px;
-      &::before {
-        content: "";
-        display: inline-block;
-        width: 24px;
-        height: 24px;
-        background-image: url("images/ico-check.svg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        vertical-align: middle;
-        position: absolute;
-        top: 0;
-        left: 0;
+    .top-other-services__item {
+      min-height: 500px;
+      @include m.bp-down(md) {
+        min-height: 0;
       }
+    }
+    .top-other-services__icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 138px;
+      height: 138px;
+      margin: 0 auto 32px;
+      @include m.bp-down(md) {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 24px;
+      }
+      .top-other-services__icon-design {
+        width: auto;
+        height: 92%;
+      }
+      .top-other-services__icon-education {
+        width: auto;
+        height: 90%;
+      }
+    }
+    .top-other-services__item-title {
+      line-height: 1.2;
     }
   }
 }
