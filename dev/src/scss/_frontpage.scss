@@ -704,7 +704,7 @@
     .top-other-services__item {
       min-height: 500px;
       @include m.bp-down(md) {
-        min-height: 0;
+        min-height: auto;
       }
     }
     .top-other-services__icon {
