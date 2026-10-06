@@ -667,30 +667,33 @@ $projects_query = new WP_Query($args);
             月額制でのデザイン顧問サービスをご用意しています。
           </p>
         </div>
-        <div class="top-design-advisory-plans__items mb-xs">
+        <p class="top-design-advisory-plans__callout tx-3xs tx-center mb-3xs">
+          どのプランも、最初の3ヶ月は「ブランド構築プログラム」から始まります。
+        </p>
+        <div class="top-design-advisory-plans__items mb-3xs">
           <div class="top-design-advisory-plans__item box">
             <p class="top-design-advisory-plans__item-txt1 tx-4xs mb-4xs">
               選ばれるブランドの土台をつくる
             </p>
             <h3 class="top-design-advisory-plans__item-title hd-xs mb-4xs">伴走パートナー</h3>
-            <h4 class="top-design-advisory-plans__item-price hd-2xs mb-4xs">10万円/月額</h4>
+            <h4 class="top-design-advisory-plans__item-price hd-2xs">10万円<span class="tx-4xs">（税別）/月額</span></h4>
           </div>
           <div class="top-design-advisory-plans__item box">
             <p class="top-design-advisory-plans__item-txt1 tx-4xs mb-4xs">
               判断の軸を、社内に根付かせる
             </p>
             <h3 class="top-design-advisory-plans__item-title hd-xs mb-4xs">戦略パートナー</h3>
-            <h4 class="top-design-advisory-plans__item-price hd-2xs mb-4xs">15万円/月額</h4>
+            <h4 class="top-design-advisory-plans__item-price hd-2xs">15万円<span class="tx-4xs">（税別）/月額</span></h4>
           </div>
           <div class="top-design-advisory-plans__item box">
             <p class="top-design-advisory-plans__item-txt1 tx-4xs mb-4xs">外部CDO</p>
             <h3 class="top-design-advisory-plans__item-title hd-xs mb-4xs">
               経営パートナー
             </h3>
-            <h4 class="top-design-advisory-plans__item-price hd-2xs mb-4xs">20万円/月額</h4>
+            <h4 class="top-design-advisory-plans__item-price hd-2xs">20万円<span class="tx-4xs">（税別）/月額</span></h4>
           </div>
         </div>
-        <p class="top-design-advisory-plans__comments tx-4xs mb-md">
+        <p class="top-design-advisory-plans__comments mb-md">
           ※ 制作は別途お見積りになります。お問い合わせください。<br /><br />
           ※ 表示価格はすべて税別です。
         </p>
