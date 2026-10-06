@@ -158,7 +158,7 @@ $news_events = new WP_Query([
 
           <div class="top-our-role__diagram">
             <div class="top-our-role__ceo">
-              <div class="top-our-role__person top-our-role__person--ceo">
+              <div class="top-common__person top-common__person--ceo">
                 <img
                   src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-role-ceo.png"
                   alt=""
@@ -177,7 +177,7 @@ $news_events = new WP_Query([
             <p class="top-our-role__connector">方向性を示し、アウトプットをそろえる</p>
             <ul class="top-our-role__specialists">
               <li class="top-our-role__specialist">
-                <div class="top-our-role__person top-our-role__person--designer">
+                <div class="top-common__person top-common__person--designer">
                   <img
                     src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-role-designer.png"
                     alt=""
@@ -189,7 +189,7 @@ $news_events = new WP_Query([
                 <p class="top-our-role__specialist-txt">ロゴ・Web</p>
               </li>
               <li class="top-our-role__specialist">
-                <div class="top-our-role__person top-our-role__person--engineer">
+                <div class="top-common__person top-common__person--engineer">
                   <img
                     src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-role-engineer.png"
                     alt=""
@@ -201,7 +201,7 @@ $news_events = new WP_Query([
                 <p class="top-our-role__specialist-txt">サイト・UI</p>
               </li>
               <li class="top-our-role__specialist">
-                <div class="top-our-role__person top-our-role__person--marketer">
+                <div class="top-common__person top-common__person--marketer">
                   <img
                     src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-role-marketer.png"
                     alt=""
@@ -213,7 +213,7 @@ $news_events = new WP_Query([
                 <p class="top-our-role__specialist-txt">SNS・広告</p>
               </li>
               <li class="top-our-role__specialist">
-                <div class="top-our-role__person top-our-role__person--team">
+                <div class="top-common__person top-common__person--team">
                   <img
                     src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-role-team.png"
                     alt=""
@@ -247,7 +247,7 @@ $news_events = new WP_Query([
           </div>
           <div class="top-our-role__item box">
             <div class="top-our-role__item-illust mb-4xs">
-              <div class="top-our-role__person top-our-role__person--marketer">
+              <div class="top-common__person top-common__person--marketer">
                 <img
                   src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-role-marketer.png"
                   alt=""
@@ -255,7 +255,7 @@ $news_events = new WP_Query([
                   decoding="async"
                 />
               </div>
-              <div class="top-our-role__person top-our-role__person--ceo">
+              <div class="top-common__person top-common__person--ceo">
                 <img
                   src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-role-ceo.png"
                   alt=""
@@ -263,7 +263,7 @@ $news_events = new WP_Query([
                   decoding="async"
                 />
               </div>
-              <div class="top-our-role__person top-our-role__person--engineer">
+              <div class="top-common__person top-common__person--engineer">
                 <img
                   src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-role-engineer.png"
                   alt=""
@@ -312,6 +312,200 @@ $news_events = new WP_Query([
             私たちのサービス
           </h2>
           <p class="top-common__title-en lexend tx-3xs">Our service</p>
+        </div>
+
+        <!-- 顧問デザイナー -->
+        <div class="top-our-service__advisor mb-lg">
+          <div class="top-our-service__intro mb-xs">
+            <div class="top-our-service__intro-txt">
+              <p class="top-our-service__label tx-4xs mb-3xs">
+                顧問デザイナー（デザイン顧問サービス）
+              </p>
+              <h3 class="top-our-service__catch hd-xs mb-3xs">
+                社外にいる、<br />
+                自社のブランド・マネージャー。
+              </h3>
+              <p class="top-our-service__intro-lead tx-3xs mb-3xs">
+                デザイナーやブランドの責任者が社内にいない企業のために、月額の顧問として、経営のそばに入ります。
+              </p>
+              <p class="top-our-service__intro-lead tx-3xs">
+                最初の3ヶ月は「ブランド構築プログラム」で、ブランドの土台をつくります。その後は、決まった軸をもとに、ロゴ・Webサイト・営業資料・SNSなどの戦略と設計を進め、制作会社や社内メンバーとのやり取りもそろえていきます。
+              </p>
+            </div>
+            <div class="top-our-service__intro-image">
+              <img
+                src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-service-advisor.png"
+                alt="地図を手に、北極星を目指して進む二人のイラスト"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+
+          <ol class="top-our-service__steps mb-xs">
+            <li class="top-our-service__step top-our-service__step--first">
+              <div class="top-our-service__icon">
+                <img
+                  class="top-our-service__icon-target"
+                  src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-role-target.png"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <p class="top-our-service__step-badge">最初の3ヶ月</p>
+              <h4 class="top-our-service__step-title hd-2xs">ブランドの土台をつくる</h4>
+              <p class="tx-4xs">
+                3ヶ月ブランド構築プログラムで、選ばれる理由と伝え方の基準を決める
+              </p>
+            </li>
+            <li class="top-our-service__step">
+              <div class="top-our-service__icon">
+                <img
+                  class="top-our-service__icon-design"
+                  src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-service-design.png"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <p class="top-our-service__step-period">4ヶ月目以降</p>
+              <h4 class="top-our-service__step-title hd-2xs">各接点に広げる</h4>
+              <p class="tx-4xs">
+                Web・営業資料・SNS・ロゴなどの戦略と設計、制作物の監修
+              </p>
+            </li>
+            <li class="top-our-service__step">
+              <div class="top-our-service__icon">
+                <img
+                  class="top-our-service__icon-education"
+                  src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-service-education.png"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <p class="top-our-service__step-period">継続して</p>
+              <h4 class="top-our-service__step-title hd-2xs">社内に根付かせる</h4>
+              <p class="tx-4xs">
+                社内メンバーへのデザイン教育や、判断基準の仕組みづくり
+              </p>
+            </li>
+          </ol>
+
+          <p class="top-our-service__note">
+            ※ 実際の制作は別途お見積もりです（顧問契約中はオリジナルデザイン制作が20%OFF）。
+          </p>
+        </div>
+
+        <!-- 3ヶ月ブランド構築プログラム -->
+        <div class="top-our-service__program mb-lg">
+          <div class="top-our-service__program-head mb-xs">
+            <div class="top-our-service__program-txt">
+              <p class="top-our-service__program-en lexend tx-2xs">Brand Building Program</p>
+              <h3 class="top-our-service__program-title hd-2xs">3ヶ月ブランド構築プログラム</h3>
+              <p class="top-our-service__program-catch hd-xs">
+                3ヶ月で、「選ばれる理由」と「伝え方の基準」をつくる。
+              </p>
+              <p class="top-our-service__program-lead tx-3xs">
+                顧問デザイナーの最初の3ヶ月で取り組むプログラムです。講義とワークを組み合わせた全14回のセッションで、市場と顧客の整理から、ブランド・アイデンティティ、トーン&amp;マナー、今後の計画づくりまでを一緒に進めます。
+              </p>
+            </div>
+            <div class="top-our-service__program-image">
+              <img
+                src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-service-sign.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+
+          <ol class="top-our-service__phases mb-xs">
+            <li class="top-our-service__phase">
+              <div class="top-our-service__icon">
+                <img
+                  class="top-our-service__icon-target"
+                  src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-role-target.png"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <p class="top-our-service__phase-num lexend">PHASE 1</p>
+              <h4 class="top-our-service__phase-title hd-2xs">ブランド構築 前半</h4>
+              <p class="top-our-service__phase-txt">
+                顧客と提供価値を<br />
+                絞り込む
+              </p>
+              <p class="top-our-service__phase-day lexend">DAY 1〜5</p>
+            </li>
+            <li class="top-our-service__phase">
+              <div class="top-our-service__icon">
+                <img
+                  class="top-our-service__icon-compass"
+                  src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-role-compass.png"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <p class="top-our-service__phase-num lexend">PHASE 2</p>
+              <h4 class="top-our-service__phase-title hd-2xs">ブランド構築 後半</h4>
+              <p class="top-our-service__phase-txt">
+                提供価値の伝え方と<br />
+                成果の測り方を決める
+              </p>
+              <p class="top-our-service__phase-day lexend">DAY 6〜9</p>
+            </li>
+            <li class="top-our-service__phase">
+              <div class="top-our-service__icon">
+                <img
+                  class="top-our-service__icon-design"
+                  src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-service-design.png"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <p class="top-our-service__phase-num lexend">PHASE 3</p>
+              <h4 class="top-our-service__phase-title hd-2xs">ブランド要素の検討</h4>
+              <p class="top-our-service__phase-txt">
+                ビジュアルの<br />
+                方向性を探る
+              </p>
+              <p class="top-our-service__phase-day lexend">DAY 10〜14</p>
+            </li>
+          </ol>
+
+          <div class="top-common__wrapper-more">
+            <a href="<?php echo esc_url( get_permalink( get_page_by_path('design-advisory'))); ?>"
+              class="top-common__more more tx-3xs"
+              >プログラムの詳細・全14回のカリキュラムを見る</a
+            >
+          </div>
+        </div>
+
+        <!-- 無料ブランド勉強会 -->
+        <div class="top-our-service__cta mb-lg">
+          <div class="top-our-service__cta-txt">
+            <div class="top-common__person top-common__person--designer">
+              <img
+                src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-role-designer.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <p class="hd-2xs">
+              まずは60分の無料ブランド勉強会で、<br class="mq-md-up" />
+              今の課題を整理しませんか。
+            </p>
+          </div>
+          <a href="<?php echo esc_url( get_permalink( get_page_by_path('brand-study'))); ?>"
+            class="top-our-service__cta-button button tx-4xs"
+            ><span class="more">無料ブランド勉強会に申し込む</span></a
+          >
         </div>
       </div>
       <div class="tx-center">
