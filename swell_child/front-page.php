@@ -128,6 +128,178 @@ $news_events = new WP_Query([
           </h2>
           <p class="top-common__title-en lexend tx-3xs">Our role</p>
         </div>
+
+        <div class="top-our-role__intro tx-center mb-sm">
+          <p class="top-our-role__lead hd-xs mb-3xs">
+            私たちは、各分野の専門家を束ねる<br />
+            「デザイン顧問」です。
+          </p>
+          <p class="top-our-role__label tx-4xs mb-3xs">
+            貴社専属の「ブランド・マネージャー」
+          </p>
+          <p class="top-our-role__intro-txt tx-3xs">
+            ブランドとは、顧客から見て、その商品・サービスが識別できる状態のことです。<br class="mq-md-up" />
+            価格競争に巻き込まれない強いブランド作りを得意としています。
+          </p>
+        </div>
+
+        <div class="top-our-role__row mb-sm">
+          <div class="top-our-role__txt tx-4xs">
+            <p class="mb-3xs">
+              Webサイト、営業資料、SNS、プロダクトの画面、採用ページ。接点が増えるほど、関わる人も増えていきます。制作会社、エンジニア、マーケター、カメラマン、そして社内のメンバー。
+            </p>
+            <p class="mb-3xs">
+              一人ひとりが優秀でも、目指す方向がそろっていなければ、伝わるメッセージは少しずつずれていきます。
+            </p>
+            <p>
+              ノースサインは、デザイン顧問として経営者の視点に立ってブランドの軸をつくり、その軸をもとに社内外の専門家へ方向性を示して、アウトプットをそろえていきます。ブランドの構築から管理までを担う「ブランド・マネージャー」の役割です。
+            </p>
+          </div>
+
+          <div class="top-our-role__diagram">
+            <div class="top-our-role__ceo">
+              <div class="top-our-role__person top-our-role__person--ceo">
+                <img
+                  src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-role-ceo.png"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <p class="top-our-role__ceo-txt">経営者・事業責任者</p>
+            </div>
+            <p class="top-our-role__connector">ブランドの軸を一緒につくる</p>
+            <div class="top-our-role__manager">
+              <p class="top-our-role__manager-sub">ノースサイン</p>
+              <p class="top-our-role__manager-title">デザイン顧問</p>
+              <p class="top-our-role__manager-sub">ブランド・マネージャー</p>
+            </div>
+            <p class="top-our-role__connector">方向性を示し、アウトプットをそろえる</p>
+            <ul class="top-our-role__specialists">
+              <li class="top-our-role__specialist">
+                <div class="top-our-role__person top-our-role__person--designer">
+                  <img
+                    src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-role-designer.png"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <p class="top-our-role__specialist-name">デザイナー</p>
+                <p class="top-our-role__specialist-txt">ロゴ・Web</p>
+              </li>
+              <li class="top-our-role__specialist">
+                <div class="top-our-role__person top-our-role__person--engineer">
+                  <img
+                    src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-role-engineer.png"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <p class="top-our-role__specialist-name">エンジニア</p>
+                <p class="top-our-role__specialist-txt">サイト・UI</p>
+              </li>
+              <li class="top-our-role__specialist">
+                <div class="top-our-role__person top-our-role__person--marketer">
+                  <img
+                    src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-role-marketer.png"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <p class="top-our-role__specialist-name">マーケター</p>
+                <p class="top-our-role__specialist-txt">SNS・広告</p>
+              </li>
+              <li class="top-our-role__specialist">
+                <div class="top-our-role__person top-our-role__person--team">
+                  <img
+                    src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-role-team.png"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <p class="top-our-role__specialist-name">社内チーム<br />制作会社</p>
+                <p class="top-our-role__specialist-txt">営業資料・販促物</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="top-our-role__items mb-sm">
+          <div class="top-our-role__item box">
+            <div class="top-our-role__item-illust mb-4xs">
+              <img
+                class="top-our-role__item-icon"
+                src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-role-target.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <p class="top-our-role__item-num lexend hd-xs mb-4xs">01</p>
+            <h3 class="top-our-role__item-title hd-2xs mb-4xs">軸をつくる</h3>
+            <p class="tx-4xs">
+              「誰に、どんな価値を約束するのか」を言葉にし、デザインや施策を判断するための基準をつくります。
+            </p>
+          </div>
+          <div class="top-our-role__item box">
+            <div class="top-our-role__item-illust mb-4xs">
+              <div class="top-our-role__person top-our-role__person--marketer">
+                <img
+                  src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-role-marketer.png"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="top-our-role__person top-our-role__person--ceo">
+                <img
+                  src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-role-ceo.png"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="top-our-role__person top-our-role__person--engineer">
+                <img
+                  src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-role-engineer.png"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
+            <p class="top-our-role__item-num lexend hd-xs mb-4xs">02</p>
+            <h3 class="top-our-role__item-title hd-2xs mb-4xs">束ねる</h3>
+            <p class="tx-4xs">
+              ブランドの軸を社内外の専門家と共有し、Web・営業資料・SNSなど、各接点の表現をそろえます。
+            </p>
+          </div>
+          <div class="top-our-role__item box">
+            <div class="top-our-role__item-illust mb-4xs">
+              <img
+                class="top-our-role__item-compass"
+                src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-role-compass.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <p class="top-our-role__item-num lexend hd-xs mb-4xs">03</p>
+            <h3 class="top-our-role__item-title hd-2xs mb-4xs">育てる</h3>
+            <p class="tx-4xs">
+              つくって終わりにはしません。お客様の反応や事業の変化を見ながら、ブランドの管理と改善を続けます。
+            </p>
+          </div>
+        </div>
+
+        <p class="top-our-role__note tx-center">
+          ノースサインには、デザイン・エンジニアリング・マーケティング・システムの専門メンバーが在籍しています。<br class="mq-md-up" />
+          必要に応じて外部の専門家とも連携し、チームとしてブランドづくりを支えます。
+        </p>
       </div>
     </section>
 
