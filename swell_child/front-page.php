@@ -421,7 +421,7 @@ $news_events = new WP_Query([
             </div>
           </div>
 
-          <ol class="top-our-service__phases mb-xs">
+          <ol class="top-our-service__phases">
             <li class="top-our-service__phase">
               <div class="top-our-service__icon">
                 <img
@@ -478,12 +478,14 @@ $news_events = new WP_Query([
             </li>
           </ol>
 
+<?php /* カリキュラムのリンクは非表示中。戻すときは、上の top-our-service__phases に mb-xs も戻す
           <div class="top-common__wrapper-more">
             <a href="<?php echo esc_url( get_permalink( get_page_by_path('design-advisory'))); ?>"
               class="top-common__more more tx-3xs"
               >プログラムの詳細・全14回のカリキュラムを見る</a
             >
           </div>
+*/ ?>
         </div>
 
         <!-- 無料ブランド勉強会 -->
