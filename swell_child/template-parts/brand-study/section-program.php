@@ -79,7 +79,7 @@ $outcomes = [
         </div>
       </div>
 
-      <p class="brand-study-program__note">勉強会のあと、ご希望があれば具体的なお見積り・ご提案をお出しします。こちらから押し売りすることはありません。</p>
+      <p class="brand-study-program__note">勉強会のあと、ご希望があれば具体的なお見積もり・ご提案をお出しします。こちらから押し売りすることはありません。</p>
     </div>
   </div>
 </section>

@@ -105,11 +105,11 @@ $news_events = new WP_Query([
               考えていません。<br />
               経営戦略と密接に関わるものだと捉えています。<br /><br />
               従来型の発注者・受注者の関係性を超えて、<br />
-              御社のデザイン顧問として<br />
+              御社のデザイン顧問として、<br />
               長期的に、貴社のブランドやサービスづくりに伴走します。
             </p>
             <div class="top-common__wrapper-more">
-              <a href="/" class="top-common__more more tx-3xs"
+              <a href="<?php echo esc_url( get_permalink( get_page_by_path('about'))); ?>" class="top-common__more more tx-3xs"
                 >私たちについて</a
               >
             </div>
@@ -694,7 +694,7 @@ $projects_query = new WP_Query($args);
           </div>
         </div>
         <p class="top-design-advisory-plans__comments mb-md">
-          ※ 制作は別途お見積りになります。お問い合わせください。<br /><br />
+          ※ 制作は別途お見積もりになります。お問い合わせください。<br /><br />
           ※ 表示価格はすべて税別です。
         </p>
         <div class="tx-center">

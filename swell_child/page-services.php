@@ -242,7 +242,7 @@
           </div>
         </div>
         <p class="services-plans__comments tx-4xs mb-md">
-          ※ 制作は別途お見積りになります。お問い合わせください。
+          ※ 制作は別途お見積もりになります。お問い合わせください。
         </p>
         <div class="services-plans__wrapper-link tx-center">
           <a
