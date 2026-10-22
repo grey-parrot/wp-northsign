@@ -363,6 +363,9 @@
               <div class="about-member__name-en lexend tx-3xs">
                 Natsuko Hojo
               </div>
+              <a href="https://x.com/nattu_northsign" class="about-member__sns lexend" target="_blank" rel="noopener">
+                <span class="about-member__sns-icon" aria-hidden="true">X</span>@nattu_northsign
+              </a>
             </div>
             <p class="about-member__txt tx-4xs tx-left">
               東京都出身。東京藝術大学絵画科油画専攻卒。子供の頃から絵を描くのが好きで、ホームページを作ったり、物作りに没頭する学生時代を過ごす。大学在学中からデザインの仕事を始め、新卒で株式会社オロにてデザイナーとして勤務し、大手企業のWeb運用やデザイン提案を経験。退社後、フリーランスとして活動し、2019年にノースサイン合同会社を父と共に設立。動物好きで猫を飼っている。一児の母。<br /><br />

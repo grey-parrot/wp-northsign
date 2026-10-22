@@ -381,6 +381,27 @@
       gap: 40px;
     }
   }
+  .about-member__sns {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 8px;
+    color: var(--c-black-lv2);
+    font-size: b.rem(13);
+    font-weight: 600;
+    line-height: normal;
+  }
+  .about-member__sns-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    background-color: var(--c-black-lv0);
+    border-radius: 4px;
+    color: var(--c-white);
+    font-size: b.rem(11);
+  }
 }
 
 /* 受賞/保有資格
