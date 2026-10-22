@@ -382,14 +382,14 @@
           <div class="about-member__item tx-center">
             <img
               src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/about/ph-about-member2.jpg"
-              alt="役員/AIクリエイティブ・システムデザイナー 北條利昭の写真"
+              alt="役員/デザインエンジニア 北條利昭の写真"
               class="about-member__img mb-xs"
               loading="lazy"
               decoding="async"
             />
             <div class="about-member__wrapper mb-xs">
               <div class="about-member__job-title tx-4xs mb-4xs">
-                役員/AIクリエイティブ・システムデザイナー
+                役員/デザインエンジニア
               </div>
               <div class="about-member__name tx-xs mb-4xs">北條 利昭</div>
               <div class="about-member__name-en lexend tx-3xs">
@@ -397,9 +397,8 @@
               </div>
             </div>
             <p class="about-member__txt tx-4xs tx-left">
-              Webデザイン・コーディングの経験をベースに、Claude、ChatGPT、AIエージェント、Adobe、Figmaなどを活用してWeb・動画制作を行いながら、AIと人が協働する新しい制作ワークフローやシステムを実験・構築しています。<br /><br />
-              ノースサイン共同創業者。コンピュータ専門学校卒業後、和陶器卸売会社の「電算機室」に勤務。その後、中央大学法学部を卒業し、行政書士などを経て、COBOLプログラマとして生命保険会社のシステム開発に約10年間従事。その後Web制作へ転身し、現在はAIを活用した新しいクリエイティブ制作環境の構築に取り組んでいます。<br /><br />
-              最近の趣味はテニスと映画鑑賞。特に『アベンジャーズ』などのスーパーヒーロー作品をよく観ています。
+              Webデザイン・コーディングの経験を軸に、生成AIやAIエージェント、Figma、Adobe製品を活用して、デザインから実装までを一貫して手がけている。あわせて、AIと人が協働する制作ワークフローの設計や自動化に取り組み、Web・動画制作の新しい仕組みを構築している。<br /><br />
+              ノースサイン共同創業者。コンピュータ専門学校を卒業後、和陶器卸売会社の「電算機室」に勤務。中央大学法学部を卒業し、行政書士などを経て、COBOLプログラマとして生命保険会社のシステム開発に約10年間従事した。その後Web制作の道へ進み、現在に至る。
             </p>
           </div>
           <div class="about-member__item tx-center">
