@@ -185,6 +185,32 @@
   @include m.bp-down(md) {
     padding: 32px 32px;
   }
+  .footer__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    @include m.bp-down(md) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  .footer__sns {
+    display: flex;
+    gap: 12px;
+  }
+  .footer__sns-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid var(--c-black-lv0);
+    border-radius: 999px;
+    padding: 8px 12px 8px 16px;
+    color: var(--c-black-lv0);
+    font-size: b.rem(14);
+    font-weight: 600;
+    line-height: normal;
+  }
   .footer__menu {
     display: flex;
     flex-direction: row;
