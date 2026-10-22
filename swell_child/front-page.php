@@ -70,7 +70,46 @@ $news_events = new WP_Query([
           すべて見る
         </a>
 <?php endif; ?>
-<?php wp_reset_postdata(); ?>    
+<?php wp_reset_postdata(); ?>
+      </div>
+
+      <!-- 無料ブランド勉強会バナー -->
+      <div class="top-brand-study">
+        <div class="top-brand-study__txt">
+          <h2 class="top-brand-study__title">
+            60分<span class="top-brand-study__title-sub"> 無料ブランド勉強会</span>
+          </h2>
+          <p class="top-brand-study__lead">
+            その価格、下げずに選ばれていますか？
+          </p>
+          <ul class="top-brand-study__chips">
+            <li class="top-brand-study__chip">所要時間 60分</li>
+            <li class="top-brand-study__chip">参加費 無料</li>
+            <li class="top-brand-study__chip">オンライン（Zoom）</li>
+            <li class="top-brand-study__chip">各回5社までの少人数制</li>
+          </ul>
+          <a href="https://northsign.jp/brand-study/" class="top-brand-study__button">
+            無料勉強会に申し込む
+            <img
+              src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/brand-study/img/ico-arrow-white.svg"
+              alt=""
+              width="20"
+              height="20"
+            />
+          </a>
+        </div>
+        <div class="top-brand-study__illust">
+          <img
+            class="top-brand-study__image"
+            src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/brand-study/img/hero.webp"
+            alt=""
+            width="152"
+            height="190"
+            loading="lazy"
+            decoding="async"
+          />
+          <span class="top-brand-study__badge">参加無料</span>
+        </div>
       </div>
     </div>
   </section>
