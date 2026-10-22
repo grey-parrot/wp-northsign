@@ -16,22 +16,30 @@
     <sections class="services-hero">
       <div class="container">
         <div class="services-hero__wrapper">
-          <div class="services-hero__wrapper-image mb-md">
+          <div class="services-hero__wrapper-image">
             <img
-              src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/services/img-services-hero.png"
-              alt="サービスページのメインビジュアル"
+              src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-service-sign.png"
+              alt=""
               class="services-hero__img"
+              width="192"
+              height="284"
               loading="eager"
               fetchpriority="high"
               decoding="async"
             />
           </div>
-          <p class="services-hero__txt tx-4xs">
-            私たちは、デザインを「つくること」そのものよりも、何を考え、<br />
-            どんな判断を積み重ねていくかを大切にしています。<br /><br />
-            事業のフェーズや課題に応じて、考えるところから並走し、必要に応じて形にし、その思考を共有していく。<br /><br />
-            以下の3つのサービスは、すべて「経営の隣で考え続ける」ための関わり方です。
-          </p>
+          <div class="services-hero__txt">
+            <h2 class="services-hero__title hd-xs">
+              経営のそばで考え、<br />
+              必要なものだけを、形にする。
+            </h2>
+            <p class="tx-4xs">
+              私たちは、デザインを「つくること」そのものよりも、何を考え、どんな判断を積み重ねていくかを大切にしています。
+            </p>
+            <p class="tx-4xs">
+              ノースサインのサービスは、「考える」ためのデザイン顧問と、「作る」ための制作メニューの2本立てです。デザイン顧問で、今どこに投資すべきかを一緒に判断し、必要になったものだけを制作メニューで形にします。
+            </p>
+          </div>
         </div>
       </div>
     </sections>
