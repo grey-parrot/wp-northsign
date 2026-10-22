@@ -689,16 +689,35 @@ $projects_query = new WP_Query($args);
             貴社の事業を継続的に理解し、伴走しながら支援を行うため、<br
               class="mq-md-up"
             />
-            月額制でのデザイン顧問サービスをご用意しています。
+            3ヶ月のブランド構築プログラムと、その後の月額の顧問プランをご用意しています。
           </p>
         </div>
         <p class="top-design-advisory-plans__callout tx-3xs tx-center mb-3xs">
-          どのプランも、最初の3ヶ月は「ブランド構築プログラム」から始まります。
+          まず3ヶ月のブランド構築プログラムでブランドの軸をつくり、その後は月額の顧問プランで、判断・設計・監修を続けます。
         </p>
+        <div class="top-design-advisory-plans__program mb-3xs">
+          <div class="top-design-advisory-plans__program-txt">
+            <p class="top-design-advisory-plans__step lexend">STEP 1</p>
+            <h3 class="top-design-advisory-plans__program-title hd-xs">3ヶ月ブランド構築プログラム</h3>
+            <p class="tx-4xs">
+              全14回のセッションで、ブランドの軸とトーン&amp;マナーを決め、今後の計画を立てます。
+            </p>
+          </div>
+          <div class="top-design-advisory-plans__program-price">
+            <p class="top-design-advisory-plans__program-price-main">
+              <span class="hd-xs">60万円</span>（税別）／3ヶ月
+            </p>
+            <p class="top-design-advisory-plans__program-price-note">月20万円×3回のお支払いも可能です</p>
+          </div>
+        </div>
+        <div class="top-design-advisory-plans__plans-head mb-3xs">
+          <p class="top-design-advisory-plans__step lexend">STEP 2</p>
+          <p class="tx-3xs">顧問プラン（プログラム修了後・月額）</p>
+        </div>
         <div class="top-design-advisory-plans__items mb-3xs">
           <div class="top-design-advisory-plans__item box">
             <p class="top-design-advisory-plans__item-txt1 tx-4xs mb-4xs">
-              選ばれるブランドの土台をつくる
+              ブランドの軸を、日々の判断に活かす
             </p>
             <h3 class="top-design-advisory-plans__item-title hd-xs mb-4xs">伴走パートナー</h3>
             <h4 class="top-design-advisory-plans__item-price hd-2xs">10万円<span class="tx-4xs">（税別）/月額</span></h4>
@@ -719,6 +738,7 @@ $projects_query = new WP_Query($args);
           </div>
         </div>
         <p class="top-design-advisory-plans__comments mb-md">
+          ※ ブランドの土台がすでにある場合は、顧問プランから始めることもできます。<br /><br />
           ※ 制作は別途お見積もりになります。お問い合わせください。<br /><br />
           ※ 表示価格はすべて税別です。
         </p>

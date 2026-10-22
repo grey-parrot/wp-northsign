@@ -868,6 +868,78 @@
       padding: 12px 16px;
     }
   }
+  .top-design-advisory-plans__step {
+    background-color: var(--c-black-lv0);
+    border-radius: 999px;
+    padding: 2px 12px;
+    color: var(--c-white);
+    font-size: b.rem(14);
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  /* STEP 1：3ヶ月ブランド構築プログラム */
+  .top-design-advisory-plans__program {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    background-color: var(--c-white);
+    border: 2px solid var(--c-black-lv0);
+    border-radius: 8px;
+    padding: 32px 40px;
+    @include m.bp-down(md) {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 16px;
+      padding: 24px;
+    }
+    .top-design-advisory-plans__program-txt {
+      flex: 1 1 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .top-design-advisory-plans__program-title {
+      line-height: 1.3;
+    }
+    .top-design-advisory-plans__program-price {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 6px;
+      flex-shrink: 0;
+      font-weight: 700;
+      @include m.bp-down(md) {
+        align-items: flex-start;
+      }
+    }
+    .top-design-advisory-plans__program-price-main {
+      font-size: b.rem(16);
+      line-height: 1.6;
+      > span {
+        padding-right: 4px;
+        line-height: 1.2;
+      }
+    }
+    .top-design-advisory-plans__program-price-note {
+      color: var(--c-black-lv2);
+      font-size: b.rem(14);
+      line-height: 1.5;
+    }
+  }
+
+  /* STEP 2：顧問プラン */
+  .top-design-advisory-plans__plans-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-top: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+  }
   .top-design-advisory-plans__items {
     display: flex;
     flex-direction: row;
