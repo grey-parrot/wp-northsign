@@ -327,6 +327,46 @@
   }
 }
 
+/* このような方のお役に立てます
+----------------------------------------*/
+.about-who {
+  .about-who__boxes {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    @include m.bp-down(md) {
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+  .about-who__box {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    color: var(--c-black-lv1);
+  }
+  .about-who__box-title {
+    line-height: 1.2;
+  }
+  .about-who__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .about-who__item {
+    display: flex;
+    gap: 15px;
+    line-height: 1.6;
+    &::before {
+      content: "";
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      background: url("images/ico-check.svg") no-repeat center / contain;
+    }
+  }
+}
+
 /* メンバー
 ----------------------------------------*/
 .about-member {

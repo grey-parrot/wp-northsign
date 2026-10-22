@@ -308,6 +308,39 @@
       </div>
     </section>
 
+    <!-- このような方のお役に立てます
+    ====================================================================== -->
+    <section class="about-who">
+      <div class="container">
+        <div class="top-common__title mb-md">
+          <h2 class="top-common__title-ja hd-xs lh-1 mb-5xs">このような方のお役に立てます</h2>
+          <p class="top-common__title-en lexend tx-3xs">Who this is for</p>
+        </div>
+        <div class="about-who__boxes">
+          <div class="about-who__box box">
+            <h3 class="about-who__box-title hd-2xs">向いている方</h3>
+            <ul class="about-who__list">
+              <li class="about-who__item tx-4xs">デザインを「見た目」ではなく、経営の一部として捉えている方</li>
+              <li class="about-who__item tx-4xs">正解をすぐに求めるより、考える時間を大切にしたい方</li>
+              <li class="about-who__item tx-4xs">アイディアや構想を、事業として整理していきたい方</li>
+              <li class="about-who__item tx-4xs">状況の変化を前提に、柔軟に進めたいと考えている方</li>
+              <li class="about-who__item tx-4xs">経験豊富なデザイナーにアイディア作りから伴走して欲しい方</li>
+              <li class="about-who__item tx-4xs">単発ではなく、長期的にブランドやサービスを育てていきたい方</li>
+            </ul>
+          </div>
+          <div class="about-who__box box">
+            <h3 class="about-who__box-title hd-2xs">向いていない方</h3>
+            <ul class="about-who__list">
+              <li class="about-who__item tx-4xs">仕様が決まっていて、見た目のデザインだけ作って欲しい</li>
+              <li class="about-who__item tx-4xs">とにかく安く作りたい</li>
+              <li class="about-who__item tx-4xs">丸投げしたい</li>
+              <li class="about-who__item tx-4xs">単発で成果だけ欲しい</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- メンバー
     ====================================================================== -->
     <sections class="about-member">
