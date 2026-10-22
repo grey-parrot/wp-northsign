@@ -1003,6 +1003,66 @@
   }
 }
 
+/* 情報発信
+----------------------------------------*/
+.top-media {
+  .top-common__title {
+    margin-bottom: 56px;
+    @include m.bp-down(md) {
+      margin-bottom: 40px;
+    }
+  }
+  .top-media__items {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    @include m.bp-down(md) {
+      flex-direction: column;
+    }
+  }
+  .top-media__item {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    box-shadow: none;
+    @include m.bp-down(md) {
+      gap: 20px;
+    }
+  }
+  .top-media__icon {
+    flex-shrink: 0;
+    &--note {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 64px;
+      height: 64px;
+      background-color: var(--c-black-lv0);
+      border-radius: 14px;
+      color: var(--c-white);
+      font-size: b.rem(18);
+      font-weight: 600;
+      line-height: 1;
+    }
+  }
+  .top-media__body {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .top-media__title {
+    font-size: b.rem(24);
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  .more {
+    font-weight: 700;
+    line-height: 1.5;
+  }
+}
+
 /* 相談してみる
 ----------------------------------------*/
 .top-contact {

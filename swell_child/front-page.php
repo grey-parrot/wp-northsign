@@ -821,6 +821,57 @@ $swell_posts = new WP_Query([
       </div>
     </section>
 
+    <!-- 情報発信
+    ======================================== -->
+    <section class="top-media">
+      <div class="container">
+        <div class="top-common__title">
+          <h2 class="top-common__title-ja hd-xs lh-1 mb-5xs">情報発信</h2>
+          <p class="top-common__title-en lexend tx-3xs">Media</p>
+        </div>
+        <div class="top-media__items">
+          <div class="top-media__item box">
+            <img
+              class="top-media__icon"
+              src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/ico-youtube.svg"
+              alt=""
+              width="72"
+              height="50"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="top-media__body">
+              <h3 class="top-media__title lexend">YouTube</h3>
+              <p class="tx-4xs">
+                ブランディングやデザインの考え方を、動画でわかりやすくお届けしています。
+              </p>
+              <a href="https://www.youtube.com/@northsign_jp"
+                class="more tx-3xs"
+                target="_blank"
+                rel="noopener"
+                >チャンネルを見る</a
+              >
+            </div>
+          </div>
+          <div class="top-media__item box">
+            <span class="top-media__icon top-media__icon--note lexend" aria-hidden="true">note</span>
+            <div class="top-media__body">
+              <h3 class="top-media__title lexend">note</h3>
+              <p class="tx-4xs">
+                経営者・事業責任者に向けて、ブランドづくりのヒントをコラムで発信しています。
+              </p>
+              <a href="https://note.com/northsign"
+                class="more tx-3xs"
+                target="_blank"
+                rel="noopener"
+                >noteを読む</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- 相談してみる
     ======================================== -->
     <section class="top-contact">
