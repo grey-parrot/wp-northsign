@@ -1,3 +1,4 @@
+@use "sass:math";
 @use "variables" as v;
 @use "base" as b;
 @use "mixin" as m;
@@ -66,6 +67,262 @@
       display: flex;
       flex-direction: column;
       gap: 16px;
+    }
+  }
+}
+
+/* 私たちの関わり方
+----------------------------------------*/
+// 図は Figma の座標（px）を、図の幅・高さに対する割合に直して配置する
+@mixin how-place($x, $y, $w, $h, $W, $H) {
+  position: absolute;
+  left: math.div($x, $W) * 100%;
+  top: math.div($y, $H) * 100%;
+  width: math.div($w, $W) * 100%;
+  @if $h {
+    height: math.div($h, $H) * 100%;
+  }
+}
+
+// 文字サイズも図の幅に合わせて縮める（図が Figma と同じ幅のときに $px になる）
+@function how-fs($px, $W, $min) {
+  @return max(#{$min}, #{math.div($px, $W) * 100}cqw);
+}
+
+.about-how {
+  .about-how__items {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    @include m.bp-down(md) {
+      gap: 80px;
+    }
+  }
+  .about-how__item {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .about-how__item-title {
+    line-height: 1.2;
+    > span {
+      line-height: 1.5;
+    }
+  }
+  .about-how__diagrams {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+    @include m.bp-down(md) {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+  }
+  .about-how__txt {
+    background-color: var(--c-black-lv7);
+    border-radius: 8px;
+    padding: 32px;
+    line-height: 1.6;
+    @include m.bp-down(md) {
+      padding: 24px 16px;
+    }
+  }
+
+  // 図の共通部分
+  .about-how__diagram {
+    position: relative;
+    width: 100%;
+    container-type: inline-size;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+  .about-how__diagram-title {
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+  }
+  .about-how__label {
+    position: absolute;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    line-height: 1.6;
+  }
+  .about-how__person {
+    position: absolute;
+    height: auto;
+  }
+
+  // 一般的な制作フロー（546 × 352）
+  .about-how__diagram--flow {
+    $W: 546;
+    $H: 352;
+    max-width: #{$W}px;
+    aspect-ratio: #{$W} / #{$H};
+    .about-how__diagram-title {
+      left: 0;
+      font-size: how-fs(18, $W, 14px);
+    }
+    .about-how__person--ceo {
+      @include how-place(36.863, 121, 122.273, false, $W, $H);
+    }
+    .about-how__flow-arrow {
+      @include how-place(196.035, 180, 190.302, 91.824, $W, $H);
+    }
+    .about-how__person--designer {
+      @include how-place(412.436, 137, 112.128, false, $W, $H);
+    }
+    .about-how__label {
+      top: math.div(310, $H) * 100%;
+      font-size: how-fs(16, $W, 12px);
+    }
+    .about-how__label--ceo {
+      left: math.div(98, $W) * 100%;
+    }
+    .about-how__label--designer {
+      left: math.div(468.5, $W) * 100%;
+    }
+  }
+
+  // 共創型（562 × 346）
+  .about-how__diagram--cocreate {
+    $W: 562;
+    $H: 346;
+    max-width: #{$W}px;
+    aspect-ratio: #{$W} / #{$H};
+    .about-how__diagram-title {
+      left: 0;
+      font-size: how-fs(18, $W, 14px);
+    }
+    .about-how__ring {
+      @include how-place(165, 31, 273, 263, $W, $H);
+    }
+    .about-how__person--marketer {
+      @include how-place(86, 41.59, 113, false, $W, $H);
+    }
+    .about-how__person--team {
+      @include how-place(404, 50, 105.621, false, $W, $H);
+    }
+    .about-how__person--engineer {
+      @include how-place(242, 201.11, 106.245, false, $W, $H);
+    }
+    .about-how__label--together {
+      left: math.div(301, $W) * 100%;
+      top: math.div(139, $H) * 100%;
+      font-size: how-fs(16, $W, 12px);
+    }
+  }
+
+  // ウォーターホール型（582 × 190）
+  .about-how__diagram--waterfall {
+    $W: 582;
+    $H: 190;
+    max-width: #{$W}px;
+    aspect-ratio: #{$W} / #{$H};
+    .about-how__diagram-title {
+      left: math.div(5, $W) * 100%;
+      font-size: how-fs(18, $W, 14px);
+    }
+    .about-how__waterfall-arrow {
+      @include how-place(84, 93, 498, 91.824, $W, $H);
+    }
+    .about-how__step {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--c-white);
+      border: 1px solid var(--c-black-lv0);
+      border-radius: 50%;
+      font-size: how-fs(16, $W, 10px);
+      white-space: nowrap;
+      @include how-place(0, 84, 106, 106, $W, $H);
+      @for $i from 2 through 4 {
+        &:nth-child(#{$i}) {
+          left: math.div(123.815 * ($i - 1), $W) * 100%;
+        }
+      }
+    }
+  }
+
+  // アジャイル型（585 × 200）
+  .about-how__diagram--agile {
+    $W: 585;
+    $H: 200;
+    max-width: #{$W}px;
+    aspect-ratio: #{$W} / #{$H};
+    .about-how__diagram-title {
+      left: 0;
+      font-size: how-fs(18, $W, 14px);
+    }
+    .about-how__agile-arrow {
+      @include how-place(45.02, 93, 540, 91.824, $W, $H);
+    }
+    .about-how__cycle {
+      @include how-place(54, 55, 145, 145, $W, $H);
+      &:nth-of-type(2) {
+        left: math.div(219, $W) * 100%;
+      }
+      &:nth-of-type(3) {
+        left: math.div(384, $W) * 100%;
+      }
+    }
+    // サイクル内の配置（145 × 145）
+    .about-how__cycle-step {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--c-white);
+      border: 1px solid var(--c-black-lv0);
+      border-radius: 50%;
+      font-size: how-fs(12, $W, 9px);
+      white-space: nowrap;
+      &--plan {
+        @include how-place(0, 46, 56, 56, 145, 145);
+      }
+      &--test {
+        @include how-place(44, 0, 56, 56, 145, 145);
+      }
+      &--build {
+        @include how-place(89, 46, 56, 56, 145, 145);
+      }
+      &--design {
+        @include how-place(45, 89, 56, 56, 145, 145);
+      }
+    }
+    .about-how__cycle-arrow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: math.div(18.205, 23.3) * 100%;
+        max-width: none;
+      }
+      &--1 {
+        @include how-place(86, 39, 23.276, 23.156, 145, 145);
+        img {
+          transform: rotate(136.37deg);
+        }
+      }
+      &--2 {
+        @include how-place(82, 88, 23.294, 23.124, 145, 145);
+        img {
+          transform: rotate(-136.93deg);
+        }
+      }
+      &--3 {
+        @include how-place(36, 82, 23.175, 23.263, 145, 145);
+        img {
+          transform: rotate(-45.99deg);
+        }
+      }
+      &--4 {
+        @include how-place(37.93, 36.23, 23.358, 22.761, 145, 145);
+        img {
+          transform: rotate(38.2deg);
+        }
+      }
     }
   }
 }

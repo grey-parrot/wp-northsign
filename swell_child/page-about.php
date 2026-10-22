@@ -162,6 +162,152 @@
       </div>
     </sections>
 
+    <!-- 私たちの関わり方
+    ====================================================================== -->
+    <section class="about-how">
+      <div class="container">
+        <div class="top-common__title mb-md">
+          <h2 class="top-common__title-ja hd-xs lh-1 mb-5xs">私たちの関わり方</h2>
+          <p class="top-common__title-en lexend tx-3xs">How we work</p>
+        </div>
+        <div class="about-how__items">
+
+          <!-- 1. 共創型 -->
+          <div class="about-how__item">
+            <h3 class="about-how__item-title hd-2xs">
+              1.一緒に考え、一緒に決める<span class="tx-3xs">（共創型）</span>
+            </h3>
+            <div class="about-how__diagrams">
+              <div class="about-how__diagram about-how__diagram--flow">
+                <p class="about-how__diagram-title">一般的な制作フロー</p>
+                <div class="about-how__person about-how__person--ceo top-common__person top-common__person--ceo">
+                  <img
+                    src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-role-ceo.png"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <img
+                  class="about-how__flow-arrow"
+                  src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/about/img-about-how-flow-arrow.svg"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="about-how__person about-how__person--designer top-common__person top-common__person--designer">
+                  <img
+                    src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-role-designer.png"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <p class="about-how__label about-how__label--ceo">仕様検討</p>
+                <p class="about-how__label about-how__label--designer">デザイナー</p>
+              </div>
+              <div class="about-how__diagram about-how__diagram--cocreate">
+                <p class="about-how__diagram-title">共創型</p>
+                <img
+                  class="about-how__ring"
+                  src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/about/img-about-how-ring.svg"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div class="about-how__person about-how__person--marketer top-common__person top-common__person--marketer">
+                  <img
+                    src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-role-marketer.png"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div class="about-how__person about-how__person--team top-common__person top-common__person--team">
+                  <img
+                    src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-role-team.png"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div class="about-how__person about-how__person--engineer top-common__person top-common__person--engineer">
+                  <img
+                    src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-role-engineer.png"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <p class="about-how__label about-how__label--together">ともに考える</p>
+              </div>
+            </div>
+            <p class="about-how__txt tx-4xs">
+              私たちは、要件やアイディアを一方的に受け取り、そのまま形にする関わり方はしていません。<br /><br />
+              経営者やチームの思考を共有しながら、どこに向かうのか、何を優先するのか。<br />
+              ときには「何をやらないか」も含めて、一緒に考え、一緒に決めていきます。<br /><br />
+              そのため、役割は「発注者／受注者」ではなく、同じ方向を向いて進むパートナーだと考えています。
+            </p>
+          </div>
+
+          <!-- 2. アジャイル型 -->
+          <div class="about-how__item">
+            <h3 class="about-how__item-title hd-2xs">
+              2.試しながら前に進める<span class="tx-3xs">（アジャイル型）</span>
+            </h3>
+            <div class="about-how__diagrams">
+              <div class="about-how__diagram about-how__diagram--waterfall">
+                <p class="about-how__diagram-title">ウォーターホール型</p>
+                <img
+                  class="about-how__waterfall-arrow"
+                  src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/about/img-about-how-waterfall-arrow.svg"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+                <ol class="about-how__steps">
+                  <li class="about-how__step">計画</li>
+                  <li class="about-how__step">設計</li>
+                  <li class="about-how__step">実装</li>
+                  <li class="about-how__step">テスト</li>
+                </ol>
+              </div>
+              <div class="about-how__diagram about-how__diagram--agile">
+                <p class="about-how__diagram-title">アジャイル型</p>
+                <img
+                  class="about-how__agile-arrow"
+                  src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/about/img-about-how-agile-arrow.svg"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+<?php for ( $i = 0; $i < 3; $i++ ) : ?>
+                <div class="about-how__cycle">
+                  <span class="about-how__cycle-step about-how__cycle-step--plan">計画</span>
+                  <span class="about-how__cycle-step about-how__cycle-step--test">テスト</span>
+                  <span class="about-how__cycle-step about-how__cycle-step--build">実装</span>
+                  <span class="about-how__cycle-step about-how__cycle-step--design">設計</span>
+                  <span class="about-how__cycle-arrow about-how__cycle-arrow--1"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/about/img-about-how-cycle-arrow.svg" alt="" loading="lazy" decoding="async" /></span>
+                  <span class="about-how__cycle-arrow about-how__cycle-arrow--2"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/about/img-about-how-cycle-arrow.svg" alt="" loading="lazy" decoding="async" /></span>
+                  <span class="about-how__cycle-arrow about-how__cycle-arrow--3"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/about/img-about-how-cycle-arrow.svg" alt="" loading="lazy" decoding="async" /></span>
+                  <span class="about-how__cycle-arrow about-how__cycle-arrow--4"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/about/img-about-how-cycle-arrow.svg" alt="" loading="lazy" decoding="async" /></span>
+                </div>
+<?php endfor; ?>
+              </div>
+            </div>
+            <p class="about-how__txt tx-4xs">
+              私たちは、最初からすべてを決め切る進め方は選んでいません。<br /><br />
+              スタートアップの多くは、進めながら状況が変わり、考えや仮説も更新されていきます。<br />
+              だからこそ、小さく試し、学びながら、次の一手を決めていく進め方を大切にしています。<br /><br />
+              計画どおりに進めることよりも、事業が前に進むことを優先する。<br />
+              そのための方法として、私たちはアジャイルな進め方を採用しています。
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <!-- メンバー
     ====================================================================== -->
     <sections class="about-member">
