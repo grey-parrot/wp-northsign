@@ -373,12 +373,23 @@
   .about-member__items {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 80px;
+    gap: 0 80px;
     @include m.bp-down(md) {
       display: flex;
       flex-direction: column;
       gap: 40px;
+    }
+  }
+  // PC は写真・名前・紹介文の行を左右でそろえ、紹介文の書き出しを同じ高さにする
+  .about-member__item {
+    @include m.bp-up(md) {
+      display: grid;
+      grid-row: span 3;
+      grid-template-rows: subgrid;
+      align-content: start;
+      &:nth-child(-n + 2) {
+        padding-bottom: 80px;
+      }
     }
   }
   .about-member__sns {
