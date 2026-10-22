@@ -447,8 +447,14 @@ $news_events = new WP_Query([
                 3ヶ月で、「選ばれる理由」と「伝え方の基準」をつくる。
               </p>
               <p class="top-our-service__program-lead tx-3xs">
-                顧問デザイナーの最初の3ヶ月で取り組むプログラムです。講義とワークを組み合わせた全14回のセッションで、市場と顧客の整理から、ブランド・アイデンティティ、トーン&amp;マナー、今後の計画づくりまでを一緒に進めます。
+                デザイン顧問のはじまりとなる、3ヶ月のプログラムです。講義とワークを組み合わせた全14回のセッションで、市場と顧客の整理から、ブランド・アイデンティティ、トーン&amp;マナー、今後の計画づくりまでを一緒に進めます。
               </p>
+              <div class="top-our-service__program-price">
+                <p class="top-our-service__program-price-main">
+                  <span class="top-our-service__program-price-amount">60万円</span>（税別）／3ヶ月
+                </p>
+                <p class="top-our-service__program-price-note">月20万円×3回のお支払いも可能です</p>
+              </div>
             </div>
             <div class="top-our-service__program-image">
               <img
@@ -525,28 +531,6 @@ $news_events = new WP_Query([
             >
           </div>
 */ ?>
-        </div>
-
-        <!-- 無料ブランド勉強会 -->
-        <div class="top-our-service__cta mb-lg">
-          <div class="top-our-service__cta-txt">
-            <div class="top-common__person top-common__person--designer">
-              <img
-                src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-role-designer.png"
-                alt=""
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-            <p class="hd-2xs">
-              まずは60分の無料ブランド勉強会で、<br class="mq-md-up" />
-              今の課題を整理しませんか。
-            </p>
-          </div>
-          <a href="<?php echo esc_url( get_permalink( get_page_by_path('brand-study'))); ?>"
-            class="top-our-service__cta-button button tx-4xs"
-            ><span class="more">無料ブランド勉強会に申し込む</span></a
-          >
         </div>
       </div>
       <div class="tx-center">
