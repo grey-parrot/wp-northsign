@@ -653,14 +653,6 @@ $projects_query = new WP_Query($args);
     <?php endwhile; ?>
   </div>
 
-  <div class="pagination">
-    <?php
-      echo paginate_links(array(
-        'total' => $projects_query->max_num_pages
-      ));
-    ?>
-  </div>
-
 <?php else : ?>
   <p>投稿がありません。</p>
 <?php endif; ?>
