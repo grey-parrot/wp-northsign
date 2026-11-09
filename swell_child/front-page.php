@@ -553,12 +553,38 @@ $news_events = new WP_Query([
         </div>
         <div class="top-projects__items mb-sm">
 <?php
-$args = array(
-  'post_type'      => 'projects',
-  'posts_per_page' => 6, // 表示件数（2カラム×3段）
-);
+// 表示件数（2カラム×3段）
+$projects_limit = 6;
 
-$projects_query = new WP_Query($args);
+// 管理画面で「トップに固定表示」をオンにした事例（新しい順）
+$pinned_ids = get_posts(array(
+  'post_type'      => 'projects',
+  'posts_per_page' => $projects_limit,
+  'fields'         => 'ids',
+  'meta_key'       => 'top_pinned',
+  'meta_value'     => '1',
+));
+
+// 残りの枠は、固定していない事例の新しい順で埋める
+$latest_ids = array();
+if ( count($pinned_ids) < $projects_limit ) {
+  $latest_ids = get_posts(array(
+    'post_type'      => 'projects',
+    'posts_per_page' => $projects_limit - count($pinned_ids),
+    'fields'         => 'ids',
+    'post__not_in'   => $pinned_ids,
+  ));
+}
+
+$project_ids = array_merge($pinned_ids, $latest_ids);
+
+$projects_query = new WP_Query(array(
+  'post_type'      => 'projects',
+  'post__in'       => $project_ids ? $project_ids : array(0),
+  'orderby'        => 'post__in',
+  'posts_per_page' => $projects_limit,
+  'no_found_rows'  => true,
+));
 ?>
 
 <?php if ( $projects_query->have_posts() ) : ?>

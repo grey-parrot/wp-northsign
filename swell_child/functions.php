@@ -235,6 +235,124 @@ add_action('acf/init', function () {
   ]);
 });
 
+// ACF フィールド：事例紹介を「トップに固定表示」するチェック
+add_action('acf/init', function () {
+  acf_add_local_field_group([
+    'key'      => 'group_projects_top_pinned',
+    'title'    => 'トップページの表示',
+    'fields'   => [
+      [
+        'key'           => 'field_projects_top_pinned',
+        'label'         => 'トップに固定表示',
+        'name'          => 'top_pinned',
+        'type'          => 'true_false',
+        'ui'            => 1,
+        'default_value' => 0,
+        'instructions'  => 'オンにすると、トップの「プロジェクト事例紹介」で新しい事例より先に表示します（最大6件）。',
+      ],
+    ],
+    'location' => [
+      [
+        [
+          'param'    => 'post_type',
+          'operator' => '==',
+          'value'    => 'projects',
+        ],
+      ],
+    ],
+    'position' => 'side',
+  ]);
+});
+
+// 事例紹介の一覧画面に「トップ固定」の列を追加（タイトルの右）
+add_filter('manage_projects_posts_columns', function ($columns) {
+  $new = [];
+  foreach ($columns as $key => $label) {
+    $new[$key] = $label;
+    if ($key === 'title') {
+      $new['top_pinned'] = 'トップ固定';
+    }
+  }
+  return $new;
+});
+
+// 一覧の列はチェックボックス。切り替えるとその場で保存する
+add_action('manage_projects_posts_custom_column', function ($column, $post_id) {
+  if ($column !== 'top_pinned') {
+    return;
+  }
+  printf(
+    '<label class="ns-top-pinned"><input type="checkbox" data-post-id="%1$d" data-nonce="%2$s"%3$s%4$s><span class="ns-top-pinned__msg" aria-live="polite"></span></label>',
+    (int) $post_id,
+    esc_attr( wp_create_nonce('ns_top_pinned_' . $post_id) ),
+    checked( get_post_meta($post_id, 'top_pinned', true), '1', false ),
+    current_user_can('edit_post', $post_id) ? '' : ' disabled'
+  );
+}, 10, 2);
+
+add_action('wp_ajax_ns_toggle_top_pinned', function () {
+  $post_id = isset($_POST['post_id']) ? (int) $_POST['post_id'] : 0;
+  check_ajax_referer('ns_top_pinned_' . $post_id, 'nonce');
+  if ( ! $post_id || get_post_type($post_id) !== 'projects' || ! current_user_can('edit_post', $post_id) ) {
+    wp_send_json_error(null, 403);
+  }
+  $value = ( isset($_POST['value']) && $_POST['value'] === '1' ) ? 1 : 0;
+  if ( function_exists('update_field') ) {
+    update_field('field_projects_top_pinned', $value, $post_id);
+  } else {
+    update_post_meta($post_id, 'top_pinned', (string) $value);
+  }
+  wp_send_json_success(['value' => $value]);
+});
+
+add_action('admin_head', function () {
+  $screen = get_current_screen();
+  if ( ! $screen || $screen->id !== 'edit-projects' ) {
+    return;
+  }
+  echo '<style>.column-top_pinned{width:7em;}.ns-top-pinned__msg{margin-left:6px;font-size:12px;color:#646970;}</style>';
+});
+
+add_action('admin_footer', function () {
+  $screen = get_current_screen();
+  if ( ! $screen || $screen->id !== 'edit-projects' ) {
+    return;
+  }
+  ?>
+  <script>
+  document.addEventListener('change', function (e) {
+    var box = e.target;
+    if (!box.matches('.ns-top-pinned input[type="checkbox"]')) {
+      return;
+    }
+    var msg = box.parentNode.querySelector('.ns-top-pinned__msg');
+    var body = new URLSearchParams({
+      action: 'ns_toggle_top_pinned',
+      post_id: box.dataset.postId,
+      nonce: box.dataset.nonce,
+      value: box.checked ? '1' : '0'
+    });
+    box.disabled = true;
+    msg.textContent = '保存中…';
+    fetch(ajaxurl, { method: 'POST', credentials: 'same-origin', body: body })
+      .then(function (res) { return res.json(); })
+      .then(function (json) {
+        if (!json.success) { throw new Error(); }
+        msg.textContent = '保存しました';
+      })
+      .catch(function () {
+        box.checked = !box.checked;
+        msg.textContent = '保存できませんでした';
+      })
+      .finally(function () {
+        box.disabled = false;
+        setTimeout(function () { msg.textContent = ''; }, 2000);
+      });
+  });
+  </script>
+  <?php
+});
+
 /**
  * Facebook（Meta）ピクセル
  * トップページと無料ブランド勉強会LP（brand-study）でのみ出力する
