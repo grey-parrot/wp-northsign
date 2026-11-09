@@ -11,51 +11,33 @@
   </div>
 
   <div class="contents mb-lg">
-    <div class="container-middle">
+    <div class="projects-grid">
 
 <?php if ( have_posts() ) : ?>
-      <div class="list-projects__items">
+      <div class="projects-grid__items">
   <?php while ( have_posts() ) : the_post(); ?>
-        <article <?php post_class('list-projects__item'); ?>>
-          <div class="list-projects__inner">
-            <!-- 左：テキスト -->
-            <div class="list-projects__body">
-              <h2 class="hd-2xs mb-4xs">
-                <a href="<?php the_permalink(); ?>">
-                  <?php the_title(); ?>
-                </a>
-              </h2>
-
-    <?php if ( get_field('company_name') ) : ?>
-              <p class="project-company tx-3xs mb-4xs">
-                <?php the_field('company_name'); ?>様
-              </p>
-    <?php endif; ?>
-
-              <div class="post_content tx-4xs">
-                <?php the_excerpt(); ?>
-              </div>
-            </div>
-
-    <!-- 右：アイキャッチ -->
+        <article <?php post_class('projects-grid__item'); ?>>
+          <a class="projects-grid__link" href="<?php the_permalink(); ?>">
     <?php if ( has_post_thumbnail() ) : ?>
-      <div class="list-projects__thumb">
-        <a href="<?php the_permalink(); ?>">
-          <?php the_post_thumbnail('medium'); ?>
-        </a>
-      </div>
+            <?php the_post_thumbnail('large', [ 'class' => 'projects-grid__img', 'alt' => '' ]); ?>
     <?php endif; ?>
-
-          </div>
+            <div class="projects-grid__caption">
+    <?php if ( get_field('company_name') ) : ?>
+              <p class="projects-grid__company"><?php the_field('company_name'); ?> 様</p>
+    <?php endif; ?>
+              <h2 class="projects-grid__title"><?php the_title(); ?></h2>
+            </div>
+          </a>
         </article>
   <?php endwhile; ?>
+      </div>
 
-        <div class="pagination">
-          <?php the_posts_pagination(); ?>
-        </div>
+      <div class="pagination">
+        <?php the_posts_pagination(); ?>
+      </div>
 
 <?php else : ?>
-  <p>投稿がありません。</p>
+      <p>投稿がありません。</p>
 <?php endif; ?>
 
     </div>

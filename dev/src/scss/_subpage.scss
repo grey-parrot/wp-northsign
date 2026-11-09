@@ -31,6 +31,26 @@
 }
 
 /*----------------------------------------
+	事例紹介（一覧）
+----------------------------------------*/
+.projects-grid {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  @include m.bp-down(xxl) {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  @include m.bp-down(md) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .pagination {
+    margin-top: 40px;
+  }
+}
+
+/*----------------------------------------
 	事例紹介
 ----------------------------------------*/
 .subpage-projects-detail {

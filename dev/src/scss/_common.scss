@@ -259,35 +259,79 @@
 }
 
 /*----------------------------------------
-	事例一覧
+	事例カード（2カラム）
 ----------------------------------------*/
-.list-projects__items {
+.projects-grid__items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 32px;
+  @include m.bp-down(md) {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+.projects-grid__link {
+  position: relative;
+  display: block;
+  aspect-ratio: 624 / 468;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: var(--c-black-lv7);
+  color: var(--c-white);
+  text-decoration: none;
+  // 下側を暗くして文字を読みやすくする
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0.72) 100%);
+    pointer-events: none;
+  }
+  &:hover .projects-grid__img {
+    transform: scale(1.03);
+  }
+}
+.projects-grid__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.projects-grid__caption {
+  position: absolute;
+  right: 28px;
+  bottom: 28px;
+  left: 28px;
+  z-index: 1;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  gap: 64px;
-  @include m.bp-down(md) {
-    gap: 32px;
+  gap: 8px;
+  font-weight: 700;
+  word-break: break-word;
+  @include m.bp-down(lg) {
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+    gap: 4px;
   }
-  .list-projects__inner {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    align-items: flex-start;
-    @include m.bp-down(md) {
-      flex-direction: column;
-      align-items: center;
-    }
-    .list-projects__body {
-      flex: 1 1 65%;
-    }
-    .list-projects__thumb {
-      flex: 0 0 35%;
-      text-align: right;
-      @include m.bp-down(md) {
-        order: -1; /* 画像を上にしたい場合 */
-      }
-    }
+}
+.projects-grid__company {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  opacity: 0.85;
+  @include m.bp-down(lg) {
+    font-size: 12px;
+  }
+}
+.projects-grid__title {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.45;
+  @include m.bp-down(lg) {
+    font-size: 16px;
   }
 }
 

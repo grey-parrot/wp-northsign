@@ -541,6 +541,58 @@ $news_events = new WP_Query([
       </div>
     </section>
 
+    <!-- プロジェクト事例紹介
+    ======================================== -->
+    <section class="top-projects">
+      <div class="container">
+        <div class="top-common__title mb-md">
+          <h2 class="top-common__title-ja hd-xs lh-1 mb-5xs">
+            プロジェクト事例紹介
+          </h2>
+          <p class="top-common__title-en lexend tx-3xs">Projects</p>
+        </div>
+        <div class="top-projects__items mb-sm">
+<?php
+$args = array(
+  'post_type'      => 'projects',
+  'posts_per_page' => 6, // 表示件数（2カラム×3段）
+);
+
+$projects_query = new WP_Query($args);
+?>
+
+<?php if ( $projects_query->have_posts() ) : ?>
+  <div class="projects-grid__items">
+    <?php while ( $projects_query->have_posts() ) : $projects_query->the_post(); ?>
+      <article <?php post_class('projects-grid__item'); ?>>
+        <a class="projects-grid__link" href="<?php the_permalink(); ?>">
+      <?php if ( has_post_thumbnail() ) : ?>
+          <?php the_post_thumbnail('large', [ 'class' => 'projects-grid__img', 'alt' => '' ]); ?>
+      <?php endif; ?>
+          <div class="projects-grid__caption">
+      <?php if ( get_field('company_name') ) : ?>
+            <p class="projects-grid__company"><?php the_field('company_name'); ?> 様</p>
+      <?php endif; ?>
+            <h3 class="projects-grid__title"><?php the_title(); ?></h3>
+          </div>
+        </a>
+      </article>
+    <?php endwhile; ?>
+  </div>
+
+<?php else : ?>
+  <p>投稿がありません。</p>
+<?php endif; ?>
+
+<?php wp_reset_postdata(); ?>
+
+        </div>
+        <div class="tx-center">
+          <a href="<?php echo esc_url( get_post_type_archive_link('projects') ); ?>" class="top-common__link more tx-xs">事例をもっと見る</a>
+        </div>
+      </div>
+    </section>
+
     <!-- あわせてご依頼いただけること
     ======================================== -->
     <section class="top-other-services">
@@ -592,76 +644,6 @@ $news_events = new WP_Query([
             class="top-common__more more tx-3xs"
             >サービス詳細</a
           >
-        </div>
-      </div>
-    </section>
-
-    <!-- プロジェクト事例
-    ======================================== -->
-    <section class="top-projects">
-      <div class="container-middle">
-        <div class="top-common__title mb-md">
-          <h2 class="top-common__title-ja hd-xs lh-1 mb-5xs">
-            プロジェクト事例
-          </h2>
-          <p class="top-common__title-en lexend tx-3xs">Projects</p>
-        </div>
-        <div class="top-projects__items mb-xs">
-<?php
-$args = array(
-  'post_type'      => 'projects',
-  'posts_per_page' => 3, // 表示件数
-  'paged'          => get_query_var('paged') ? get_query_var('paged') : 1,
-);
-
-$projects_query = new WP_Query($args);
-?>
-
-<?php if ( $projects_query->have_posts() ) : ?>
-  <div class="list-projects__items">
-
-    <?php while ( $projects_query->have_posts() ) : $projects_query->the_post(); ?>
-      <article <?php post_class('list-projects__item'); ?>>
-        <div class="list-projects__inner">
-
-          <div class="list-projects__body">
-            <h2 class="hd-2xs mb-4xs">
-              <a href="<?php the_permalink(); ?>">
-                <?php the_title(); ?>
-              </a>
-            </h2>
-
-      <?php if ( get_field('company_name') ) : ?>
-            <p class="project-company tx-3xs mb-4xs">
-              <?php the_field('company_name'); ?>様
-            </p>
-      <?php endif; ?>
-
-            <div class="post_content tx-4xs mb-3xs">
-              <?php the_excerpt(); ?>
-            </div>
-          </div>
-          <?php if ( has_post_thumbnail() ) : ?>
-            <div class="list-projects__thumb">
-              <a href="<?php the_permalink(); ?>">
-                <?php the_post_thumbnail('medium'); ?>
-              </a>
-            </div>
-          <?php endif; ?>
-        </div>
-      </article>
-    <?php endwhile; ?>
-  </div>
-
-<?php else : ?>
-  <p>投稿がありません。</p>
-<?php endif; ?>
-
-<?php wp_reset_postdata(); ?>
-
-        </div>
-        <div class="top-common__wrapper-more">
-          <a href="<?php echo esc_url( get_post_type_archive_link('projects') ); ?>" class="top-common__more more tx-3xs">もっと見る</a>
         </div>
       </div>
     </section>
