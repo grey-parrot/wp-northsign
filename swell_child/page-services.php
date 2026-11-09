@@ -624,7 +624,7 @@ foreach ( $plan_features as $feature => $has ) :
         <ol class="services-flow__steps">
 <?php
 $flow_steps = [
-  [ '無料ブランド勉強会（60分）', '事業の状況と課題を伺い、3C分析を使って強みと課題を一緒に整理します。' ],
+  [ '無料ブランド勉強会（90分）', '事業の状況と課題を伺い、3C分析を使って強みと課題を一緒に整理します。' ],
   [ 'ご提案・お見積もり', '課題に合わせて、ブランド構築プログラムの進め方をご提案します。' ],
   [ '3ヶ月ブランド構築プログラム', '全14回のセッションで、ブランドの軸とトーン&amp;マナーを決めます。' ],
   [ '顧問プランで各接点へ展開', '決まった軸をもとに、顧問プランでWeb・営業資料・SNSなどの戦略と設計を進め、必要なものを制作します。' ],
@@ -677,13 +677,13 @@ foreach ( $faqs as $faq ) :
         <div class="top-brand-study">
           <div class="top-brand-study__txt">
             <h2 class="top-brand-study__title">
-              60分<span class="top-brand-study__title-sub"> 無料ブランド勉強会</span>
+              90分<span class="top-brand-study__title-sub"> 無料ブランド勉強会</span>
             </h2>
             <p class="top-brand-study__lead">
               その価格、下げずに選ばれていますか？
             </p>
             <ul class="top-brand-study__chips">
-              <li class="top-brand-study__chip">所要時間 60分</li>
+              <li class="top-brand-study__chip">所要時間 90分</li>
               <li class="top-brand-study__chip">参加費 無料</li>
               <li class="top-brand-study__chip">オンライン（Zoom）</li>
               <li class="top-brand-study__chip">各回5社までの少人数制</li>

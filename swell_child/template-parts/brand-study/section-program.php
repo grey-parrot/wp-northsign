@@ -8,7 +8,7 @@ $steps = [
   [ 'img' => 'step-03', 'alt' => '旗と的のアイコン', 'label' => 'アクション提案', 'title' => '次の一手を決める', 'text' => '3C分析の結果をもとに、今後の目標と、優先して取り組むことを一緒に考えます。' ],
 ];
 $overview = [
-  '所要時間' => '60分',
+  '所要時間' => '90分',
   '参加費'   => '無料',
   '対象'     => '経営者・事業責任者の方',
   '開催形式' => nl2br( esc_html( $args['format'] ) ),
@@ -23,14 +23,14 @@ $outcomes = [
 <section class="brand-study-program brand-study-section">
   <div class="brand-study-inner">
     <div class="brand-study-heading">
-      <h2 class="brand-study-heading__title">60分でお話しすること</h2>
+      <h2 class="brand-study-heading__title">90分でお話しすること</h2>
       <p class="brand-study-heading__en" lang="en">Program</p>
     </div>
 
     <div class="brand-study-program__box">
       <div class="brand-study-program__intro">
         <p class="brand-study-program__intro-en" lang="en">Brand Study Session</p>
-        <p class="brand-study-program__intro-title">ブランドの基本を知り、<br />自社の「選ばれる理由」を<br class="brand-study-only-sp" />見つける60分。</p>
+        <p class="brand-study-program__intro-title">ブランドの基本を知り、<br />自社の「選ばれる理由」を<br class="brand-study-only-sp" />見つける90分。</p>
         <p class="brand-study-program__intro-text">講義とワークを組み合わせて進めます。事前の資料準備は不要です。<br class="brand-study-only-pc" />3C分析は、ワークシートに御社のことを書き込みながら進めます。</p>
       </div>
 
@@ -70,7 +70,7 @@ $outcomes = [
           </dl>
         </div>
         <div class="brand-study-program__card">
-          <h3 class="brand-study-program__card-title">60分後に見えてくること</h3>
+          <h3 class="brand-study-program__card-title">90分後に見えてくること</h3>
           <ul class="brand-study-program__outcomes">
             <?php foreach ( $outcomes as $outcome ) : ?>
               <li class="brand-study-check"><?php echo esc_html( $outcome ); ?></li>

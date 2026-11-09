@@ -77,13 +77,13 @@ $news_events = new WP_Query([
       <div class="top-brand-study">
         <div class="top-brand-study__txt">
           <h2 class="top-brand-study__title">
-            60分<span class="top-brand-study__title-sub"> 無料ブランド勉強会</span>
+            90分<span class="top-brand-study__title-sub"> 無料ブランド勉強会</span>
           </h2>
           <p class="top-brand-study__lead">
             その価格、下げずに選ばれていますか？
           </p>
           <ul class="top-brand-study__chips">
-            <li class="top-brand-study__chip">所要時間 60分</li>
+            <li class="top-brand-study__chip">所要時間 90分</li>
             <li class="top-brand-study__chip">参加費 無料</li>
             <li class="top-brand-study__chip">オンライン（Zoom）</li>
             <li class="top-brand-study__chip">各回5社までの少人数制</li>

@@ -9,10 +9,10 @@
     <div class="brand-study-hero__copy">
       <p class="brand-study-hero__label">経営者・事業責任者のための　無料ブランド勉強会</p>
       <h1 class="brand-study-hero__title">その価格、下げずに<br />選ばれていますか？</h1>
-      <p class="brand-study-hero__subtitle">ブランドの「今」を、<br class="brand-study-only-sp" />60分で一緒に見直しませんか。</p>
-      <p class="brand-study-hero__lead">事業が動き出すと、目の前の仕事に追われて、ブランドやデザインの見直しは後回しになりがちです。「なんとなく気になっているけれど、手をつけられていない」ブランドの課題を、60分の無料勉強会で一緒に整理します。</p>
+      <p class="brand-study-hero__subtitle">ブランドの「今」を、<br class="brand-study-only-sp" />90分で一緒に見直しませんか。</p>
+      <p class="brand-study-hero__lead">事業が動き出すと、目の前の仕事に追われて、ブランドやデザインの見直しは後回しになりがちです。「なんとなく気になっているけれど、手をつけられていない」ブランドの課題を、90分の無料勉強会で一緒に整理します。</p>
       <ul class="brand-study-hero__facts">
-        <li class="brand-study-pill">所要時間 60分</li>
+        <li class="brand-study-pill">所要時間 90分</li>
         <li class="brand-study-pill">参加費 無料</li>
         <li class="brand-study-pill">オンライン（Zoom）・少人数制</li>
       </ul>
