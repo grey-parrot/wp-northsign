@@ -48,48 +48,7 @@
     ====================================================================== -->
     <section class="services-overview">
       <div class="container">
-        <div class="services-overview__pillars">
-          <div class="services-overview__pillar services-overview__pillar--advisory">
-            <img
-              class="services-overview__icon"
-              src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-role-target.png"
-              alt=""
-              loading="lazy"
-              decoding="async"
-            />
-            <div class="services-overview__pillar-txt">
-              <p class="services-overview__pillar-label">①&nbsp;&nbsp;考える・月額</p>
-              <h2 class="hd-2xs">デザイン顧問</h2>
-              <p class="tx-4xs">ブランドの軸をつくり、今どこに投資すべきか、何を作るかを一緒に判断します。</p>
-            </div>
-          </div>
-          <span class="services-overview__arrow" aria-hidden="true"></span>
-          <div class="services-overview__pillar">
-            <img
-              class="services-overview__icon"
-              src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-service-design.png"
-              alt=""
-              loading="lazy"
-              decoding="async"
-            />
-            <div class="services-overview__pillar-txt">
-              <p class="services-overview__pillar-label">②&nbsp;&nbsp;作る・都度</p>
-              <h2 class="hd-2xs">制作メニュー</h2>
-              <p class="tx-4xs">Web・ロゴ・営業資料など、顧問で決めたものを必要な分だけ形にします。</p>
-            </div>
-          </div>
-        </div>
-        <div class="services-overview__training">
-          <img
-            class="services-overview__training-icon"
-            src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-service-education.png"
-            alt=""
-            loading="lazy"
-            decoding="async"
-          />
-          <h2 class="hd-2xs">＋ 講座・研修</h2>
-          <p class="tx-4xs">社内にデザインの考え方を広げたい企業・組織には、研修・ワークショップもご用意しています。</p>
-        </div>
+        <?php get_template_part( 'template-parts/services-overview', null, [ 'heading' => 'h2' ] ); ?>
         <ul class="services-overview__links">
           <li><a href="#advisory" class="services-overview__link">デザイン顧問サービス</a></li>
           <li><a href="#plans" class="services-overview__link">料金プラン</a></li>
@@ -146,21 +105,77 @@
       </div>
     </section>
 
-    <!-- 3ヶ月ブランド構築プログラム
+    <!-- 支援の流れ
+    ====================================================================== -->
+    <section class="services-support">
+      <div class="container">
+        <div class="services-support__head">
+          <h2 class="services-common__title hd-xs">支援の流れ</h2>
+          <p class="tx-3xs">最初の3ヶ月でブランドの土台をつくり、その後は各接点へ広げ、社内に根付かせていきます。</p>
+        </div>
+        <ol class="services-support__steps">
+          <li class="services-support__step services-support__step--first">
+            <div class="services-support__icon">
+              <img
+                class="services-support__icon-target"
+                src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-role-target.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <p class="services-support__badge">最初の3ヶ月</p>
+            <h3 class="services-support__title hd-2xs">ブランドの土台をつくる</h3>
+            <p class="tx-4xs">講義とワークのセッションで、選ばれる理由と伝え方の基準を決める</p>
+          </li>
+          <li class="services-support__step">
+            <div class="services-support__icon">
+              <img
+                class="services-support__icon-design"
+                src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-service-design.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <p class="services-support__period">4ヶ月目以降</p>
+            <h3 class="services-support__title hd-2xs">各接点に広げる</h3>
+            <p class="tx-4xs">Web・営業資料・SNS・ロゴなどの戦略・設計から制作まで</p>
+          </li>
+          <li class="services-support__step">
+            <div class="services-support__icon">
+              <img
+                class="services-support__icon-education"
+                src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-service-education.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <p class="services-support__period">継続して</p>
+            <h3 class="services-support__title hd-2xs">社内に根付かせる</h3>
+            <p class="tx-4xs">社内メンバーへのデザイン教育や、判断基準の仕組みづくり</p>
+          </li>
+        </ol>
+        <p class="services-support__note">※ 実際の制作は別途お見積もりです（顧問契約中はオリジナルデザイン制作が20%OFF）。</p>
+        <p class="services-support__team">
+          ノースサインには、デザイン・エンジニアリング・マーケティング・システムの専門メンバーが在籍しています。<br class="mq-md-up" />
+          必要に応じて外部の専門家とも連携し、チームとしてブランドづくりを支えます。
+        </p>
+      </div>
+    </section>
+
+    <!-- ブランドの土台をつくる（顧問契約の最初の3ヶ月）
     ====================================================================== -->
     <section id="program" class="services-program services-anchor">
       <div class="container">
         <div class="services-program__box">
           <div class="services-program__head">
             <div class="services-program__head-txt">
-              <p class="services-program__en lexend">Brand Building Program</p>
-              <h2 class="services-program__title hd-2xs">はじめの3ヶ月：ブランド構築プログラム</h2>
+              <p class="services-program__en lexend">Brand Building</p>
+              <h2 class="services-program__title hd-2xs">ブランドの土台をつくる</h2>
               <p class="services-program__catch hd-xs">3ヶ月で、「選ばれる理由」と「伝え方の基準」をつくる。</p>
-              <p class="services-program__lead tx-3xs">デザイン顧問のはじまりとなる、3ヶ月のプログラムです。講義とワークを組み合わせた全14回のセッションで、市場と顧客の整理から、ブランド・アイデンティティ、トーン&amp;マナー、今後の計画づくりまでを一緒に進めます。</p>
-              <div class="services-program__price">
-                <p class="services-program__price-main"><span>60万円</span>（税別）／3ヶ月</p>
-                <p class="services-program__price-note">月20万円×3回のお支払いも可能です</p>
-              </div>
+              <p class="services-program__lead tx-3xs">顧問契約の最初の3ヶ月は、ブランドの土台づくりに集中します。講義とワークを組み合わせたセッションで、市場と顧客の整理から、ブランド・アイデンティティ、トーン&amp;マナー、今後の計画づくりまでを一緒に進めます。内容は、事業の状況に合わせて調整します。</p>
             </div>
             <div class="services-program__person top-common__person top-common__person--engineer">
               <img
@@ -175,9 +190,9 @@
             <dl class="services-program__overview">
 <?php
 $program_overview = [
-  '期間'   => '3ヶ月',
-  '回数'   => '全14回（1回90分）',
-  '料金'   => '60万円（税別）。月20万円×3回のお支払いも可能です',
+  '期間'   => '顧問契約の最初の3ヶ月',
+  '回数'   => '全14回程度（1回90分）。下記のカリキュラムは一例です',
+  '料金'   => '顧問プランの月額に含まれます',
   '構成'   => '3つのフェーズ<br />顧客と価値を絞り込む → 価値の伝え方と目標を決める → ビジュアルの方向性を探る',
   '進め方' => '講義＋ワーク。ワークシートを使い、セッションの間に宿題もあります',
   '参加者' => '経営者・事業責任者（社内メンバーのご参加も歓迎します）',
@@ -208,11 +223,11 @@ foreach ( $program_overview as $label => $value ) :
       </div>
     </section>
 
-    <!-- 3ヶ月・全14回のカリキュラム
+    <!-- カリキュラム例（3ヶ月・全14回）
     ====================================================================== -->
     <section id="curriculum" class="services-curriculum services-anchor">
       <div class="container">
-        <h2 class="services-common__title hd-xs">3ヶ月・全14回のカリキュラム</h2>
+        <h2 class="services-common__title hd-xs">カリキュラム例（3ヶ月・全14回）</h2>
         <ol class="services-curriculum__phases">
           <li class="services-curriculum__phase">
             <img
@@ -384,24 +399,8 @@ foreach ( $curriculum as $phase ) :
           デザイン顧問サービスは、事業やブランドへの理解を継続的に深めながら、判断や設計を一緒に進めていく月額制のサポートです。<br class="mq-md-up" />
           単発の制作やスポット対応ではなく、中長期の視点で伴走することを前提としています。
         </p>
-        <p class="services-plans__lead tx-3xs">まず3ヶ月のブランド構築プログラムでブランドの軸をつくり、その後は月額の顧問プランで、判断・設計・監修を続けます。ブランドの土台がすでにある場合は、顧問プランから始めることもできます。</p>
+        <p class="services-plans__lead tx-3xs">どのプランも、最初の3ヶ月でブランドの土台をつくるところから始め、その後は決めた軸をもとに、判断・設計・監修を続けます。</p>
         <div class="services-plans__body">
-          <div class="services-plans__program">
-            <div class="services-plans__program-txt">
-              <p class="services-common__step lexend">STEP 1</p>
-              <h3 class="services-plans__program-title hd-xs">3ヶ月ブランド構築プログラム</h3>
-              <p class="tx-4xs">全14回のセッションで、ブランドの軸とトーン&amp;マナーを決め、今後の計画を立てます。</p>
-              <a href="#program" class="services-plans__program-link more tx-4xs">プログラムの内容を見る</a>
-            </div>
-            <div class="services-plans__program-price">
-              <p class="services-plans__program-price-main"><span class="hd-xs">60万円</span>（税別）／3ヶ月</p>
-              <p class="services-plans__program-price-note">月20万円×3回のお支払いも可能です</p>
-            </div>
-          </div>
-          <div class="services-plans__plans-head">
-            <p class="services-common__step lexend">STEP 2</p>
-            <p class="tx-3xs">顧問プラン（プログラム修了後・月額）</p>
-          </div>
           <div class="services-plans__items">
             <div class="services-plans__item">
               <div class="services-plans__item-head">
@@ -409,7 +408,7 @@ foreach ( $curriculum as $phase ) :
                 <h3 class="services-plans__item-title hd-xs">伴走パートナー</h3>
                 <p class="services-plans__item-price"><span class="hd-2xs">10万円</span>（税別）/月額</p>
               </div>
-              <p class="tx-4xs">プログラムで決めたブランドの軸をもとに、ロゴ・Web・販促物など各媒体の戦略や設計をご相談いただけるプランです。定期的なセッションで、判断の軸がぶれないよう伴走します。</p>
+              <p class="tx-4xs">最初の3ヶ月でブランドの軸をつくり、その後はロゴ・Web・販促物など各媒体の戦略や設計をご相談いただけるプランです。定期的なセッションで、判断の軸がぶれないよう伴走します。</p>
             </div>
             <div class="services-plans__item">
               <div class="services-plans__item-head">
@@ -454,6 +453,7 @@ foreach ( $curriculum as $phase ) :
 <?php
 // 各機能の有無（伴走・戦略・経営の順）
 $plan_features = [
+  '最初の3ヶ月のブランド構築'             => [ true, true, true ],
   'Web・営業資料・SNSなどの戦略と設計'   => [ true, true, true ],
   '社内メンバー向けのデザイン教育・相談'   => [ false, true, true ],
   '社内のデザインの判断基準・仕組みづくり' => [ false, true, true ],
@@ -474,7 +474,7 @@ foreach ( $plan_features as $feature => $has ) :
             </table>
           </div>
           <ul class="services-plans__notes">
-            <li>※ 顧問プランは、原則としてブランド構築プログラム修了後にご利用いただけます。ブランドの土台がすでにある場合は、顧問プランから始めることもできます。</li>
+            <li>※ ブランドの土台がすでにある場合は、最初の3ヶ月の内容をご状況に合わせて調整します。</li>
             <li>※ 制作は別途お見積もりになります。お問い合わせください。</li>
             <li>※ 表示価格はすべて税別です。セッションの頻度・時間は、ご相談内容と支援範囲に応じて個別に設定します。</li>
           </ul>
@@ -625,9 +625,9 @@ foreach ( $plan_features as $feature => $has ) :
 <?php
 $flow_steps = [
   [ '無料ブランド勉強会（90分）', '事業の状況と課題を伺い、3C分析を使って強みと課題を一緒に整理します。' ],
-  [ 'ご提案・お見積もり', '課題に合わせて、ブランド構築プログラムの進め方をご提案します。' ],
-  [ '3ヶ月ブランド構築プログラム', '全14回のセッションで、ブランドの軸とトーン&amp;マナーを決めます。' ],
-  [ '顧問プランで各接点へ展開', '決まった軸をもとに、顧問プランでWeb・営業資料・SNSなどの戦略と設計を進め、必要なものを制作します。' ],
+  [ 'ご提案・お見積もり', '課題に合わせて、顧問プランと最初の3ヶ月の進め方をご提案します。' ],
+  [ 'ブランドの土台をつくる（最初の3ヶ月）', '顧問契約の最初の3ヶ月で、ブランドの軸とトーン&amp;マナーを決めます。' ],
+  [ '各接点へ展開', '決まった軸をもとに、Web・営業資料・SNSなどの戦略と設計を進め、必要なものを制作します。' ],
   [ '振り返りと改善', 'お客様の反応や事業の変化を見ながら、方針を見直し、改善を続けます。' ],
 ];
 foreach ( $flow_steps as $i => $step ) :
@@ -655,9 +655,9 @@ $faqs = [
   [ 'まだ課題がはっきりしていなくても相談できますか？', 'はい。「今の伝え方に違和感がある」「何から始めたらよいかわからない」といった段階からお話を伺います。まずは無料ブランド勉強会で、現状を一緒に整理しましょう。' ],
   [ 'Webサイトやロゴの制作も含まれますか？', '実制作は顧問料に含まれません。顧問プランで方向性や優先順位を整理し、制作が必要になった際に別途お見積もりします。顧問契約中は、オリジナルデザイン制作を20%OFFでご提供します。' ],
   [ '制作だけを依頼することはできますか？', 'はい、可能です。制作メニューは顧問契約なしでもご依頼いただけます。' ],
-  [ 'どのプランを選べばよいかわかりません。', 'まずは3ヶ月のブランド構築プログラムから始めていただき、プログラムの最終回で、次に取り組むことに合わせて顧問プランをご提案します。決めた軸で判断を続けたい場合は伴走パートナー、社内への定着も進めたい場合は戦略パートナー、実行段階の改善支援・監修まで必要な場合は経営パートナーが目安です。' ],
-  [ 'セッションの回数や契約期間は決まっていますか？', 'ブランド構築プログラムは、3ヶ月・全14回（1回90分）で、3ヶ月のご契約が前提です。その後の顧問プランのセッションの頻度・時間は、課題や支援内容に合わせて個別に設定します。契約期間などの条件は、ご契約前にご案内します。' ],
-  [ 'ブランド構築プログラムを受けずに、顧問プランから始められますか？', 'ターゲットや提供価値、トーン&amp;マナーなど、ブランドの土台がすでにある場合は、顧問プランから始めることもできます。無料ブランド勉強会で現状を伺い、ご提案します。' ],
+  [ 'どのプランを選べばよいかわかりません。', '無料ブランド勉強会で現状を伺い、課題に合わせてご提案します。決めた軸で判断を続けたい場合は伴走パートナー、社内への定着も進めたい場合は戦略パートナー、実行段階の改善支援・デザイン監修まで任せたい場合は経営パートナーがおすすめです。' ],
+  [ 'セッションの回数や契約期間は決まっていますか？', '顧問契約の最初の3ヶ月は、ブランドの土台をつくるセッション（例：全14回・1回90分）を行います。その後のセッションの頻度・時間は、課題や支援内容に合わせて個別に設定します。契約期間などの条件は、ご契約前にご案内します。' ],
+  [ 'ブランドの土台がすでにある場合も、最初の3ヶ月は必要ですか？', 'ターゲットや提供価値、トーン&amp;マナーなど、ブランドの土台がすでにある場合は、最初の3ヶ月の内容をご状況に合わせて調整します。無料ブランド勉強会で現状を伺い、ご提案します。' ],
 ];
 foreach ( $faqs as $faq ) :
 ?>

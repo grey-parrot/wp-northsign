@@ -12,7 +12,7 @@
         <img
           class="top-hero__image"
           src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-hero.jpg"
-          alt="起業家のアイディアをイノベーションに変える、ノースサインのブランディングイメージ"
+          alt="ノースサインのメンバー"
           loading="eager"
           fetchpriority="high"
           decoding="async"
@@ -20,12 +20,13 @@
       </div>
       <div class="top-hero__txt">
         <h1 class="top-hero__catch hd-sm lh-13 mb-3xs">
-          起業家のアイディアを<br />
-          イノベーションに変える。
+          経営のそばにいる、<br />
+          あなたの会社の<br />
+          デザイン顧問。
         </h1>
         <p class="top-hero__txt1 tx-xs lh-16 mb-3xs">
-          スタートアップの意思決定に並走する、<br />
-          協創型デザインパートナー。
+          顧問デザイナー・外部CDOとして、<br />
+          企業・組織のブランドづくりに<br class="mq-md-down" />伴走します。
         </p>
         <p class="top-hero__txt2 tx-4xs lh-16">
           デザインを「作る」前に、<br />
@@ -121,13 +122,23 @@ $news_events = new WP_Query([
       <div class="container">
         <div class="top-concept__wrapper">
           <div class="top-concept__wrapper-image">
-            <img
-              class="top-concept__image"
-              src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-concept.png"
-              alt="コンセプトイメージ"
-              loading="lazy"
-              decoding="async"
-            />
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-concept_sp.png"
+                width="624"
+                height="720"
+              />
+              <img
+                class="top-concept__image"
+                src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-concept_pc.png"
+                alt="北極星を見上げる2人のイラスト"
+                width="1102"
+                height="1374"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
           </div>
           <div class="top-concept__wrapper-txt">
             <h2 class="top-concept__title lexend hd-xs mb-3xs">Concept</h2>
@@ -136,16 +147,20 @@ $news_events = new WP_Query([
               ともに見つける。
             </p>
             <p class="top-concept__txt2 tx-3xs mb-2xs">
-              経営のそばで、考え続けるパートナーとして。<br /><br />
-              起業家の頭の中にあるアイディアを整理し、<br />
-              ブランドの軸を共に探し、世界観を構築していく。<br />
-              それが、私たちの大好きな仕事です。<br /><br />
-              私たちは、デザインをただ見た目を装飾するものだとは<br />
-              考えていません。<br />
-              経営戦略と密接に関わるものだと捉えています。<br /><br />
-              従来型の発注者・受注者の関係性を超えて、<br />
-              御社のデザイン顧問として、<br />
-              長期的に、貴社のブランドやサービスづくりに伴走します。
+              社名のノースサインは、北極星をイメージしています。<br /><br />
+              私たちはデザインを、単なる表現や装飾ではなく、<br class="mq-md-up" />
+              事業や経営を前に進めるための重要なプロセスだと考えています。<br /><br />
+              そして、ブランド戦略は経営戦略と切り離せません。<br class="mq-md-up" />
+              どこを目指し、何に投資し、何をやらないのか。<br class="mq-md-up" />
+              迷ったときに立ち返る、その判断の軸こそが、<br class="mq-md-up" />
+              あなたの会社にとっての「北極星」です。<br /><br />
+              私たちは、要件を受け取って形にするだけではなく、<br class="mq-md-up" />
+              発注者と受注者という関係を超え、チームの一員のように、<br class="mq-md-up" />
+              経営者やメンバーと思考を共有しながら、<br class="mq-md-up" />
+              その北極星を一緒に探し、一緒に決めていきます。<br /><br />
+              そうして見つけた北極星を、ビジュアルやモーションの力で表現し、<br class="mq-md-up" />
+              ひと目で伝わり、記憶に残る、<br class="mq-md-up" />
+              唯一無二のブランドをつくります。
             </p>
             <div class="top-common__wrapper-more">
               <a href="<?php echo esc_url( get_permalink( get_page_by_path('about'))); ?>" class="top-common__more more tx-3xs"
@@ -157,15 +172,15 @@ $news_events = new WP_Query([
       </div>
     </section>
 
-    <!-- 私たちの役割
+    <!-- 私たちのサービス
     ======================================== -->
     <section class="top-our-role">
       <div class="container">
         <div class="top-common__title mb-md">
           <h2 class="top-common__title-ja hd-xs lh-1 mb-5xs">
-            私たちの役割
+            私たちのサービス
           </h2>
-          <p class="top-common__title-en lexend tx-3xs">Our role</p>
+          <p class="top-common__title-en lexend tx-3xs">Our service</p>
         </div>
 
         <div class="top-our-role__intro tx-center mb-sm">
@@ -177,21 +192,24 @@ $news_events = new WP_Query([
             貴社専属の「ブランド・マネージャー」
           </p>
           <p class="top-our-role__intro-txt tx-3xs">
-            ブランドとは、顧客から見て、その商品・サービスが識別できる状態のことです。<br class="mq-md-up" />
-            価格競争に巻き込まれない強いブランド作りを得意としています。
+            デザイナーやブランドの責任者が社内にいない企業にとっての、<br class="mq-md-up" />
+            社外のブランド・マネージャー、外部CDOとしての役割をしております。
           </p>
         </div>
 
         <div class="top-our-role__row mb-sm">
           <div class="top-our-role__txt tx-4xs">
-            <p class="mb-3xs">
-              Webサイト、営業資料、SNS、プロダクトの画面、採用ページ。接点が増えるほど、関わる人も増えていきます。制作会社、エンジニア、マーケター、カメラマン、そして社内のメンバー。
+            <p class="top-our-role__question tx-3xs mb-3xs">
+              せっかく良い事業やサービスがあっても、<br class="mq-md-up" />
+              その価値がお客様に伝わっていない。<br class="mq-md-up" />
+              自社が大切にしているスタンスが、外から見えていない。<br class="mq-md-up" />
+              そんなことはありませんか？
             </p>
             <p class="mb-3xs">
-              一人ひとりが優秀でも、目指す方向がそろっていなければ、伝わるメッセージは少しずつずれていきます。
+              Webサイト、営業資料、SNS、採用ページ。接点が増えるほど、制作会社やエンジニア、マーケター、社内のメンバーなど、関わる人も増えていきます。一人ひとりが優秀でも、目指す方向がそろっていなければ、伝わるメッセージは少しずつずれていきます。
             </p>
             <p>
-              ノースサインは、デザイン顧問として経営者の視点に立ってブランドの軸をつくり、その軸をもとに社内外の専門家へ方向性を示して、アウトプットをそろえていきます。ブランドの構築から管理までを担う「ブランド・マネージャー」の役割です。
+              ノースサインは、月額の顧問として経営のそばに入り、ブランドの軸をつくって、社内外の専門家へ方向性を示せるよう、ブランドステートメントを作り、さらにそれを社内外に伝えられるよう伴走し、必要に応じてクリエイティブの力でサポートしております。
             </p>
           </div>
 
@@ -267,277 +285,16 @@ $news_events = new WP_Query([
           </div>
         </div>
 
-        <div class="top-our-role__items mb-sm">
-          <div class="top-our-role__item box">
-            <div class="top-our-role__item-illust mb-4xs">
-              <img
-                class="top-our-role__item-icon"
-                src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-role-target.png"
-                alt=""
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-            <p class="top-our-role__item-num lexend hd-xs mb-4xs">01</p>
-            <h3 class="top-our-role__item-title hd-2xs mb-4xs">軸をつくる</h3>
-            <p class="tx-4xs">
-              「誰に、どんな価値を約束するのか」を言葉にし、デザインや施策を判断するための基準をつくります。
-            </p>
-          </div>
-          <div class="top-our-role__item box">
-            <div class="top-our-role__item-illust mb-4xs">
-              <div class="top-common__person top-common__person--marketer">
-                <img
-                  src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-role-marketer.png"
-                  alt=""
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-              <div class="top-common__person top-common__person--ceo">
-                <img
-                  src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-role-ceo.png"
-                  alt=""
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-              <div class="top-common__person top-common__person--engineer">
-                <img
-                  src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-role-engineer.png"
-                  alt=""
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-            </div>
-            <p class="top-our-role__item-num lexend hd-xs mb-4xs">02</p>
-            <h3 class="top-our-role__item-title hd-2xs mb-4xs">束ねる</h3>
-            <p class="tx-4xs">
-              ブランドの軸を社内外の専門家と共有し、Web・営業資料・SNSなど、各接点の表現をそろえます。
-            </p>
-          </div>
-          <div class="top-our-role__item box">
-            <div class="top-our-role__item-illust mb-4xs">
-              <img
-                class="top-our-role__item-compass"
-                src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-role-compass.png"
-                alt=""
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-            <p class="top-our-role__item-num lexend hd-xs mb-4xs">03</p>
-            <h3 class="top-our-role__item-title hd-2xs mb-4xs">育てる</h3>
-            <p class="tx-4xs">
-              つくって終わりにはしません。お客様の反応や事業の変化を見ながら、ブランドの管理と改善を続けます。
-            </p>
-          </div>
+        <div class="services-overview top-our-role__overview mb-sm">
+          <?php get_template_part( 'template-parts/services-overview' ); ?>
         </div>
 
-        <p class="top-our-role__note tx-center">
-          ノースサインには、デザイン・エンジニアリング・マーケティング・システムの専門メンバーが在籍しています。<br class="mq-md-up" />
-          必要に応じて外部の専門家とも連携し、チームとしてブランドづくりを支えます。
-        </p>
-      </div>
-    </section>
-
-    <!-- 私たちのサービス
-    ======================================== -->
-    <section class="top-our-service">
-      <div class="container">
-        <div class="top-common__title mb-md">
-          <h2 class="top-common__title-ja hd-xs lh-1 mb-5xs">
-            私たちのサービス
-          </h2>
-          <p class="top-common__title-en lexend tx-3xs">Our service</p>
+        <div class="tx-center">
+          <a href="<?php echo esc_url( get_permalink( get_page_by_path('services'))); ?>"
+            class="top-common__link more tx-xs"
+            >サービス詳細はこちら</a
+          >
         </div>
-
-        <!-- 顧問デザイナー -->
-        <div class="top-our-service__advisor mb-lg">
-          <div class="top-our-service__intro mb-xs">
-            <div class="top-our-service__intro-txt">
-              <p class="top-our-service__label tx-4xs mb-3xs">
-                顧問デザイナー（デザイン顧問サービス）
-              </p>
-              <h3 class="top-our-service__catch hd-xs mb-3xs">
-                社外にいる、<br />
-                自社のブランド・マネージャー。
-              </h3>
-              <p class="top-our-service__intro-lead tx-3xs mb-3xs">
-                デザイナーやブランドの責任者が社内にいない企業のために、月額の顧問として、経営のそばに入ります。
-              </p>
-              <p class="top-our-service__intro-lead tx-3xs">
-                最初の3ヶ月は「ブランド構築プログラム」で、ブランドの土台をつくります。その後は、決まった軸をもとに、ロゴ・Webサイト・営業資料・SNSなどの戦略と設計を進め、制作会社や社内メンバーとのやり取りもそろえていきます。
-              </p>
-            </div>
-            <div class="top-our-service__intro-image">
-              <img
-                src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-service-advisor.png"
-                alt="地図を手に、北極星を目指して進む二人のイラスト"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-          </div>
-
-          <ol class="top-our-service__steps mb-xs">
-            <li class="top-our-service__step top-our-service__step--first">
-              <div class="top-our-service__icon">
-                <img
-                  class="top-our-service__icon-target"
-                  src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-role-target.png"
-                  alt=""
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-              <p class="top-our-service__step-badge">最初の3ヶ月</p>
-              <h4 class="top-our-service__step-title hd-2xs">ブランドの土台をつくる</h4>
-              <p class="tx-4xs">
-                3ヶ月ブランド構築プログラムで、選ばれる理由と伝え方の基準を決める
-              </p>
-            </li>
-            <li class="top-our-service__step">
-              <div class="top-our-service__icon">
-                <img
-                  class="top-our-service__icon-design"
-                  src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-service-design.png"
-                  alt=""
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-              <p class="top-our-service__step-period">4ヶ月目以降</p>
-              <h4 class="top-our-service__step-title hd-2xs">各接点に広げる</h4>
-              <p class="tx-4xs">
-                Web・営業資料・SNS・ロゴなどの戦略と設計、制作物の監修
-              </p>
-            </li>
-            <li class="top-our-service__step">
-              <div class="top-our-service__icon">
-                <img
-                  class="top-our-service__icon-education"
-                  src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-service-education.png"
-                  alt=""
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-              <p class="top-our-service__step-period">継続して</p>
-              <h4 class="top-our-service__step-title hd-2xs">社内に根付かせる</h4>
-              <p class="tx-4xs">
-                社内メンバーへのデザイン教育や、判断基準の仕組みづくり
-              </p>
-            </li>
-          </ol>
-
-          <p class="top-our-service__note">
-            ※ 実際の制作は別途お見積もりです（顧問契約中はオリジナルデザイン制作が20%OFF）。
-          </p>
-        </div>
-
-        <!-- 3ヶ月ブランド構築プログラム -->
-        <div class="top-our-service__program mb-lg">
-          <div class="top-our-service__program-head mb-xs">
-            <div class="top-our-service__program-txt">
-              <p class="top-our-service__program-en lexend tx-2xs">Brand Building Program</p>
-              <h3 class="top-our-service__program-title hd-2xs">3ヶ月ブランド構築プログラム</h3>
-              <p class="top-our-service__program-catch hd-xs">
-                3ヶ月で、「選ばれる理由」と「伝え方の基準」をつくる。
-              </p>
-              <p class="top-our-service__program-lead tx-3xs">
-                デザイン顧問のはじまりとなる、3ヶ月のプログラムです。講義とワークを組み合わせた全14回のセッションで、市場と顧客の整理から、ブランド・アイデンティティ、トーン&amp;マナー、今後の計画づくりまでを一緒に進めます。
-              </p>
-              <div class="top-our-service__program-price">
-                <p class="top-our-service__program-price-main">
-                  <span class="top-our-service__program-price-amount">60万円</span>（税別）／3ヶ月
-                </p>
-                <p class="top-our-service__program-price-note">月20万円×3回のお支払いも可能です</p>
-              </div>
-            </div>
-            <div class="top-our-service__program-image">
-              <img
-                src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-service-sign.png"
-                alt=""
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-          </div>
-
-          <ol class="top-our-service__phases">
-            <li class="top-our-service__phase">
-              <div class="top-our-service__icon">
-                <img
-                  class="top-our-service__icon-target"
-                  src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-role-target.png"
-                  alt=""
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-              <p class="top-our-service__phase-num lexend">PHASE 1</p>
-              <h4 class="top-our-service__phase-title hd-2xs">ブランド構築 前半</h4>
-              <p class="top-our-service__phase-txt">
-                顧客と提供価値を<br />
-                絞り込む
-              </p>
-              <p class="top-our-service__phase-day lexend">DAY 1〜5</p>
-            </li>
-            <li class="top-our-service__phase">
-              <div class="top-our-service__icon">
-                <img
-                  class="top-our-service__icon-compass"
-                  src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-role-compass.png"
-                  alt=""
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-              <p class="top-our-service__phase-num lexend">PHASE 2</p>
-              <h4 class="top-our-service__phase-title hd-2xs">ブランド構築 後半</h4>
-              <p class="top-our-service__phase-txt">
-                提供価値の伝え方と<br />
-                成果の測り方を決める
-              </p>
-              <p class="top-our-service__phase-day lexend">DAY 6〜9</p>
-            </li>
-            <li class="top-our-service__phase">
-              <div class="top-our-service__icon">
-                <img
-                  class="top-our-service__icon-design"
-                  src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-service-design.png"
-                  alt=""
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-              <p class="top-our-service__phase-num lexend">PHASE 3</p>
-              <h4 class="top-our-service__phase-title hd-2xs">ブランド要素の検討</h4>
-              <p class="top-our-service__phase-txt">
-                ビジュアルの<br />
-                方向性を探る
-              </p>
-              <p class="top-our-service__phase-day lexend">DAY 10〜14</p>
-            </li>
-          </ol>
-
-<?php /* カリキュラムのリンクは非表示中。戻すときは、上の top-our-service__phases に mb-xs も戻す
-          <div class="top-common__wrapper-more">
-            <a href="<?php echo esc_url( get_permalink( get_page_by_path('design-advisory'))); ?>"
-              class="top-common__more more tx-3xs"
-              >プログラムの詳細・全14回のカリキュラムを見る</a
-            >
-          </div>
-*/ ?>
-        </div>
-      </div>
-      <div class="tx-center">
-        <a href="<?php echo esc_url( get_permalink( get_page_by_path('services'))); ?>"
-          class="top-common__link more tx-xs"
-          >サービス詳細はこちら</a
-        >
       </div>
     </section>
 
@@ -619,61 +376,6 @@ $projects_query = new WP_Query(array(
       </div>
     </section>
 
-    <!-- あわせてご依頼いただけること
-    ======================================== -->
-    <section class="top-other-services">
-      <div class="container">
-        <div class="top-common__title mb-md">
-          <h2 class="top-common__title-ja hd-xs lh-1 mb-5xs">
-            あわせてご依頼いただけること
-          </h2>
-          <p class="top-common__title-en lexend tx-3xs">Other services</p>
-        </div>
-        <div class="top-other-services__items mb-3xs">
-          <div class="top-other-services__item box">
-            <div class="top-other-services__icon">
-              <img
-                class="top-other-services__icon-design"
-                src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-service-design.png"
-                alt=""
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-            <h3 class="top-other-services__item-title hd-2xs tx-center mb-3xs">デザイン支援</h3>
-            <p class="tx-4xs">
-              事業の状況や目的を共有しながら、<br />
-              何をつくるか以前に、何をつくらないかを一緒に考え、UI/UXやWeb、マーケティングに関わる設計を支援します。<br /><br />
-              UI/UX設計やWebデザインを中心に、<br />
-              マーケデザイン、アニメーションでの作成なども得意としております。
-            </p>
-          </div>
-          <div class="top-other-services__item box">
-            <div class="top-other-services__icon">
-              <img
-                class="top-other-services__icon-education"
-                src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/top/img-top-service-education.png"
-                alt=""
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-            <h3 class="top-other-services__item-title hd-2xs tx-center mb-3xs">講座・研修</h3>
-            <p class="tx-4xs">
-              デザイン業務を内製化したい企業様や、自社で制作フローを構築する際に、デザイン研修やサポートをさせていただいております。<br /><br />
-              Figma、Canva、Webノーコードツールなど、最新ツールに対応しております。
-            </p>
-          </div>
-        </div>
-        <div class="top-common__wrapper-more">
-          <a href="<?php echo esc_url( get_permalink( get_page_by_path('services'))); ?>"
-            class="top-common__more more tx-3xs"
-            >サービス詳細</a
-          >
-        </div>
-      </div>
-    </section>
-
     <!-- デザイン顧問サービス｜料金プラン
     ======================================== -->
     <section class="top-design-advisory-plans">
@@ -689,30 +391,8 @@ $projects_query = new WP_Query(array(
             貴社の事業を継続的に理解し、伴走しながら支援を行うため、<br
               class="mq-md-up"
             />
-            3ヶ月のブランド構築プログラムと、その後の月額の顧問プランをご用意しています。
+            月額制のデザイン顧問サービスをご用意しています。
           </p>
-        </div>
-        <p class="top-design-advisory-plans__callout tx-3xs tx-center mb-3xs">
-          まず3ヶ月のブランド構築プログラムでブランドの軸をつくり、その後は月額の顧問プランで、判断・設計・監修を続けます。
-        </p>
-        <div class="top-design-advisory-plans__program mb-3xs">
-          <div class="top-design-advisory-plans__program-txt">
-            <p class="top-design-advisory-plans__step lexend">STEP 1</p>
-            <h3 class="top-design-advisory-plans__program-title hd-xs">3ヶ月ブランド構築プログラム</h3>
-            <p class="tx-4xs">
-              全14回のセッションで、ブランドの軸とトーン&amp;マナーを決め、今後の計画を立てます。
-            </p>
-          </div>
-          <div class="top-design-advisory-plans__program-price">
-            <p class="top-design-advisory-plans__program-price-main">
-              <span class="hd-xs">60万円</span>（税別）／3ヶ月
-            </p>
-            <p class="top-design-advisory-plans__program-price-note">月20万円×3回のお支払いも可能です</p>
-          </div>
-        </div>
-        <div class="top-design-advisory-plans__plans-head mb-3xs">
-          <p class="top-design-advisory-plans__step lexend">STEP 2</p>
-          <p class="tx-3xs">顧問プラン（プログラム修了後・月額）</p>
         </div>
         <div class="top-design-advisory-plans__items mb-3xs">
           <div class="top-design-advisory-plans__item box">
@@ -738,7 +418,6 @@ $projects_query = new WP_Query(array(
           </div>
         </div>
         <p class="top-design-advisory-plans__comments mb-md">
-          ※ ブランドの土台がすでにある場合は、顧問プランから始めることもできます。<br /><br />
           ※ 制作は別途お見積もりになります。お問い合わせください。<br /><br />
           ※ 表示価格はすべて税別です。
         </p>
@@ -831,6 +510,21 @@ $swell_posts = new WP_Query([
         </div>
         <div class="top-media__items">
           <div class="top-media__item box">
+            <span class="top-media__icon top-media__icon--note lexend" aria-hidden="true">note</span>
+            <div class="top-media__body">
+              <h3 class="top-media__title lexend">note</h3>
+              <p class="tx-4xs">
+                経営者・事業責任者に向けて、ブランドづくりのヒントをコラムで発信しています。
+              </p>
+              <a href="https://note.com/northsign"
+                class="more tx-3xs"
+                target="_blank"
+                rel="noopener"
+                >noteを読む</a
+              >
+            </div>
+          </div>
+          <div class="top-media__item box">
             <img
               class="top-media__icon"
               src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/ico-youtube.svg"
@@ -850,21 +544,6 @@ $swell_posts = new WP_Query([
                 target="_blank"
                 rel="noopener"
                 >チャンネルを見る</a
-              >
-            </div>
-          </div>
-          <div class="top-media__item box">
-            <span class="top-media__icon top-media__icon--note lexend" aria-hidden="true">note</span>
-            <div class="top-media__body">
-              <h3 class="top-media__title lexend">note</h3>
-              <p class="tx-4xs">
-                経営者・事業責任者に向けて、ブランドづくりのヒントをコラムで発信しています。
-              </p>
-              <a href="https://note.com/northsign"
-                class="more tx-3xs"
-                target="_blank"
-                rel="noopener"
-                >noteを読む</a
               >
             </div>
           </div>

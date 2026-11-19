@@ -52,8 +52,14 @@
 
 /* サービスの全体像
 ----------------------------------------*/
+// カード部分は template-parts/services-overview.php。トップの「私たちのサービス」でも使う
 .services-overview {
   .container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .services-overview__body {
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -112,15 +118,13 @@
     font-weight: 700;
     line-height: 1.5;
   }
-  .services-overview__arrow {
+  .services-overview__plus {
     flex-shrink: 0;
     align-self: center;
-    width: 24px;
-    height: 24px;
-    background: url("images/ico-arrow.svg") no-repeat center / contain;
-    @include m.bp-down(md) {
-      transform: rotate(90deg);
-    }
+    color: var(--c-black-lv0);
+    font-size: b.rem(24);
+    font-weight: 700;
+    line-height: 1;
   }
   .services-overview__training {
     display: flex;
@@ -286,18 +290,6 @@
   }
 }
 
-.services-common__step {
-  align-self: flex-start;
-  background-color: var(--c-black-lv0);
-  border-radius: 999px;
-  padding: 2px 12px;
-  color: var(--c-white);
-  font-size: b.rem(14);
-  font-weight: 600;
-  line-height: 1.5;
-  white-space: nowrap;
-}
-
 /* デザイン顧問サービス
 ----------------------------------------*/
 .services-advisory {
@@ -353,34 +345,6 @@
     line-height: 1.3;
   }
   .services-program__lead {
-    line-height: 1.5;
-  }
-  .services-program__price {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 4px 16px;
-    background-color: var(--c-black-lv0);
-    border-radius: 8px;
-    padding: 10px 20px;
-    font-weight: 700;
-    @include m.bp-down(md) {
-      align-self: stretch;
-    }
-  }
-  .services-program__price-main {
-    color: var(--c-white);
-    font-size: b.rem(16);
-    line-height: 1.6;
-    > span {
-      margin-right: 4px;
-      font-size: b.rem(24);
-      line-height: 1.2;
-    }
-  }
-  .services-program__price-note {
-    color: var(--c-black-lv5);
-    font-size: b.rem(14);
     line-height: 1.5;
   }
   .services-program__person {
@@ -598,6 +562,128 @@
   }
 }
 
+/* 支援の流れ
+----------------------------------------*/
+// カードは本番トップにあった旧「私たちのサービス」の支援3段階のデザインを流用
+.services-support {
+  .services-support__head {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 48px;
+    @include m.bp-down(md) {
+      margin-bottom: 32px;
+    }
+    .tx-3xs {
+      line-height: 1.5;
+    }
+  }
+
+  // カードの間の矢印（»）
+  .services-support__steps {
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+    margin-bottom: 24px;
+    @include m.bp-down(md) {
+      flex-direction: column;
+      gap: 56px;
+    }
+    > li {
+      position: relative;
+      flex: 1 1 0;
+      & + li::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -44px;
+        width: 24px;
+        height: 24px;
+        background-image: url("images/ico-arrow.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: translateY(-50%);
+        @include m.bp-down(md) {
+          top: -40px;
+          left: 50%;
+          transform: translateX(-50%) rotate(90deg);
+        }
+      }
+    }
+  }
+
+  .services-support__step {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    background-color: var(--c-white);
+    border: 1px solid var(--c-black-lv0);
+    border-radius: 8px;
+    padding: 32px;
+    @include m.bp-down(md) {
+      padding: 24px;
+    }
+    &--first {
+      border-width: 2px;
+    }
+  }
+
+  // アイコン（72px枠）
+  .services-support__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 72px;
+    height: 72px;
+    .services-support__icon-target {
+      align-self: flex-end;
+      width: 54px;
+    }
+    .services-support__icon-design {
+      width: auto;
+      height: 66px;
+    }
+    .services-support__icon-education {
+      width: auto;
+      height: 65px;
+    }
+  }
+
+  .services-support__badge {
+    background-color: var(--c-black-lv0);
+    border-radius: 999px;
+    padding: 2px 12px;
+    color: var(--c-white);
+    font-size: b.rem(14);
+    font-weight: 700;
+    line-height: 1.5;
+  }
+  .services-support__period {
+    color: var(--c-black-lv2);
+    font-size: b.rem(14);
+    font-weight: 700;
+    line-height: 1.5;
+  }
+  .services-support__title {
+    line-height: 1.2;
+  }
+
+  .services-support__note {
+    margin-bottom: 16px;
+    font-size: b.rem(14);
+    font-weight: 700;
+    line-height: 1.5;
+  }
+  .services-support__team {
+    color: var(--c-black-lv2);
+    font-size: b.rem(14);
+    font-weight: 700;
+    line-height: 1.5;
+  }
+}
+
 /* セッションの進め方
 ----------------------------------------*/
 .services-session {
@@ -676,69 +762,6 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-  }
-  .services-plans__program {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 32px;
-    background-color: var(--c-white);
-    border: 2px solid var(--c-black-lv0);
-    border-radius: 8px;
-    padding: 32px 40px;
-    @include m.bp-down(md) {
-      flex-direction: column;
-      align-items: stretch;
-      gap: 16px;
-      padding: 24px;
-    }
-  }
-  .services-plans__program-txt {
-    flex: 1 1 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    .tx-4xs {
-      line-height: 1.6;
-    }
-  }
-  .services-plans__program-title {
-    line-height: 1.3;
-  }
-  .services-plans__program-link {
-    color: var(--c-black-lv0);
-  }
-  .services-plans__program-price {
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 6px;
-    font-weight: 700;
-    @include m.bp-down(md) {
-      align-items: flex-start;
-    }
-  }
-  .services-plans__program-price-main {
-    font-size: b.rem(16);
-    line-height: 1.6;
-    > span {
-      padding-right: 4px;
-      line-height: 1.2;
-    }
-  }
-  .services-plans__program-price-note {
-    color: var(--c-black-lv2);
-    font-size: b.rem(14);
-    line-height: 1.5;
-  }
-  .services-plans__plans-head {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding-top: 16px;
-    line-height: 1.5;
   }
   .services-plans__items {
     display: flex;
