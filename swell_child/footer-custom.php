@@ -16,15 +16,15 @@
           </div>
           <ul class="footer__sns">
             <li>
-              <a href="https://www.youtube.com/@northsign_jp" class="footer__sns-link lexend" target="_blank" rel="noopener">
-                <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/ico-youtube-sm.svg" alt="" width="20" height="14" loading="lazy" decoding="async" />
-                YouTube
+              <a href="https://note.com/northsign" class="footer__sns-link lexend" target="_blank" rel="noopener">
+                note
                 <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/ico-arrow.svg" alt="" width="18" height="18" loading="lazy" decoding="async" />
               </a>
             </li>
             <li>
-              <a href="https://note.com/northsign" class="footer__sns-link lexend" target="_blank" rel="noopener">
-                note
+              <a href="https://www.youtube.com/@northsign_jp" class="footer__sns-link lexend" target="_blank" rel="noopener">
+                <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/ico-youtube-sm.svg" alt="" width="20" height="14" loading="lazy" decoding="async" />
+                YouTube
                 <img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/images/ico-arrow.svg" alt="" width="18" height="18" loading="lazy" decoding="async" />
               </a>
             </li>
