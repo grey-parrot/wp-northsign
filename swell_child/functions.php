@@ -97,6 +97,17 @@ add_action('init', function () {
   ]);
 });
 
+// 404ページのタイトルを、ほかのページと同じ「…｜ノースサイン」の形にする
+// （All in One SEO が404のタイトルを出さないため、WordPress標準の「… – Northsign」になっていた）
+add_filter('pre_get_document_title', function ($title) {
+
+    if ( is_404() ) {
+        return 'ページが見つかりませんでした｜ノースサイン';
+    }
+
+    return $title;
+}, PHP_INT_MAX);
+
 add_filter('swell_is_show_sidebar', function ($show) {
 
     if ( is_singular(['news-events', 'projects']) ) {
