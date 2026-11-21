@@ -21,7 +21,7 @@ $img_dir = get_stylesheet_directory_uri() . '/images/top';
       <div class="services-overview__pillar-txt">
         <p class="services-overview__pillar-label">ベース ｜ 月額の顧問契約</p>
         <<?php echo $heading; ?> class="hd-2xs">デザイン顧問</<?php echo $heading; ?>>
-        <p class="tx-4xs">最初の3ヶ月でブランドの軸をつくり、その後も経営のそばで、何をつくるかを一緒に判断します。</p>
+        <p class="tx-4xs">まずブランドの軸をつくり（3ヶ月程度が目安）、その後も経営のそばで、何をつくるかを一緒に判断します。</p>
       </div>
     </div>
     <span class="services-overview__plus" aria-hidden="true">＋</span>
