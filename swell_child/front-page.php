@@ -397,6 +397,13 @@ $projects_query = new WP_Query(array(
         <div class="top-design-advisory-plans__items mb-3xs">
           <div class="top-design-advisory-plans__item box">
             <p class="top-design-advisory-plans__item-txt1 tx-4xs mb-4xs">
+              デザインの迷いを、気軽に相談する
+            </p>
+            <h3 class="top-design-advisory-plans__item-title hd-xs mb-4xs">相談パートナー</h3>
+            <h4 class="top-design-advisory-plans__item-price hd-2xs">5万円<span class="tx-4xs">（税別）/月額</span></h4>
+          </div>
+          <div class="top-design-advisory-plans__item box">
+            <p class="top-design-advisory-plans__item-txt1 tx-4xs mb-4xs">
               ブランドの軸を、日々の判断に活かす
             </p>
             <h3 class="top-design-advisory-plans__item-title hd-xs mb-4xs">伴走パートナー</h3>
@@ -409,14 +416,8 @@ $projects_query = new WP_Query(array(
             <h3 class="top-design-advisory-plans__item-title hd-xs mb-4xs">戦略パートナー</h3>
             <h4 class="top-design-advisory-plans__item-price hd-2xs">15万円<span class="tx-4xs">（税別）/月額</span></h4>
           </div>
-          <div class="top-design-advisory-plans__item box">
-            <p class="top-design-advisory-plans__item-txt1 tx-4xs mb-4xs">外部CDO</p>
-            <h3 class="top-design-advisory-plans__item-title hd-xs mb-4xs">
-              経営パートナー
-            </h3>
-            <h4 class="top-design-advisory-plans__item-price hd-2xs">20万円<span class="tx-4xs">（税別）/月額</span></h4>
-          </div>
         </div>
+        <?php get_template_part( 'template-parts/plan-option-cdo', null, [ 'class' => 'mb-3xs' ] ); ?>
         <p class="top-design-advisory-plans__comments mb-md">
           ※ 制作は別途お見積もりになります。お問い合わせください。<br /><br />
           ※ 表示価格はすべて税別です。

@@ -352,6 +352,80 @@
   }
 }
 
+/* 料金プラン：外部CDOの枠（TOP・サービス共通、template-parts/plan-option-cdo.php）
+   PC：左に見出し、中央に説明、右に料金とお問い合わせ
+   SP：見出し → 料金 → 説明 → お問い合わせ の順に縦に並べる */
+.plan-option {
+  display: grid;
+  grid-template-columns: 220px 1fr auto;
+  grid-template-areas:
+    "head txt price"
+    "head txt link";
+  align-items: center;
+  column-gap: 48px;
+  row-gap: 8px;
+  background-color: var(--c-white);
+  border: 1px solid var(--c-black-lv0);
+  border-radius: 8px;
+  padding: 32px 40px;
+  color: var(--c-black-lv0);
+  font-weight: 700;
+  @include m.bp-down(md) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "head"
+      "price"
+      "txt"
+      "link";
+    justify-items: start;
+    padding: 24px;
+  }
+  .plan-option__head {
+    grid-area: head;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    @include m.bp-down(md) {
+      gap: 8px;
+    }
+  }
+  .plan-option__lead,
+  .plan-option__price {
+    font-size: b.rem(16);
+    line-height: 1.6;
+    white-space: nowrap;
+    @include m.bp-down(md) {
+      font-size: b.rem(14);
+      line-height: 1.5;
+    }
+  }
+  .plan-option__title {
+    line-height: 1.3;
+  }
+  .plan-option__price {
+    grid-area: price;
+    align-self: end;
+  }
+  .plan-option__txt {
+    grid-area: txt;
+    font-size: b.rem(16);
+    line-height: 1.6;
+    @include m.bp-down(md) {
+      font-size: b.rem(12);
+    }
+  }
+  .plan-option__link {
+    grid-area: link;
+    align-self: start;
+    font-size: b.rem(18);
+    line-height: 1.5;
+    white-space: nowrap;
+    @include m.bp-down(md) {
+      font-size: b.rem(16);
+    }
+  }
+}
+
 /* ボタン */
 .button {
   display: inline-block;

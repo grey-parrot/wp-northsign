@@ -88,8 +88,8 @@
               <li>ターゲット・提供価値の再定義</li>
               <li>判断基準・トーン&amp;マナーの設計</li>
               <li>Web・営業資料・SNSなど、各媒体の戦略と設計</li>
-              <li>社内メンバー向けのデザイン教育・相談（戦略パートナー以上）</li>
-              <li>各ブランド要素の改善支援・デザイン監修（経営パートナー）</li>
+              <li>社内メンバー向けのデザイン教育・相談（戦略パートナー）</li>
+              <li>各ブランド要素の改善支援・デザイン監修（オプション：外部CDO）</li>
             </ul>
           </div>
           <img
@@ -192,7 +192,7 @@
 $program_overview = [
   '期間'   => '顧問契約の最初の3ヶ月',
   '回数'   => '全14回程度（1回90分）。下記のカリキュラムは一例です',
-  '料金'   => '顧問プランの月額に含まれます',
+  '料金'   => '伴走パートナー以上の月額に含まれます',
   '構成'   => '3つのフェーズ<br />顧客と価値を絞り込む → 価値の伝え方と目標を決める → ビジュアルの方向性を探る',
   '進め方' => '講義＋ワーク。ワークシートを使い、セッションの間に宿題もあります',
   '参加者' => '経営者・事業責任者（社内メンバーのご参加も歓迎します）',
@@ -399,16 +399,23 @@ foreach ( $curriculum as $phase ) :
           デザイン顧問サービスは、事業やブランドへの理解を継続的に深めながら、判断や設計を一緒に進めていく月額制のサポートです。<br class="mq-md-up" />
           単発の制作やスポット対応ではなく、中長期の視点で伴走することを前提としています。
         </p>
-        <p class="services-plans__lead tx-3xs">どのプランも、最初の3ヶ月でブランドの土台をつくるところから始め、その後は決めた軸をもとに、判断・設計・監修を続けます。</p>
         <div class="services-plans__body">
           <div class="services-plans__items">
+            <div class="services-plans__item">
+              <div class="services-plans__item-head">
+                <p class="tx-4xs">デザインの迷いを、気軽に相談する</p>
+                <h3 class="services-plans__item-title hd-xs">相談パートナー</h3>
+                <p class="services-plans__item-price"><span class="hd-2xs">5万円</span>（税別）/月額</p>
+              </div>
+              <p class="tx-4xs">デザインについて、気軽にご相談いただけるプランです。ロゴ・Web・販促物など、いま迷っていることを月1回のMTGで一緒に整理します。</p>
+            </div>
             <div class="services-plans__item">
               <div class="services-plans__item-head">
                 <p class="tx-4xs">ブランドの軸を、日々の判断に活かす</p>
                 <h3 class="services-plans__item-title hd-xs">伴走パートナー</h3>
                 <p class="services-plans__item-price"><span class="hd-2xs">10万円</span>（税別）/月額</p>
               </div>
-              <p class="tx-4xs">最初の3ヶ月でブランドの軸をつくり、その後はロゴ・Web・販促物など各媒体の戦略や設計をご相談いただけるプランです。定期的なセッションで、判断の軸がぶれないよう伴走します。</p>
+              <p class="tx-4xs">ブランドの軸をつくり、その軸をもとに、ロゴ・Web・販促物などのデザインや設計を一緒に進めるプランです。隔週のMTGで、判断の軸がぶれないよう伴走します。</p>
             </div>
             <div class="services-plans__item">
               <div class="services-plans__item-head">
@@ -416,50 +423,47 @@ foreach ( $curriculum as $phase ) :
                 <h3 class="services-plans__item-title hd-xs">戦略パートナー</h3>
                 <p class="services-plans__item-price"><span class="hd-2xs">15万円</span>（税別）/月額</p>
               </div>
-              <p class="tx-4xs">伴走パートナーの内容に加え、社内メンバー向けのデザイン教育・相談や、社内のデザインの仕組みづくりをお手伝いするプランです。ブランドを根付かせ、判断の軸が社内に根付く仕組みをつくります。</p>
-            </div>
-            <div class="services-plans__item">
-              <div class="services-plans__item-head">
-                <p class="tx-4xs">外部CDO</p>
-                <h3 class="services-plans__item-title hd-xs">経営パートナー</h3>
-                <p class="services-plans__item-price"><span class="hd-2xs">20万円</span>（税別）/月額</p>
-              </div>
-              <p class="tx-4xs">戦略パートナーの内容に加え、単なる外部アドバイザーではなく、ブランドを実行するために伴走します。戦略・ゴール設定を行うほか、Webサイト、UIデザイン、販促ツール、SNSなど各ブランド要素の戦略策定・改善支援・デザイン監修も行えます。</p>
+              <p class="tx-4xs">伴走パートナーの内容に加え、社内メンバー向けのデザイン教育・相談や、社内のデザインの仕組みづくりをお手伝いするプランです。毎週のMTGで、判断の軸が社内に根付く仕組みをつくります。</p>
             </div>
           </div>
+          <?php get_template_part( 'template-parts/plan-option-cdo' ); ?>
           <div class="services-plans__compare">
             <table class="services-plans__table tx-4xs">
               <thead>
                 <tr>
                   <td></td>
+                  <th scope="col">相談パートナー</th>
                   <th scope="col">伴走パートナー</th>
                   <th scope="col">戦略パートナー</th>
-                  <th scope="col">経営パートナー</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <th scope="row">月額（税別）</th>
+                  <td>5万円</td>
                   <td>10万円</td>
                   <td>15万円</td>
-                  <td>20万円</td>
+                </tr>
+                <tr>
+                  <th scope="row">MTGの頻度</th>
+                  <td>月1回</td>
+                  <td>隔週</td>
+                  <td>毎週</td>
                 </tr>
                 <tr>
                   <th scope="row">こんな方に</th>
-                  <td>決めた軸で判断を続けたい</td>
-                  <td>社内に判断の軸を根付かせたい</td>
-                  <td>外部CDOとして実行まで任せたい</td>
+                  <td>デザインの相談相手がほしい</td>
+                  <td>ブランドの軸をつくりたい</td>
+                  <td>ブランドを根付かせたい</td>
                 </tr>
 <?php
-// 各機能の有無（伴走・戦略・経営の順）
+// 各機能の有無（相談・伴走・戦略の順）
 $plan_features = [
-  '最初の3ヶ月のブランド構築'             => [ true, true, true ],
-  'Web・営業資料・SNSなどの戦略と設計'   => [ true, true, true ],
-  '社内メンバー向けのデザイン教育・相談'   => [ false, true, true ],
-  '社内のデザインの判断基準・仕組みづくり' => [ false, true, true ],
-  'ブランド実行に向けた戦略・ゴール設定'   => [ false, false, true ],
-  '各ブランド要素の改善支援・デザイン監修' => [ false, false, true ],
-  'オリジナルデザイン制作 20%OFF'          => [ true, true, true ],
+  'ブランド構築'                   => [ false, true, true ],
+  '目標設定と進捗の確認'           => [ false, false, true ],
+  '制作物の企画・設計'             => [ false, false, true ],
+  'デザイン監修'                   => [ false, true, true ],
+  'オリジナルデザイン制作 20%OFF' => [ true, true, true ],
 ];
 foreach ( $plan_features as $feature => $has ) :
 ?>
@@ -474,9 +478,8 @@ foreach ( $plan_features as $feature => $has ) :
             </table>
           </div>
           <ul class="services-plans__notes">
-            <li>※ ブランドの土台がすでにある場合は、最初の3ヶ月の内容をご状況に合わせて調整します。</li>
             <li>※ 制作は別途お見積もりになります。お問い合わせください。</li>
-            <li>※ 表示価格はすべて税別です。セッションの頻度・時間は、ご相談内容と支援範囲に応じて個別に設定します。</li>
+            <li>※ 表示価格はすべて税別です。MTGの時間や進め方は、ご相談内容に応じて調整します。</li>
           </ul>
         </div>
       </div>
@@ -655,7 +658,7 @@ $faqs = [
   [ 'まだ課題がはっきりしていなくても相談できますか？', 'はい。「今の伝え方に違和感がある」「何から始めたらよいかわからない」といった段階からお話を伺います。まずは無料ブランド勉強会で、現状を一緒に整理しましょう。' ],
   [ 'Webサイトやロゴの制作も含まれますか？', '実制作は顧問料に含まれません。顧問プランで方向性や優先順位を整理し、制作が必要になった際に別途お見積もりします。顧問契約中は、オリジナルデザイン制作を20%OFFでご提供します。' ],
   [ '制作だけを依頼することはできますか？', 'はい、可能です。制作メニューは顧問契約なしでもご依頼いただけます。' ],
-  [ 'どのプランを選べばよいかわかりません。', '無料ブランド勉強会で現状を伺い、課題に合わせてご提案します。決めた軸で判断を続けたい場合は伴走パートナー、社内への定着も進めたい場合は戦略パートナー、実行段階の改善支援・デザイン監修まで任せたい場合は経営パートナーがおすすめです。' ],
+  [ 'どのプランを選べばよいかわかりません。', '無料ブランド勉強会で現状を伺い、課題に合わせてご提案します。まずデザインの相談相手がほしい場合は相談パートナー、ブランドの軸をつくって判断を続けたい場合は伴走パートナー、社内への定着も進めたい場合は戦略パートナーがおすすめです。外部CDOとして実行まで任せたい場合は、個別にご相談ください。' ],
   [ 'セッションの回数や契約期間は決まっていますか？', '顧問契約の最初の3ヶ月は、ブランドの土台をつくるセッション（例：全14回・1回90分）を行います。その後のセッションの頻度・時間は、課題や支援内容に合わせて個別に設定します。契約期間などの条件は、ご契約前にご案内します。' ],
   [ 'ブランドの土台がすでにある場合も、最初の3ヶ月は必要ですか？', 'ターゲットや提供価値、トーン&amp;マナーなど、ブランドの土台がすでにある場合は、最初の3ヶ月の内容をご状況に合わせて調整します。無料ブランド勉強会で現状を伺い、ご提案します。' ],
 ];
