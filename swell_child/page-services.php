@@ -111,7 +111,7 @@
       <div class="container">
         <div class="services-support__head">
           <h2 class="services-common__title hd-xs">支援の流れ</h2>
-          <p class="tx-3xs">最初の3ヶ月でブランドの土台をつくり、その後は各接点へ広げ、社内に根付かせていきます。</p>
+          <p class="tx-3xs">まずブランドの土台をつくり（3ヶ月程度が目安）、その後は各接点へ広げ、使いながら育てていきます。</p>
         </div>
         <ol class="services-support__steps">
           <li class="services-support__step services-support__step--first">
