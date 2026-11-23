@@ -1,6 +1,6 @@
 <?php
 /**
- * サービス概要（デザイン顧問＋制作メニュー＋講座・研修）
+ * サービス概要（デザイン顧問＋デザイン制作＋講座・研修）
  * トップページの「私たちのサービス」と、サービスページ上部で共通。
  *
  * $args['heading'] … カードの見出しのタグ（既定は h3）
@@ -21,7 +21,7 @@ $img_dir = get_stylesheet_directory_uri() . '/images/top';
       <div class="services-overview__pillar-txt">
         <p class="services-overview__pillar-label">ベース ｜ 月額の顧問契約</p>
         <<?php echo $heading; ?> class="hd-2xs">デザイン顧問</<?php echo $heading; ?>>
-        <p class="tx-4xs">まずブランドの軸をつくり（3ヶ月程度が目安）、その後も経営のそばで、何をつくるかを一緒に判断します。</p>
+        <p class="tx-4xs">目標設定から制作物の企画・設計、デザイン監修まで。<br class="mq-md-up" />何を、どう伝えるかを経営のそばで一緒に決めます。</p>
       </div>
     </div>
     <span class="services-overview__plus" aria-hidden="true">＋</span>
@@ -35,8 +35,8 @@ $img_dir = get_stylesheet_directory_uri() . '/images/top';
       />
       <div class="services-overview__pillar-txt">
         <p class="services-overview__pillar-label">スポット ｜ 必要なときに都度</p>
-        <<?php echo $heading; ?> class="hd-2xs">制作メニュー</<?php echo $heading; ?>>
-        <p class="tx-4xs">Web・ロゴ・営業資料などを、必要なときに必要な分だけ。顧問契約がなくても、スポットでご依頼いただけます。</p>
+        <<?php echo $heading; ?> class="hd-2xs">デザイン制作</<?php echo $heading; ?>>
+        <p class="tx-4xs">顧問で決めた内容を、必要な規模で形にします。顧問契約がなくても、スポットでご依頼いただけます。</p>
       </div>
     </div>
   </div>

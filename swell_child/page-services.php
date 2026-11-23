@@ -50,9 +50,9 @@
       <div class="container">
         <?php get_template_part( 'template-parts/services-overview', null, [ 'heading' => 'h2' ] ); ?>
         <ul class="services-overview__links">
-          <li><a href="#advisory" class="services-overview__link">デザイン顧問サービス</a></li>
+          <li><a href="#advisory" class="services-overview__link">デザイン顧問</a></li>
           <li><a href="#plans" class="services-overview__link">料金プラン</a></li>
-          <li><a href="#design" class="services-overview__link">デザイン支援・制作</a></li>
+          <li><a href="#design" class="services-overview__link">デザイン制作</a></li>
           <li><a href="#training" class="services-overview__link">講座・研修</a></li>
           <li><a href="#flow" class="services-overview__link">ご依頼の流れ</a></li>
           <li><a href="#faq" class="services-overview__link">よくある質問</a></li>
