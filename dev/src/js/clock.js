@@ -14,16 +14,18 @@ function getElements() {
 
   const degreeSec = (second / 60) * 360;
 
-  document.querySelector(
-    ".watch-hour"
-  ).style.transform = `rotate(${degreeHour}deg)`;
-  document.querySelector(
-    ".watch-min"
-  ).style.transform = `rotate(${degreeMin}deg)`;
-  document.querySelector(
-    ".watch-sec"
-  ).style.transform = `rotate(${degreeSec}deg)`;
+  watchHour.style.transform = `rotate(${degreeHour}deg)`;
+  watchMin.style.transform = `rotate(${degreeMin}deg)`;
+  watchSec.style.transform = `rotate(${degreeSec}deg)`;
 }
 
-// 1秒ごとで十分（10秒単位の更新があるため）
-setInterval(getElements, 1000);
+// 時計はトップページにだけある。時計がないページでは動かさない
+// （以前は全ページで1秒ごとに動かしていて、時計のないページでエラーになっていた）
+const watchHour = document.querySelector(".watch-hour");
+const watchMin = document.querySelector(".watch-min");
+const watchSec = document.querySelector(".watch-sec");
+
+if (watchHour && watchMin && watchSec) {
+  // 1秒ごとで十分（10秒単位の更新があるため）
+  setInterval(getElements, 1000);
+}

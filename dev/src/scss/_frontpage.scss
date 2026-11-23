@@ -550,6 +550,9 @@
     gap: 24px;
     @include m.bp-down(md) {
       flex-direction: column;
+      gap: 16px;
+      // 下の外部CDOの枠との間も、カードどうしと同じ 16px にそろえる（mb-3xs の上書き）
+      margin-bottom: 16px;
     }
     .top-design-advisory-plans__item {
       box-shadow: none;

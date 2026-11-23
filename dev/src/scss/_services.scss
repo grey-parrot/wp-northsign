@@ -762,6 +762,10 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+    // スマホはカード・外部CDOの枠・比較表の間を、カードどうしと同じ 16px にそろえる
+    @include m.bp-down(md) {
+      gap: 16px;
+    }
   }
   .services-plans__items {
     display: flex;
