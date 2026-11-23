@@ -928,6 +928,10 @@
       font-size: b.rem(18);
       line-height: 1.5;
     }
+    // PC は価格を中央に（スマホは下の指定で左寄せ）
+    td.services-design__price {
+      text-align: center;
+    }
     tbody tr:not(:last-child) > * {
       border-bottom: 1px solid var(--c-black-lv6);
     }
@@ -962,7 +966,6 @@
   .services-design__price {
     font-size: b.rem(24);
     line-height: 1.2;
-    text-align: center !important;
     white-space: nowrap;
     @include m.bp-down(md) {
       font-size: b.rem(20);
