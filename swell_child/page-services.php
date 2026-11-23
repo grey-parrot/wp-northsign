@@ -535,35 +535,52 @@ foreach ( $plan_features as $feature => $has ) :
         <div class="services-design__menu">
           <h3 class="hd-2xs">デザイン制作の料金（一例）</h3>
           <p class="tx-4xs">デザイン顧問で決めたことを、必要な分だけ形にします。デザイン制作は、顧問契約なしでもご依頼いただけます。</p>
-          <table class="services-design__table tx-4xs">
-            <thead>
-              <tr>
-                <th scope="col">メニュー</th>
-                <th scope="col">内容</th>
-                <th scope="col">価格（税別）</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">スタートサイト</th>
-                <td>〜5ページ。AIとSTUDIOテンプレートを活用し、短期間で公開</td>
-                <td class="services-design__price">20万円</td>
-              </tr>
-              <tr>
-                <th scope="row">スタンダードサイト</th>
-                <td>〜10ページ。AI活用＋デザイナー監修</td>
-                <td class="services-design__price">30万円</td>
-              </tr>
-              <tr>
-                <th scope="row">オリジナルサイト</th>
-                <td>ブランド構築を踏まえたフルオーダー</td>
-                <td class="services-design__price">50万円〜</td>
-              </tr>
-            </tbody>
-          </table>
+<?php
+// デザイン制作の料金（一例）：見出し → [メニュー, 内容, 価格] の行
+$design_menu_groups = [
+  'Webサイト制作' => [
+    [ 'スタートサイト', '〜5ページ。STUDIOテンプレートを活用し、短期間で公開', '20万円' ],
+    [ 'スタンダードサイト', '〜10ページ。オリジナルデザイン', '30万円' ],
+    [ 'オリジナルサイト', 'ブランド構築を踏まえたフルオーダー', '50万円〜' ],
+  ],
+  '紙媒体デザイン' => [
+    [ '名刺デザイン（裏表）', 'ブランドに合わせた両面デザイン', '5万円〜' ],
+    [ 'ポスター（A4・裏表）', 'イベント告知や店頭掲示などに。A4両面のデザイン', '8万円〜' ],
+    [ 'パンフレット（A4見開き・4P）', 'サービス紹介・会社案内などに', '12万円〜' ],
+  ],
+  'ロゴ・アニメーション' => [
+    [ 'ロゴ・CIデザイン', '企業やサービスのイメージを形にするロゴ。ロゴの使い方をまとめた仕様書を含みます', '10万円〜' ],
+    [ 'アニメーション', 'ブランドの世界観をアニメーションで表現。イラストの作成を含みます', '20万円〜' ],
+  ],
+];
+foreach ( $design_menu_groups as $group_title => $rows ) :
+?>
+          <div class="services-design__group">
+            <h4 class="services-design__group-title"><?php echo esc_html( $group_title ); ?></h4>
+            <table class="services-design__table tx-4xs">
+              <thead>
+                <tr>
+                  <th scope="col">メニュー</th>
+                  <th scope="col">内容</th>
+                  <th scope="col">価格（税別）</th>
+                </tr>
+              </thead>
+              <tbody>
+<?php foreach ( $rows as $row ) : ?>
+                <tr>
+                  <th scope="row"><?php echo esc_html( $row[0] ); ?></th>
+                  <td><?php echo esc_html( $row[1] ); ?></td>
+                  <td class="services-design__price"><?php echo esc_html( $row[2] ); ?></td>
+                </tr>
+<?php endforeach; ?>
+              </tbody>
+            </table>
+          </div>
+<?php endforeach; ?>
           <p class="services-design__notes">
-            ※ 上記は一例です。内容・ページ数に応じてお見積もりします。表示価格はすべて税別です。<br />
-            ※ デザイン顧問のご契約中は、オリジナルデザイン制作を20%OFFでご提供します。
+            ※ 上記は一例です。内容・ページ数・仕様に応じてお見積もりします。表示価格はすべて税別です。<br />
+            ※ Webサイトの運用管理費、紙媒体の印刷費は別途です。そのほかのツールもご相談ください。<br />
+            ※ デザイン顧問サービスのご契約中は、オリジナルデザイン制作を20%OFFでご提供します。
           </p>
         </div>
       </div>

@@ -883,6 +883,20 @@
       line-height: 1.6;
     }
   }
+  // 料金表のまとまり（Webサイト制作・紙媒体デザイン・ロゴ・アニメーション）
+  .services-design__group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .services-design__group-title {
+    font-size: b.rem(18);
+    font-weight: 700;
+    line-height: 1.5;
+    @include m.bp-down(md) {
+      font-size: b.rem(16);
+    }
+  }
   // スマホは1行ずつブロックにして縦に並べる
   .services-design__table {
     width: 100%;
